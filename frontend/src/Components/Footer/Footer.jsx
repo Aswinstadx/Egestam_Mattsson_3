@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="container footer">
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-md-4">
           <h3>Kontakt</h3>
           <ul>
@@ -145,6 +145,7 @@ function Footer() {
         src="https://s3-alpha-sig.figma.com/img/2efb/d2df/887a0c4388ef2816f7d81d2cb5aea050?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~8mmnSgdI9Wgo-zl9o19UBJUeAUD2AO0mSnABPPrnCWWIsZcM405UBIfAw3FAXkXKjOTFWP9AabUbG033spGSdqxNkUnRTWKmbxAKQTDKkWjfD9NCW8KOFqi2U8VkYzvRmvU9QvvkjMYHKivqt2tp23aK6-qZLLpu0Cg7Tqfsz45NKXRbsQehR0Oz~hCxHKUUHPD-weZtkZROFPtcmVJueaE97QoKBQPXPF6s3upGz2mSQVOat~7SI3gEd2dGriQuhLGrOs5PypG7LB9t-~bNk--ae1zjhoSXUZmusk9wZysJLpYjN93fZc2AEr~QHcGprSe0hLLk4GAdHRVrCrxg__"
         className="footer-image"
       />
+      <div className="line"></div>
       <div className="text-center copyright-text">
         Copyright © 2024 All rights reserved.
       </div>

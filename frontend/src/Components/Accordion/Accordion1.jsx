@@ -57,17 +57,18 @@ function Accordion1({ title, content }) {
             {/* <p>{content}</p> */}
             <div className="container">
               <p>
-                Vid nybyggnation, oavsett om det gäller bostäder, kommersiella
-                lokaler eller kontor, är kvalitetsinstallationer av el och
-                datanätverk kritiska. Dessa installationer omfattar en rad
-                tjänster från belysning och uppvärmning till avancerade
-                datanätverk och kommunikationssystem. Integration av moderna
-                teknologier som smarta hem- och kontorslösningar, samt
-                energieffektiva installationer, är centrala för att skapa en
-                hållbar, säker och effektiv miljö anpassad för framtida behov.
-                Som experter på området är Egestam & Mattsson de du kan lita på
-                för att leverera högkvalitativa installationer. Kontakta oss för
-                att ta det första steget mot en framtidssäker fastighet.
+                Egestam och Mattsson erbjuder omfattande tjänster för renovering
+                inom el och installation, anpassade för både bostäder och
+                kommersiella fastigheter. Vår expertis täcker allt från
+                uppgradering av befintliga elsystem till installation av
+                moderna, energieffektiva lösningar. Vi förstår vikten av att
+                kombinera funktionalitet med estetik och arbetar nära våra
+                kunder för att säkerställa att varje projekt möter deras
+                specifika behov och önskemål. Vårt team är specialiserat på att
+                leverera högkvalitativa resultat, från planering till
+                slutförande, med fokus på säkerhet, hållbarhet och teknisk
+                innovation. Kontakta oss för att diskutera dina renoveringsbehov
+                och få en skräddarsydd offert från branschens experter.
               </p>
               <button>Kontakta oss</button>
             </div>

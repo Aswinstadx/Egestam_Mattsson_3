@@ -5,6 +5,26 @@
   margin: 0;
   padding: 0;
 }
+.navbar-container {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 99px;
+  z-index: 1000;
+}
+
+.navbar-container.sticky img.logo{
+  width: 119px;
+height: 61px;
+flex-shrink: 0;
+top: 19px;
+position: absolute;
+left: 233px;
+}
 
 /* Custom CSS for Header */
 .navbar-container {
@@ -980,5 +1000,29 @@ footer {
     top: -49px;
     left: -100px;
     position: relative;
+  }
+  img.logo{
+    width: 184.329px;
+height: 116px;
+flex-shrink: 0;
+left: 60px;
+position: relative;
+  }
+  .navbar-nav a{
+    font-size: 20px;
+  }
+  .banner-text{
+    width: 800px;
+    position: absolute;
+    /* top: 50%; */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner-text h1{
+    font-size: 50px;
+  }
+  .banner-text span{
+    font-size: 50px;
   }
 }

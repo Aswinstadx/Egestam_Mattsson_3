@@ -34,8 +34,8 @@ function App() {
   }, []);
   return (
     <div>
-      {/* <Header />
-      <Banner /> */}
+      <Header />
+      <Banner />
       <Accordion />
       <Accordion1 />
       <Accordion2 />

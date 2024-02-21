@@ -57,17 +57,20 @@ function Accordion1({ title, content }) {
             {/* <p>{content}</p> */}
             <div className="container">
               <p>
-                Vid nybyggnation, oavsett om det gäller bostäder, kommersiella
-                lokaler eller kontor, är kvalitetsinstallationer av el och
-                datanätverk kritiska. Dessa installationer omfattar en rad
-                tjänster från belysning och uppvärmning till avancerade
-                datanätverk och kommunikationssystem. Integration av moderna
-                teknologier som smarta hem- och kontorslösningar, samt
-                energieffektiva installationer, är centrala för att skapa en
-                hållbar, säker och effektiv miljö anpassad för framtida behov.
-                Som experter på området är Egestam & Mattsson de du kan lita på
-                för att leverera högkvalitativa installationer. Kontakta oss för
-                att ta det första steget mot en framtidssäker fastighet.
+                Egestam och Mattsson erbjuder specialanpassade
+                installationstjänster för moderna värmesystem, smarta hem,
+                effektiva kontorslösningar, avancerade säkerhetssystem och
+                omfattande datainstallationer. Vår breda erfarenhet garanterar
+                installationer som inte bara ökar komforten utan även
+                energieffektiviteten och säkerheten i din fastighet. Vi
+                engagerar oss i ett nära samarbete med våra kunder för att
+                förstå deras unika behov, säkerställa funktionell och estetiskt
+                tilltalande design och implementera de senaste innovationerna.
+                Från grundlig planering till precision i utförandet, är vårt
+                expertteam dedikerat till detaljer och de högsta standarderna av
+                säkerhet och hållbarhet. Kontakta Egestam och Mattsson för att
+                utforska hur vi kan transformera ditt utrymme till en
+                intelligent och energismart miljö.
               </p>
               <button>Kontakta oss</button>
             </div>
