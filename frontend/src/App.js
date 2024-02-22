@@ -13,6 +13,7 @@ import MobileFooter from "./Components/Footer/MobileFooter";
 import Accordion from "./Components/Accordion/Accordion";
 import Accordion1 from "./Components/Accordion/Accordion1";
 import Accordion2 from "./Components/Accordion/Accordion2";
+import Section9 from "./Sections/Section9";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,18 +37,24 @@ function App() {
     <div>
       <Header />
       <Banner />
+      <Section1 />
       <Accordion />
       <Accordion1 />
       <Accordion2 />
-      <Section1 />
       <Section3 />
       <Section4 />
       <Section5 />
       <Section6 />
       <Section7 />
       {/* <Section8 /> */}
+      <div className="d-none d-sm-block">
+        <Section9 />
+      </div>
       <footer className="d-none d-sm-block">
         <Footer />
+      </footer>
+      <footer className="d-block d-sm-none">
+        <MobileFooter />
       </footer>
     </div>
   );
