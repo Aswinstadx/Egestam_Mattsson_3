@@ -9,7 +9,6 @@ function Banner() {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
-      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024);
     };
 
     handleResize();
@@ -20,10 +19,9 @@ function Banner() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  // src={process.env.PUBLIC_URL + "/logo.png"}
   return (
     <div className="banner-container">
-      {console.log("WINDOW----------", window.innerWidth)}
       <div className="banner-overlay" />
       <ReactPlayer
         url={BANNER_VIDEO}

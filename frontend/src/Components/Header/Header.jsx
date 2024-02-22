@@ -59,14 +59,6 @@ const Header = () => {
             <Nav.Link href="#link">Kontakt</Nav.Link>
             <Nav.Link href="#link">Jobba med oss</Nav.Link>
           </Nav>
-          <Nav className="ml-auto align-items-center d-lg-none">
-            <Nav.Link href="#search">
-              <FaSearch />
-            </Nav.Link>
-            <Nav.Link href="#menu">
-              <FaBars />
-            </Nav.Link>
-          </Nav>
         </Navbar.Collapse>
       </div>
     </Navbar>

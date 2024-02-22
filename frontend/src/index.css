@@ -81,7 +81,10 @@ a.active {
   /* Adjust the color as needed */
 }
 
-
+.navbar-toggler{
+  border: none;
+  outline: none;
+}
 
 img.logo {
   width: 266px;
@@ -629,6 +632,13 @@ footer {
     /* In figma */
     height: 69px;
     flex-shrink: 0;
+    left: 19px;
+    top: 14px;
+    position: absolute;
+  }
+  .navbar-container.sticky img.logo{
+    left: 10px;
+    position: absolute;
   }
 
   .banner-text {
