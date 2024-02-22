@@ -101,6 +101,10 @@ img.logo {
   position: relative;
 }
 
+.i-pad-only {
+  display: none;
+}
+
 .banner-overlay {
   position: absolute;
   top: 0;
@@ -130,7 +134,7 @@ img.logo {
 .banner-text {
   position: absolute;
   /* top: 50%; */
-  top: 48%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* text-align: center; */
@@ -360,6 +364,8 @@ img.logo {
   width: 770px;
   height: 577px;
   flex-shrink: 0;
+  top: 10px;
+  position: relative;
 }
 
 .section6 {
@@ -654,6 +660,7 @@ footer {
   background-size: cover;
   padding: 107px 58px 38px 120px;
   height: auto;
+  background: linear-gradient(0deg, rgba(0, 53, 78, 0.40) 0%, rgba(0, 53, 78, 0.40) 100%), url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__'), lightgray 0px -72.243px / 100% 122.682% no-repeat;
 }
 
 
@@ -1024,20 +1031,24 @@ footer {
     margin-right: 20px;
     float: right;
   }
-  .footer{
+
+  .footer {
     display: flex;
     align-content: center;
     align-items: center;
   }
-  .footer-content h2{
+
+  .footer-content h2 {
     color: #FFF;
-font-family: Montserrat;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: 38.4px; /* 120% */
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px;
+    /* 120% */
   }
 }
+
 
 @media only screen and (min-width: 1000px) and (max-width: 1588px) {
   .section4 img {
@@ -1100,5 +1111,424 @@ line-height: 38.4px; /* 120% */
 
   .banner-text span {
     font-size: 50px;
+  }
+
+  .i-pad-only {
+    display: none;
+
+  }
+
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  img.logo {
+    width: 182.74px;
+    height: 115px;
+    flex-shrink: 0;
+    left: 66px;
+    position: absolute;
+  }
+
+  button.navbar-toggler {
+    top: 55px;
+    right: 66px;
+    position: absolute;
+    border: none;
+    outline: none;
+    color: white;
+  }
+
+  .banner-text {
+    display: flex;
+    width: 781px;
+    flex-direction: column;
+  }
+
+  .banner-text p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 140% */
+    width: 808px;
+    height: 142px;
+    flex-shrink: 0;
+  }
+
+  .arrow {
+    width: 58px;
+    height: 58px;
+    top: 7px;
+    position: relative;
+  }
+
+  .section1 {
+    width: 100%;
+    height: 331px;
+    flex-shrink: 0;
+  }
+
+  .section1 .container {
+    top: 50px;
+    position: relative;
+  }
+
+  .section1 h1 {
+    color: #00354E;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 78.125% */
+  }
+
+  .section1 p {
+    color: #00354E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    /* 155% */
+    width: 631px;
+    /* height: 300px; */
+    flex-shrink: 0;
+    left: 97px;
+    position: relative;
+  }
+
+  .section3 p {
+
+    display: flex;
+    width: 600px;
+    height: 294px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+  }
+
+  .section3 {
+    padding: 0;
+    height: 337px;
+  }
+
+  .banner-container {
+    height: 854px;
+    height: 1024px;
+  }
+
+  /* .section4{
+    display: none;
+  } */
+  /* .section5{
+    display: none;
+  } */
+  .section6 {
+    margin-top: 120px;
+    padding: 100px;
+  }
+
+  .section7 {
+    display: none;
+  }
+
+  .section9 {
+    /* display: none; */
+  }
+
+  /* footer {
+    display: none;
+  } */
+
+  .desktop-only {
+    display: none;
+  }
+
+  .i-pad-only {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* Adjust as needed */
+    height: 300px;
+    /* Adjust as needed */
+    background-image: url('https://s3-alpha-sig.figma.com/img/ec6b/e842/7ccfd23a9f3bc48ec821a5819b15fe97?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtnB1gTM1BsKSsIDOOfafD6CQZGBRTr9F8IlozL~We5iYWYZXbYe4LigH3auBBTY8fhNenqnP3sSBwRD6SqjZvZOj3RDPlMyKRrEyx78K3nj5IgvVGOtmI49cDKpaxlq5~Ij9vh-rrq9A9NjC6QGZ~zFc~~sosDk286cJKIeGHbvYym63~s90Z3JdhtRgvu520DxAoqgiAHfHzcVXAsn9oadJfkQFGR6QO7jxgwoC-GnNtHOSBOQ4CPZ3in4GRJItFw84TBFZ~HRQmUVfPylQlKbIaJ5mEfGXVm8y2DqcQrKUQoDe8A0BvPUaoN4QaQpYnfzMuzORv2E0RRZSSxF6w__');
+    background-size: cover;
+    background-position: center;
+    height: 433px;
+    width: 100%;
+    /* top: -199px;
+    position: relative; */
+  }
+
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+  }
+
+  .text-over-image {
+    position: absolute;
+    left: 92px;
+    /* Adjust distance from left edge */
+    top: 50%;
+    /* Adjust vertical alignment */
+    transform: translateY(-50%);
+
+  }
+
+  .text-over-image h2 {
+    display: flex;
+    width: 610.64px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    /* 131.25% */
+  }
+
+  .text-over-image p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.25px;
+    /* 162.5% */
+    display: flex;
+    width: 625px;
+    height: 126px;
+  }
+
+  .text-over-image button {
+    border: none;
+    outline: none;
+    width: 420.98px;
+    height: 42.5px;
+    flex-shrink: 0;
+    border-radius: 54px;
+    background: var(--egestam-mattsson, #89BF50);
+    top: 22px;
+    position: relative;
+  }
+
+  .text-over-image button span {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    /* 125% */
+  }
+
+  .section7 {
+    display: none;
+  }
+
+  footer h3 {
+    font-size: 24px;
+  }
+
+  .section3 a {
+    top: -66px;
+    position: relative;
+  }
+
+  /* Regular styles */
+  .card2-im {
+    position: relative;
+    width: 100%;
+    border-radius: 28px;
+  }
+
+  .image-container {
+    position: relative;
+    /* Ensure image container is a positioned ancestor */
+  }
+
+  .image-content_ {
+    position: absolute;
+    top: 50%;
+    /* Place content at the vertical center */
+    left: 80%;
+    /* Place content at the horizontal center */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: left;
+    color: white;
+    /* Text color */
+    z-index: 1;
+    /* Ensure content is above the dark overlay */
+  }
+
+  /* Dark overlay */
+  .card2-im::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay color */
+  }
+
+  /* Ensure content is above the dark overlay */
+  .image-content_ h2,
+  .image-content_ p {
+    position: relative;
+  }
+
+  .section5 img.card2-im {
+    width: 762px;
+    height: 361px;
+    flex-shrink: 0;
+  }
+
+  .image-content_ h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    /* 87.5% */
+  }
+
+  .image-content_ p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+  }
+
+  .ipad-cards {
+    top: 138px;
+    position: relative;
+  }
+
+  .ipad-card img {
+    width: 363px;
+    height: 191px;
+    flex-shrink: 0;
+  }
+
+  .ipad-card-content {
+    top: 50px;
+    position: relative;
+  }
+
+  .ipad-card-content h2 {
+    color: #003A3A;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.56px;
+    /* 101.75% */
+  }
+
+  .ipad-card-content h6 {
+    color: #003A3A;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.56px;
+  }
+
+  .ipad-card-content p {
+    width: 391px;
+    height: 131px;
+    flex-shrink: 0;
+    color: #00354E;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23.94px;
+    /* 171% */
+  }
+
+  .ipad-card:nth-of-type(2) {
+    margin-left: 40px;
+  }
+
+  .ipad-card-content-btns {
+    border: none;
+    outline: none;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .ipad-card-content-btns button {
+    border: none;
+    width: 100%;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    border: 1px solid #00354E;
+    background: #00354E;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    margin-top: 10px;
+  }
+
+  .section9 {
+    width: 100%;
+    height: 431px;
+    flex-shrink: 0;
+  }
+
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* iPad Pro (portrait and landscape) */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section1 p {
+    color: #00354E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    /* 155% */
+    width: 760px;
+    height: 300px;
+    flex-shrink: 0;
+    left: 97px;
+    position: relative;
   }
 }

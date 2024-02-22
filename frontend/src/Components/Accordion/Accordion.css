@@ -5,11 +5,12 @@
 }
 
 .accordion:nth-child(odd) {
-  background-color: #00354E;
+  background-color: #89BF50;
 }
 
 .accordion:nth-child(even) {
-  background-color: #89BF50;
+  
+  background-color: #00354E;
 }
 
 .accordion-header {
@@ -61,4 +62,19 @@
   .accord-icon {
     margin-right: 20px;
   }
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .accordion-header h3 {
+    left: 86px;
+    position: relative;
+  }
+  .accordion-content{
+    margin-left: 81px;
+    position: relative;
+  }
+  /* .accordion-content p{
+    width: 1000px;
+  } */
 }
