@@ -5,10 +5,11 @@ function Section9() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsIpad(
-        (window.innerWidth <= 1366 && window.innerWidth >= 1024) ||
-          (window.innerWidth <= 1180 && window.innerWidth >= 820)
-      ); // Assuming iPad width is less than or equal to 768px
+      // setIsIpad(
+      //   (window.innerWidth <= 1366 && window.innerWidth >= 820) ||
+      //     (window.innerWidth <= 1180 && window.innerWidth >= 820)
+      // ); 
+      setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600);
     };
 
     // Initial check
@@ -200,7 +201,7 @@ function Section9() {
         </>
       ) : (
         <>
-          <div className="div">
+          <div className="div section9 mt-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&"

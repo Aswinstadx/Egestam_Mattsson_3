@@ -135,8 +135,8 @@ function Section6() {
         ) : (
           <div className="container">
             <div className="row mt-3">
-              <div className="col-md-6">
-                <div className="card-sm">
+              <div className="col-md-6 col-6">
+                <div className="card-sm odd-card">
                   <img
                     src={process.env.PUBLIC_URL + "/images/card1-im.png"}
                     className="card-im"
@@ -166,8 +166,8 @@ function Section6() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="card-sm">
+              <div className="col-md-6 col-6">
+                <div className="card-sm even-card">
                   <img
                     src={process.env.PUBLIC_URL + "/images/card2-im.png"}
                     className="card-im"
@@ -204,8 +204,8 @@ function Section6() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="card-sm">
+              <div className="col-md-6 col-6">
+                <div className="card-sm odd-card">
                   <img
                     src={process.env.PUBLIC_URL + "/images/card3-im.png"}
                     className="card-im"
@@ -238,8 +238,8 @@ function Section6() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="card-sm">
+              <div className="col-md-6 col-6">
+                <div className="card-sm even-card">
                   <img
                     src={process.env.PUBLIC_URL + "/images/card3-im.png"}
                     className="card-im"

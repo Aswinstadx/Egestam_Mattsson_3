@@ -5,7 +5,8 @@ function Section4() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsIpad(window.innerWidth <= 1366 && window.innerWidth >= 1024 || window.innerWidth <= 1180 && window.innerWidth >= 768);
+      // setIsIpad(window.innerWidth <= 1366 && window.innerWidth >= 1024 || window.innerWidth <= 1180 && window.innerWidth >= 768);
+      setIsIpad(window.innerWidth <= 1024 || window.innerWidth >= 820 );
     };
     console.log('WINDOW INNER WIDHT--------', window.innerWidth)
     // Initial check

@@ -67,7 +67,7 @@ function Section5() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="ipad-card" style={{ marginLeft: "84px" }}>
+                  <div className="ipad-card" style={{ marginLeft: "50px" }}>
                     <img
                       src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
                     />

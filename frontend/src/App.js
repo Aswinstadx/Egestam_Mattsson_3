@@ -65,42 +65,10 @@ function App() {
       <Section4 />
       <Section5 />
       <Section6 />
-      {/* <Navbar /> */}
-      {/* <Banner />
-      <Section1 />
-      <Accordion />
-      <Accordion1 />
-      <Accordion2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <div className="ipad-block">
-        <Section7 />
-      </div> */}
       <div className="ipad-block">
         <Section7 />
       </div>
-
-      {/* <Section8 /> */}
-      {/* <div className="d-none d-sm-block">
-        <Section9 />
-      </div> */}
-      {/* <footer className="d-none d-sm-block">
-        <Footer />
-      </footer>
-      <footer className="d-block d-sm-none">
-        <MobileFooter />
-      </footer> */}
-      {/* <footer className="d-none d-sm-block">
-        <Footer />
-      </footer> */}
-      {/* <footer className="d-block d-sm-none">
-        <MobileFooter />
-      </footer> */}
-      <footer>
-        <Footer />
-      </footer>
+      <Section9 />
     </div>
   );
 }
