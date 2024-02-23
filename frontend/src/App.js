@@ -64,7 +64,10 @@ function App() {
       <Section4 />
       <Section5 />
       <Section6 />
-      {/* <Section7 /> */}
+      <div className="ipad-block">
+        <Section7 />
+      </div>
+
       {/* <Section8 /> */}
       <div className="d-none d-sm-block">
         <Section9 />
@@ -78,6 +81,9 @@ function App() {
       <footer className="d-none d-sm-block">
         <Footer />
       </footer>
+      {/* <footer className="d-block d-sm-none">
+        <MobileFooter />
+      </footer> */}
     </div>
   );
 }

@@ -38,6 +38,7 @@ function Section7() {
               <img
                 src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
                 className=""
+                style={{ width: "443px" }}
               />
               <div className="mt-3">
                 <h6>Behöver du hjälp med något ? Kontakta oss idag!</h6>
@@ -58,7 +59,7 @@ function Section7() {
                     />
                   </svg>
                 </button>
-                <button>
+                <button style={{ marginLeft: "20px" }}>
                   <span>Ring oss direkt</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

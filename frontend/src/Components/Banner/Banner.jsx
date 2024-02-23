@@ -26,6 +26,7 @@ function Banner() {
       <ReactPlayer
         url={BANNER_VIDEO}
         playing={true}
+        playsinline
         loop={true}
         volume={0}
         controls={false}

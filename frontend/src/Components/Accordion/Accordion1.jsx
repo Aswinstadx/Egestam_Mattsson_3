@@ -11,7 +11,11 @@ function Accordion1({ title, content }) {
   return (
     <>
       <div className="accordion">
-        <div className="accordion-header" onClick={toggleAccordion}>
+        <div
+          className="accordion-header"
+          onClick={toggleAccordion}
+          style={{ backgroundColor: "#89BF50" }}
+        >
           {/* <h3>{title}</h3> */}
           <h3>Renovering</h3>
           <span className="accord-icon">
@@ -53,7 +57,10 @@ function Accordion1({ title, content }) {
           </span>
         </div>
         {isOpen && (
-          <div className={`accordion-content ${isOpen ? "expanded" : ""}`}>
+          <div
+            className={`accordion-content ${isOpen ? "expanded" : ""}`}
+            style={{ backgroundColor: "#89BF50" }}
+          >
             {/* <p>{content}</p> */}
             <div className="container">
               <p>

@@ -5,7 +5,10 @@ function Section9() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600); // Assuming iPad width is less than or equal to 768px
+      setIsIpad(
+        (window.innerWidth <= 1366 && window.innerWidth >= 1024) ||
+          (window.innerWidth <= 1180 && window.innerWidth >= 820)
+      ); // Assuming iPad width is less than or equal to 768px
     };
 
     // Initial check
@@ -232,7 +235,7 @@ function Section9() {
               inset: 0;
               height: 100%;
               width: 100%;
-              object-fit: cover;
+              // object-fit: cover;
               object-position: center;
             }
             .div-2 {

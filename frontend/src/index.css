@@ -9,6 +9,17 @@
 .navbar-container {
   transition: background-color 0.3s ease;
 }
+.navbar-container .nav-link {
+  color: var(--egestam-mattsson, #fff); /* Normal color */
+}
+
+.navbar-container .nav-link:hover {
+  color: white; /* Color on hover */
+}
+
+.navbar-container .nav-link:visited {
+  color: var(--egestam-mattsson, #fff); /* Color for visited links */
+}
 
 .navbar-container.sticky {
   position: fixed;
@@ -1058,7 +1069,9 @@ footer {
     left: 10px;
     position: relative;
   }
-
+  .ipad-block{
+    display: none;
+  }
   .section5 {
 
     display: flex;
@@ -1121,7 +1134,23 @@ footer {
 }
 
 /* iPads (portrait and landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+  .navbar-container.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 99px;
+    z-index: 1000;
+  }
+  
+  .navbar-container.sticky img.logo {
+    width: 119px;
+    height: 61px;
+    flex-shrink: 0;
+    top: 19px;
+    position: absolute;
+    left: 40px;
+  }
   img.logo {
     width: 182.74px;
     height: 115px;
@@ -1129,7 +1158,19 @@ footer {
     left: 66px;
     position: absolute;
   }
-
+  .ipad-block{
+    display: none;
+  }
+  .navbar-nav{
+    top: 60px;
+    position: relative;
+   
+  }
+  .navbar-container.sticky .navbar-nav{
+    top: 0px;
+    position: relative;
+   left: 45px;
+  }
   button.navbar-toggler {
     top: 55px;
     right: 66px;
@@ -1530,5 +1571,312 @@ footer {
     flex-shrink: 0;
     left: 97px;
     position: relative;
+  }
+  .ipad-block{
+    display: none;
+  }
+}
+
+/* Responsivensss for ipad air */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section3{
+    padding: 0;
+  }
+  .section3 p{
+    width: 800px;
+  }
+  .ipad-block{
+    display: none;
+  }
+  .i-pad-only {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* Adjust as needed */
+    height: 300px;
+    /* Adjust as needed */
+    background-image: url('https://s3-alpha-sig.figma.com/img/ec6b/e842/7ccfd23a9f3bc48ec821a5819b15fe97?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtnB1gTM1BsKSsIDOOfafD6CQZGBRTr9F8IlozL~We5iYWYZXbYe4LigH3auBBTY8fhNenqnP3sSBwRD6SqjZvZOj3RDPlMyKRrEyx78K3nj5IgvVGOtmI49cDKpaxlq5~Ij9vh-rrq9A9NjC6QGZ~zFc~~sosDk286cJKIeGHbvYym63~s90Z3JdhtRgvu520DxAoqgiAHfHzcVXAsn9oadJfkQFGR6QO7jxgwoC-GnNtHOSBOQ4CPZ3in4GRJItFw84TBFZ~HRQmUVfPylQlKbIaJ5mEfGXVm8y2DqcQrKUQoDe8A0BvPUaoN4QaQpYnfzMuzORv2E0RRZSSxF6w__');
+    background-size: cover;
+    background-position: center;
+    height: 433px;
+    width: 100%;
+    /* top: -199px;
+    position: relative; */
+  }
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+  }
+
+  .text-over-image {
+    position: absolute;
+    left: 92px;
+    /* Adjust distance from left edge */
+    top: 50%;
+    /* Adjust vertical alignment */
+    transform: translateY(-50%);
+
+  }
+
+  .text-over-image h2 {
+    display: flex;
+    width: 610.64px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    /* 131.25% */
+  }
+
+  .text-over-image p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.25px;
+    /* 162.5% */
+    display: flex;
+    width: 625px;
+    height: 126px;
+  }
+
+  .text-over-image button {
+    border: none;
+    outline: none;
+    width: 420.98px;
+    height: 42.5px;
+    flex-shrink: 0;
+    border-radius: 54px;
+    background: var(--egestam-mattsson, #89BF50);
+    top: 22px;
+    position: relative;
+  }
+
+  .text-over-image button span {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    /* 125% */
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section3{
+    padding: 0;
+    background: rgba(137, 191, 80, 0.14);
+    height: 376px;
+  }
+  .ipad-block{
+    display: none;
+  }
+  .section3 {
+    display: flex;
+    width: 100%;
+    height: 337px;
+ 
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: rgba(137, 191, 80, 0.14);
+    flex-direction: column;
+  }
+  
+  .section3 p {
+    color: #00354E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36.75px;
+    /* 153.125% */
+  
+    width: 700px;
+  
+  }
+  
+  .section3 a {
+    color: #00354E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-decoration-line: underline;
+  }
+  .i-pad-only {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* Adjust as needed */
+    height: 300px;
+    /* Adjust as needed */
+    background-image: url('https://s3-alpha-sig.figma.com/img/ec6b/e842/7ccfd23a9f3bc48ec821a5819b15fe97?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtnB1gTM1BsKSsIDOOfafD6CQZGBRTr9F8IlozL~We5iYWYZXbYe4LigH3auBBTY8fhNenqnP3sSBwRD6SqjZvZOj3RDPlMyKRrEyx78K3nj5IgvVGOtmI49cDKpaxlq5~Ij9vh-rrq9A9NjC6QGZ~zFc~~sosDk286cJKIeGHbvYym63~s90Z3JdhtRgvu520DxAoqgiAHfHzcVXAsn9oadJfkQFGR6QO7jxgwoC-GnNtHOSBOQ4CPZ3in4GRJItFw84TBFZ~HRQmUVfPylQlKbIaJ5mEfGXVm8y2DqcQrKUQoDe8A0BvPUaoN4QaQpYnfzMuzORv2E0RRZSSxF6w__');
+    background-size: cover;
+    background-position: center;
+    height: 433px;
+    width: 100%;
+    /* top: -199px;
+    position: relative; */
+  }
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+  }
+
+  .text-over-image {
+    position: absolute;
+    left: 92px;
+    /* Adjust distance from left edge */
+    top: 50%;
+    /* Adjust vertical alignment */
+    transform: translateY(-50%);
+
+  }
+
+  .text-over-image h2 {
+    display: flex;
+    width: 610.64px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    /* 131.25% */
+  }
+
+  .text-over-image p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.25px;
+    /* 162.5% */
+    display: flex;
+    width: 625px;
+    height: 126px;
+  }
+
+  .text-over-image button {
+    border: none;
+    outline: none;
+    width: 420.98px;
+    height: 42.5px;
+    flex-shrink: 0;
+    border-radius: 54px;
+    background: var(--egestam-mattsson, #89BF50);
+    top: 22px;
+    position: relative;
+  }
+
+  .text-over-image button span {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+    /* 125% */
+  }
+  img.logo{
+    width: 182.74px;
+height: 115px;
+flex-shrink: 0;
+left: 66px;
+position: absolute;
+  }
+  .navbar-toggler{
+    top: 55px;
+    position: relative;
+    outline: none;
+    border: none;
+  }
+  button{
+    border: none;
+    outline: none;
+  }
+  .banner-text h1{
+    color: #FFF;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 70.4px; /* 110% */
+width: 781px;
+
+  }
+  .banner-container{
+    height: 854px;
+  }
+  .banner-text{
+    left: 50%;
+position: absolute;
+flex-direction: column;
+width: 700px;
+  }
+  .banner-text h1,.banner-text span{
+    font-size: 50px;
+  }
+  .banner-text p{
+    width: 700px;
+height: 142px;
+flex-shrink: 0;
+    font-size: 15px;
+  }
+  .navbar-container.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 99px;
+    z-index: 1000;
+  }
+  
+  .navbar-container.sticky img.logo {
+    width: 119px;
+    height: 61px;
+    flex-shrink: 0;
+    top: 19px;
+    position: absolute;
+    left: 40px;
+  }
+  .navbar-container.sticky .navbar-toggler {
+    width: 119px;
+    height: 61px;
+    flex-shrink: 0;
+    top: 10px;
+    position: relative;
+    left: 0px;
+  }
+  .section5{}
+  .image-container{
+   
+  }
+  .image-container  img{
+    width: 585px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
   }
 }

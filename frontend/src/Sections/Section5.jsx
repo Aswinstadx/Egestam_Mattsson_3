@@ -27,7 +27,7 @@ function Section5() {
             <>
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container ">
-                  <div className="overlay4"></div>
+                  {/* <div className="overlay4"></div> */}
                   <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                     className="card2-im text-center"

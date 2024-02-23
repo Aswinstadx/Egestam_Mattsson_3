@@ -5,12 +5,12 @@
 }
 
 .accordion:nth-child(odd) {
-  background-color: #89BF50;
+  background-color: #00354E;
 }
 
 .accordion:nth-child(even) {
-  
-  background-color: #00354E;
+  background-color: #89BF50;
+ 
 }
 
 .accordion-header {
