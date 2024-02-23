@@ -69,6 +69,9 @@ function App() {
         <Section7 />
       </div>
       <Section9 />
+      {/* <footer>
+        <Footer />
+      </footer> */}
     </div>
   );
 }

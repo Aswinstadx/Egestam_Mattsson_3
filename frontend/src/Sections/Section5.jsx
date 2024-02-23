@@ -26,7 +26,7 @@ function Section5() {
           {isIpad ? (
             <>
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
-                <div className="image-container ">
+                <div className="image-container text-center">
                   {/* <div className="overlay4"></div> */}
                   <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
@@ -43,7 +43,7 @@ function Section5() {
                 </div>
               </div>
               <div className="row ipad-cards">
-                <div className="col-md-6">
+                <div className="col-md-6 col-6">
                   <div className="ipad-card card1">
                     <img
                       src={process.env.PUBLIC_URL + "/images/section5.png"}
@@ -66,8 +66,8 @@ function Section5() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="ipad-card" style={{ marginLeft: "50px" }}>
+                <div className="col-md-6 col-6">
+                  <div className="ipad-card ipad-air" style={{ marginLeft: "50px" }}>
                     <img
                       src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
                     />
