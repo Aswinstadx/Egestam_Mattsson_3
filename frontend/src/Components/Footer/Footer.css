@@ -11,9 +11,9 @@ line-height: 38.4px; /* 120% */
     margin-left: -32px;
     color: #FFF;
 font-size: 20px;
+margin-bottom: 5px;
 
-
-line-height: 38px; /* 190% */
+line-height: 38px
 }
 
 .footer p{
@@ -102,7 +102,7 @@ line-height: 32px; /* 160% */
         width: 203px;
 height: 97px;
 flex-shrink: 0;
-right: 87px;
+right: 17px;
 position: relative;
     }
     img.footer-image{

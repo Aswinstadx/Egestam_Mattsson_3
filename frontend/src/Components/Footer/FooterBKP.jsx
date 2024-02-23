@@ -10,15 +10,31 @@ function Footer() {
             <li>
               <p>Egestam Mattsson El & Data AB</p>
             </li>
-            <li>
+            <li style={{ top: "-10px", position: "relative" }}>
               <p>Ridspögatan 15a</p>
             </li>
-            <li style={{ fontFamily: "Montserrat" }}>213 77 Malmö</li>
+            <li
+              style={{
+                fontFamily: "Montserrat",
+                top: "-20px",
+                position: "relative",
+              }}
+            >
+              213 77 Malmö
+            </li>
             <li style={{ fontFamily: "Montserrat" }}>Tel: 040-6170166</li>
             <li style={{ fontFamily: "Montserrat" }}>
               E-post: info@emeldata.se
             </li>
-            <li style={{ fontFamily: "Montserrat" }}>Integritetspolicy</li>
+            <li
+              style={{
+                fontFamily: "Montserrat",
+                top: "20px",
+                position: "relative",
+              }}
+            >
+              Integritetspolicy
+            </li>
           </ul>
         </div>
         <div className="col-md-4">
@@ -36,21 +52,25 @@ function Footer() {
                     Meny
                   </p>
                 </li>
-                <li>
-                  <p style={{ fontFamily: "Inter", fontSize: "16px" }}>Hem</p>
-                </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
-                  Hållbarhet
-                </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
-                  Tjänter
-                </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
-                  Kontakta oss
-                </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
-                  Jobba med oss
-                </li>
+                <div style={{ top: "-10px", position: "relative" }}>
+                  <li>
+                    <p style={{ fontFamily: "Inter", fontSize: "16px" }}>Hem</p>
+                  </li>
+                  <div style={{ top: "-10px", position: "relative" }}>
+                    <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                      Hållbarhet
+                    </li>
+                    <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                      Tjänter
+                    </li>
+                    <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                      Kontakta oss
+                    </li>
+                    <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                      Jobba med oss
+                    </li>
+                  </div>
+                </div>
               </ul>
             </div>
             <div>
@@ -67,14 +87,14 @@ function Footer() {
                   </p>
                 </li>
                 <li>
-                  <p style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                  <p style={{ fontFamily: "Inter", fontSize: "16px" ,top:'-12px',position:'relative'}}>
                     Integritetspolicy
                   </p>
                 </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                <li style={{ fontFamily: "Inter", fontSize: "16px" ,top:'-20px',position:'relative'}}>
                   Cookiepolicy
                 </li>
-                <li style={{ fontFamily: "Inter", fontSize: "16px" }}>
+                <li style={{ fontFamily: "Inter", fontSize: "16px" ,top:'-12px',position:'relative'}}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"

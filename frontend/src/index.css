@@ -663,18 +663,118 @@ footer {
  
 } */
 
-.section9 {
+/* .section9 {
   position: relative;
-  /* Ensure the overlay covers the entire section */
+
   background-image: url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__');
   background-position: center;
   background-size: cover;
   padding: 107px 58px 38px 120px;
   height: auto;
   background: linear-gradient(0deg, rgba(0, 53, 78, 0.40) 0%, rgba(0, 53, 78, 0.40) 100%), url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__'), lightgray 0px -72.243px / 100% 122.682% no-repeat;
+} */
+
+/* .section9 {
+  position: relative;
+  background: linear-gradient(rgba(0, 53, 78, 0.4), rgba(0, 53, 78, 0.4)),
+              url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__');
+  background-position: center;
+  background-size: cover;
+  padding: 107px 58px 38px 120px;
+  height: auto;
+} */
+
+.section9 {
+  position: relative;
+  background: linear-gradient(rgba(0, 53, 78, 0.8), rgba(0, 53, 78, 0.8)),
+              url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__');
+  background-position: center;
+  background-size: cover;
+  padding: 107px 58px 38px 120px;
+  height: auto;
+}
+.position-relative {
+  position: relative;
+  fill: rgba(0, 0, 0, 0.60);
+  top: 8px;
+  
 }
 
+.dark-overlay {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 770px;
+  height: 577px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 999;
+}
 
+.card2-im {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-image-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white; /* Adjust text color */
+  z-index: 999; /* Ensure the text appears above the overlay */
+  padding: 20px; /* Adjust padding as needed */
+ 
+}
+.card-image-content h2{
+  color: #FFF;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px; /* 87.5% */
+z-index: 999;
+visibility: inherit;
+margin-left: 140px;
+position: relative;
+}
+
+.card-image-content p{
+  color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+width: 665px;
+margin-left: 140px;
+top: 20px;
+position: relative;
+}
+.card-image-content button{
+  display: flex;
+width: 268.28px;
+padding: 9px 17px;
+justify-content: center;
+align-items: center;
+gap: 13.28px;
+border: none;
+outline: none;
+margin-left: 140px;
+top: 40px;
+position: relative;
+border-radius: 48px;
+border: 1px solid #00354E;
+background: #00354E;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+}
 
 /* Media query for mobile layout */
 @media (max-width: 768px) {
@@ -1085,6 +1185,15 @@ footer {
   .section5 img.card2-im {
     width: 550px;
 
+  }
+  .dark-overlay {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 550px;
+    height: 577px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 999;
   }
 
   .section5 p {

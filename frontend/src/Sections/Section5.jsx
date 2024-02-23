@@ -134,11 +134,62 @@ function Section5() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12 col-12">
+              {/* <div className="col-md-6 col-sm-12 col-12">
                 <img
-                  src={process.env.PUBLIC_URL + "/images/section5_2.png"}
+                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                   className="card2-im"
                 />
+                <div className="card-image-content">
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>Läs mer om lediga tjänster</button>
+                </div>
+              </div> */}
+              <div className="col-md-6 col-sm-12 col-12 position-relative">
+                <div
+                  className="dark-overlay"
+                  style={{
+                    borderTopLeftRadius: "20px",
+                    borderTopRightRadius: "20px",
+                  }}
+                ></div>{" "}
+                {/* This will create the dark overlay */}
+                <img
+                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
+                  className="card2-im"
+                  style={{
+                    borderTopLeftRadius: "20px",
+                    borderTopRightRadius: "20px",
+                  }}
+                  alt="Background"
+                />
+                <div className="card-image-content">
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.31987L10.8956 4.38321L14.2289 7.71654L14.27 7.76321L14.3167 7.8321L14.35 7.89876L14.3722 7.96765L14.3856 8.02987L14.3911 8.10987L14.3878 8.16876L14.3722 8.2521L14.35 8.3221L14.2922 8.42543L14.2411 8.48876L10.8956 11.8365C10.7976 11.935 10.6663 11.9931 10.5275 11.9995C10.3888 12.006 10.2527 11.9602 10.146 11.8712C10.0394 11.7823 9.96988 11.6566 9.95128 11.519C9.93269 11.3813 9.96632 11.2417 10.0456 11.1277L10.1089 11.0499L12.4944 8.66543H2.72444C2.58561 8.66568 2.45172 8.61395 2.34913 8.52042C2.24653 8.42689 2.18268 8.29833 2.17014 8.16007C2.15759 8.02181 2.19727 7.88386 2.28135 7.77339C2.36544 7.66292 2.48783 7.58794 2.62444 7.56321L2.72444 7.55432H12.4944L10.1089 5.16987C10.017 5.07781 9.96037 4.95644 9.9488 4.8269C9.93723 4.69736 9.97147 4.56787 10.0456 4.46098L10.1089 4.38321C10.1892 4.30318 10.2921 4.24964 10.4037 4.22978C10.5153 4.20992 10.6303 4.22469 10.7333 4.2721L10.8178 4.31987Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </>
           )}
