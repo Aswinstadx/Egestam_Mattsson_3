@@ -28,7 +28,22 @@
   height: 99px;
   z-index: 1000;
 }
-
+.text-roboto{
+  color: #FFF;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 190% */
+}
+.text-monteserrat{
+  color: #FFF;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 190% */
+}
 .navbar-container.sticky img.logo {
   width: 119px;
   height: 61px;
@@ -89,7 +104,9 @@ a.active {
 
 /* Style for hamburger menu icon */
 .navbar-toggler-icon {
-  color: #000;
+  color: #fff;
+  top: -21px;
+  position: relative;
   /* Adjust the color as needed */
 }
 
@@ -1145,9 +1162,9 @@ line-height: 20px; /* 125% */
   }
 
   .footer {
-    display: flex;
+    /* display: flex;
     align-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .footer-content h2 {
@@ -1242,6 +1259,29 @@ line-height: 20px; /* 125% */
   }
 
 }
+.footer h4{
+  color: #FFF;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 38.4px; /* 120% */
+}
+.footer ul li{
+  list-style: none;
+}
+.footer ul{
+  left: -30px;
+  position: relative;
+}
+.text-roboto{
+  color: #FFF;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 190% */
+}
 
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1281,15 +1321,20 @@ line-height: 20px; /* 125% */
     position: relative;
    left: 45px;
   }
-  button.navbar-toggler {
+  /* button.navbar-toggler {
     top: 55px;
     right: 66px;
     position: absolute;
     border: none;
     outline: none;
     color: white;
+  } */
+  @media (max-width: 1024px) {
+    .navbar-container,
+    .offcanvas {
+      max-width: 100vw;
+    }
   }
-
   .banner-text {
     display: flex;
     width: 781px;
@@ -1543,11 +1588,16 @@ line-height: 20px; /* 125% */
   }
 
   .section5 img.card2-im {
-    width: 762px;
-    height: 361px;
+    /* width: 762px; */
+    width: 550px;
+    /* height: 361px; */
+    height: 577px;
     flex-shrink: 0;
   }
-
+  .card1{
+    left: -50px;
+    position: relative;
+  }
   .image-content_ h2 {
     color: #FFF;
     font-family: Inter;
@@ -1665,7 +1715,11 @@ line-height: 20px; /* 125% */
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
+.offcanvas{
+  background-color: #89BF50;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 /* iPad Pro (portrait and landscape) */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
   .section1 p {
@@ -1676,7 +1730,7 @@ line-height: 20px; /* 125% */
     font-weight: 400;
     line-height: 31px;
     /* 155% */
-    width: 760px;
+    width: 693px;
     height: 300px;
     flex-shrink: 0;
     left: 97px;

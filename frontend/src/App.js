@@ -14,6 +14,7 @@ import Accordion from "./Components/Accordion/Accordion";
 import Accordion1 from "./Components/Accordion/Accordion1";
 import Accordion2 from "./Components/Accordion/Accordion2";
 import Section9 from "./Sections/Section9";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,26 +65,39 @@ function App() {
       <Section4 />
       <Section5 />
       <Section6 />
+      {/* <Navbar /> */}
+      {/* <Banner />
+      <Section1 />
+      <Accordion />
+      <Accordion1 />
+      <Accordion2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
       <div className="ipad-block">
         <Section7 />
-      </div>
+      </div> */}
 
       {/* <Section8 /> */}
-      <div className="d-none d-sm-block">
+      {/* <div className="d-none d-sm-block">
         <Section9 />
-      </div>
+      </div> */}
       {/* <footer className="d-none d-sm-block">
         <Footer />
       </footer>
       <footer className="d-block d-sm-none">
         <MobileFooter />
       </footer> */}
-      <footer className="d-none d-sm-block">
+      {/* <footer className="d-none d-sm-block">
         <Footer />
-      </footer>
+      </footer> */}
       {/* <footer className="d-block d-sm-none">
         <MobileFooter />
       </footer> */}
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

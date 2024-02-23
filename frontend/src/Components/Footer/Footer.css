@@ -35,7 +35,18 @@ line-height: 38px; /* 190% */
 }
 .third-column {
     left: 80px;
+    top: 20px;
     position: relative;
+}
+.third-column h3{
+    top: 22px;
+    position: relative;
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 38.4px; /* 192% */
 }
 .third-column img{
     width: 268px;

@@ -44,7 +44,7 @@ function Section5() {
               </div>
               <div className="row ipad-cards">
                 <div className="col-md-6">
-                  <div className="ipad-card">
+                  <div className="ipad-card card1">
                     <img
                       src={process.env.PUBLIC_URL + "/images/section5.png"}
                     />
