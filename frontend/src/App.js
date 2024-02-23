@@ -78,6 +78,9 @@ function App() {
       <div className="ipad-block">
         <Section7 />
       </div> */}
+      <div className="ipad-block">
+        <Section7 />
+      </div>
 
       {/* <Section8 /> */}
       {/* <div className="d-none d-sm-block">
