@@ -11,6 +11,7 @@ import Section6 from "../Sections/Section6";
 import Section7 from "../Sections/Section1/Section7";
 import Section9 from "../Sections/Section9";
 import Accordion from "../Components/Accordion/Accordion";
+import Footer from "../Components/Footer/Footer";
 
 function HomeScreen() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -46,6 +47,10 @@ function HomeScreen() {
           <Section7 />
         </div> */}
         <Section9 />
+        <footer>
+          {/* <h1>{screenWidth}</h1> */}
+          <Footer />
+        </footer>
       </div>
     </div>
   );

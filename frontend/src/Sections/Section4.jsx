@@ -22,7 +22,7 @@ function Section4() {
   }, []);
   return (
     <div>
-      {!isIpad ? (
+      {!isIpad || window.innerWidth >=1400? (
         <>
           <div className="section4">
             <div className="container desktop-only">

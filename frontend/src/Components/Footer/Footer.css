@@ -34,7 +34,7 @@ line-height: 38px; /* 190% */
     position: relative;
 }
 .third-column {
-    left: 80px;
+    left: 10px;
     top: 20px;
     position: relative;
 }
@@ -69,7 +69,7 @@ img.footer-image{
 height: 104px;
 flex-shrink: 0;
 float: right;
-left: 200px;
+left: 23px;
 top: -90px;
 position: relative;
 }
@@ -121,3 +121,15 @@ position: relative;
         position: relative;
     }
 }
+
+@media (min-width: 1600px) {
+    img.footer-image{
+        left: 0px;
+        top: -45px;
+        position: relative;
+    }
+    .footer h3{
+        left: -32px;
+        position: relative;
+    }
+  }

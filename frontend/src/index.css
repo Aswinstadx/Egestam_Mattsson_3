@@ -887,7 +887,10 @@ footer {
     top: 14px;
     position: absolute;
   }
-
+.section1{
+  top: -13px;
+    position: relative;
+}
   .navbar-container.sticky img.logo {
     left: 10px;
     position: absolute;
@@ -1249,7 +1252,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1588px) {
+@media only screen and (min-width: 1000px) and (max-width: 1398px) {
   .section4 img {
     width: 469px;
     height: 269.722px;
@@ -1448,8 +1451,12 @@ footer {
 
   .section1 {
     width: 100%;
-    height: 331px;
+    /* height: 331px; In figma */
+    /* height: auto; */
     flex-shrink: 0;
+    height: 331px;
+    top: 0px;
+    position: relative;
   }
 
   .section1 .container {
@@ -2389,3 +2396,175 @@ margin-top: 40px;
     justify-content: center;
   }
 } */
+
+@media (min-width: 1369px) {
+  .ipad-block{
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width: 1399px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+  .desktop-only{
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  .desktop-only{
+    display: block;
+  }
+  .section5 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+
+  .section5 img {
+    width: 500px;
+  }
+  .image-container{
+   
+    left: 140px;
+    position: relative;
+  }
+  .section5 img.card2-im {
+    width: 921px;
+    border-radius: 28px;
+  }
+
+  .dark-overlay {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 921px;
+    height: 577px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    border-radius: 28px;
+  }
+
+  .section5 p {
+    width: 500px;
+  }
+
+  .image-content_ {
+    position: absolute;
+    top: 50%;
+    /* Place content at the vertical center */
+    left: 80%;
+    /* Place content at the horizontal center */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: left;
+    color: white;
+    /* Text color */
+    z-index: 999;
+    
+    /* Ensure content is above the dark overlay */
+  }
+
+  /* Dark overlay */
+  .card2-im::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 53, 78, 0.6); 
+    /* Dark overlay color */
+  }
+
+  /* Ensure content is above the dark overlay */
+  .image-content_ h2,
+  .image-content_ p {
+    position: relative;
+  }
+
+  .image-content_ h2{
+    color: #FFF;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px; /* 87.5% */
+  }
+  .image-content_ p {
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+width: 665px;
+height: 191px;
+top: 30px;
+position: relative;
+  }
+.image-content_ button{
+  width: 268.28px;
+padding: 9px 17px;
+justify-content: center;
+align-items: center;
+gap: 13.28px;
+border-radius: 48px;
+border: 1px solid #00354E;
+background: #00354E;
+border: none;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+top: -20px;
+position: relative;
+}
+.ipad-cards{
+  margin-top: 200px;
+}
+.card1 img{
+  width: 558px;
+height: 255px;
+flex-shrink: 0;
+}
+.ipad-card-content{
+  margin-top: 35px;
+}
+.ipad-air {
+  top: 60px;
+  position: relative;
+}
+.ipad-air img{
+  width: 499px;
+}
+.ipad-air h2{
+  display: none;
+}
+.ipad-card-content-btns{
+  display: flex;
+  flex-direction: column;
+}
+.ipad-card-content-btns button{
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  width: 233px;
+height: 38px;
+flex-shrink: 0;
+border-radius: 48px;
+border: 1px solid #00354E;
+background: #00354E;
+color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+}
+.section4 img{
+  left: 100px;
+  position: relative;
+}
+}

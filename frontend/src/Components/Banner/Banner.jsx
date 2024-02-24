@@ -9,6 +9,7 @@ function Banner() {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1366);
     };
 
     handleResize();
@@ -23,17 +24,47 @@ function Banner() {
   return (
     <div className="banner-container">
       <div className="banner-overlay" />
-      <ReactPlayer
-        url={BANNER_VIDEO}
-        playing={true}
-        playsinline
-        loop={true}
-        volume={0}
-        controls={false}
-        width="100%"
-        height="auto"
-        className="player"
-      />
+      {isMobile ? (
+        <>
+          <ReactPlayer
+            url={process.env.PUBLIC_URL + "/videos/mobile.mp4"}
+            playing={true}
+            playsinline
+            loop={true}
+            volume={0}
+            controls={false}
+            width="100%"
+            height="auto"
+            className="player"
+          />
+        </>
+      ) : isTablet ? (
+        <>
+          <ReactPlayer
+            url={process.env.PUBLIC_URL + "/videos/banner_tablet.mp4"}
+            playing={true}
+            playsinline
+            loop={true}
+            volume={0}
+            controls={false}
+            width="100%"
+            height="auto"
+            className="player"
+          />
+        </>
+      ) : (
+        <ReactPlayer
+          url={BANNER_VIDEO}
+          playing={true}
+          playsinline
+          loop={true}
+          volume={0}
+          controls={false}
+          width="100%"
+          height="auto"
+          className="player"
+        />
+      )}
       <div className="banner-text">
         <h1>
           EL, Teknik & Installationer för framtiden med{" "}
