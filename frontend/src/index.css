@@ -2567,4 +2567,16 @@ line-height: 20px; /* 125% */
   left: 100px;
   position: relative;
 }
+.odd-card{
+  left: 40px;
+  position: relative;
+}
+.section6 h2{
+  left: 42px;
+  position: relative;
+}
+.more-arrow{
+  left: -260px;
+  position: relative;
+}
 }
