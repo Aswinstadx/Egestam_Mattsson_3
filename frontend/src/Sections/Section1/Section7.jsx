@@ -7,7 +7,7 @@ function Section7() {
         <>
           <div className="container">
             <div className="text">
-              <h2>Projekt</h2>
+              <h2>Våra referenser</h2>
             </div>
             <div className="row mt-3">
               <div className="col-md-6">

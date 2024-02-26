@@ -5,11 +5,13 @@ import ReactPlayer from "react-player";
 function Banner() {
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
+  const [isIpad, setIsIpad] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
-      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1366);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1084);
+      setIsIpad(window.innerWidth > 1085 && window.innerWidth <= 1366);
     };
 
     handleResize();
@@ -40,8 +42,33 @@ function Banner() {
         </>
       ) : isTablet ? (
         <>
+          {/* <ReactPlayer
+            url={process.env.PUBLIC_URL + "/videos/banner_tablet.mp4"}
+            playing={true}
+            playsinline
+            loop={true}
+            volume={0}
+            controls={false}
+            width="100%"
+            height="auto"
+            className="player"
+          /> */}
           <ReactPlayer
             url={process.env.PUBLIC_URL + "/videos/banner_tablet.mp4"}
+            playing={true}
+            playsinline
+            loop={true}
+            volume={0}
+            controls={false}
+            width="100%"
+            height="auto"
+            className="player"
+          />
+        </>
+      ) : isIpad ? (
+        <>
+          <ReactPlayer
+            url={process.env.PUBLIC_URL + "/videos/banner_ipad.mp4"}
             playing={true}
             playsinline
             loop={true}

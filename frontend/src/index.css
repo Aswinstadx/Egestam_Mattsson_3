@@ -142,6 +142,9 @@ img.logo {
 .i-pad-only {
   display: none;
 }
+.desktop-only {
+  display: block;
+}
 
 .banner-overlay {
   position: absolute;
@@ -798,8 +801,9 @@ footer {
 
 .card-image-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%; */
+  top: 35%;
+  left: 39%;
   transform: translate(-50%, -50%);
   text-align: left;
   color: white;
@@ -821,7 +825,7 @@ footer {
   /* 87.5% */
   z-index: 999;
   visibility: inherit;
-  margin-left: 140px;
+  /* margin-left: 40px; */
   position: relative;
 }
 
@@ -834,7 +838,7 @@ footer {
   line-height: 30px;
   /* 150% */
   width: 665px;
-  margin-left: 140px;
+  /* margin-left: 40px; */
   top: 20px;
   position: relative;
 }
@@ -848,14 +852,13 @@ footer {
   gap: 13.28px;
   border: none;
   outline: none;
-  margin-left: 140px;
+  /* margin-left: 40px; */
   top: 40px;
   position: relative;
   border-radius: 48px;
   border: 1px solid #00354E;
+  color: white;
   background: #00354E;
-  color: #FFF;
-  text-align: center;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -863,6 +866,13 @@ footer {
   line-height: 20px;
   /* 125% */
 }
+
+img.card2-im{
+  width: 770px;
+height: 577px;
+flex-shrink: 0;
+}
+
 /* .section5 img.card2-im{
   width: 500px;
 } */
@@ -1007,13 +1017,15 @@ footer {
     align-items: center;
     flex-shrink: 0;
     background: var(--egestam-mattsson, #89BF50);
+    background: rgba(137, 191, 80, 0.14);
   }
 
   .section3 p {
     display: flex;
     width: 348px;
     height: 294px;
-    color: #FFF;
+    color: #00354E;
+    
     text-align: center;
     font-family: Inter;
     font-size: 24px;
@@ -1024,7 +1036,7 @@ footer {
   }
 
   .section3 a {
-    color: #FFF;
+    color: #00354E;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
@@ -1330,11 +1342,13 @@ footer {
     font-size: 50px;
   }
 
-  .i-pad-only {
+  /* .i-pad-only {
     display: none;
 
+  } */
+  .desktop-only {
+    display: block;
   }
-
 }
 
 .footer h4 {
@@ -1536,7 +1550,7 @@ footer {
   } */
 
   .desktop-only {
-    display: none;
+    display: block;
   }
 
   .i-pad-only {
@@ -2607,4 +2621,10 @@ line-height: 20px; /* 125% */
   left: -260px;
   position: relative;
 }
+}
+
+@media only screen and (min-device-width: 1251px) and (max-device-width: 1398px) and (-webkit-min-device-pixel-ratio: 1){
+  .desktop-only {
+    display: block;
+  }
 }

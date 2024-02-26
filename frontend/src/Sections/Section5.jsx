@@ -174,6 +174,10 @@ function Section5() {
                   style={{
                     borderTopLeftRadius: "20px",
                     borderTopRightRadius: "20px",
+
+                    left: "13px",
+                    width: "96%", // Set width to 100% of its container
+                    height: "72%", // Set height to 100% of its container
                   }}
                 ></div>{" "}
                 {/* This will create the dark overlay */}
@@ -183,12 +187,20 @@ function Section5() {
                   style={{
                     borderTopLeftRadius: "20px",
                     borderTopRightRadius: "20px",
+                    maxWidth: "100%", // Set maximum width to 100% of its container
+                    height: "72%",
                   }}
                   alt="Background"
                 />
                 <div className="card-image-content">
                   <h2>Jobba hos oss</h2>
-                  <p>
+                  <p
+                    style={{
+                      maxWidth: "100%", // Set maximum width to 100% of its container
+                      width: "100%", // Ensure the width adjusts to its container
+                      maxHeight: "100%",
+                    }}
+                  >
                     Är du intresserad av att vara med och forma framtidens
                     infrastruktur och fastighetslösningar? Bli en del av vårt
                     team & hjälp oss att bygga en hållbar framtid

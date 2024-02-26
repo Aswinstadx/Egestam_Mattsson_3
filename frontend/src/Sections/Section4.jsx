@@ -6,7 +6,8 @@ function Section4() {
   useEffect(() => {
     const handleResize = () => {
       // setIsIpad(window.innerWidth <= 1366 && window.innerWidth >= 1024 || window.innerWidth <= 1180 && window.innerWidth >= 768);
-      setIsIpad(window.innerWidth <= 1024 || window.innerWidth >= 820 );
+      // setIsIpad(window.innerWidth <= 1024 || window.innerWidth >= 820 );
+       setIsIpad(window.innerWidth <= 1024 || window.innerWidth >= 820 );
     };
     console.log('WINDOW INNER WIDHT--------', window.innerWidth)
     // Initial check
@@ -22,7 +23,7 @@ function Section4() {
   }, []);
   return (
     <div>
-      {!isIpad || window.innerWidth >=1400? (
+      {!isIpad || window.innerWidth >=1251? (
         <>
           <div className="section4">
             <div className="container desktop-only">
