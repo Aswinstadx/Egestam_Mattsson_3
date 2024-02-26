@@ -2659,6 +2659,7 @@ line-height: 20px; /* 125% */
 height: 412px;
 flex-shrink: 0;
   box-sizing: border-box;
+  margin-top: 80px;
 }
 
 .card-date{
@@ -2697,6 +2698,33 @@ border-radius: 54px;
 border: 1px solid #00354E;
 background: transparent;
 }
+
+/* .card-select{
+  display: flex;
+width: 152px;
+height: 48.25px;
+padding: 16.625px 7.75px 16.625px 129.25px;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+} */
+
+.card-select{
+  color: #00354E;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.5px; /* 125% */
+width: 152px;
+height: 48.25px;
+/* padding: 16.625px 7.75px 16.625px 129.25px; */
+border-radius: 28px;
+background: transparent;
+outline: none;
+}
+
 @media screen and (max-width: 1200px) {
   .card-box {
     width: calc(50% - 10px); /* Adjust as needed */
