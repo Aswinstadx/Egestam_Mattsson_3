@@ -2628,3 +2628,16 @@ line-height: 20px; /* 125% */
     display: block;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .section9{
+    height: 840px;
+  }
+  .div-5{
+    color: white;
+  }
+  .column-2 img{
+    top: -150px;
+    position: relative;
+  }
+}

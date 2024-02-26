@@ -97,6 +97,9 @@ line-height: 32px; /* 160% */
       left: 0px;
       position: relative;
     }
+    .third-column-p{
+        display: none;
+    }
   }
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {

@@ -8,7 +8,7 @@ function Section9() {
       // setIsIpad(
       //   (window.innerWidth <= 1366 && window.innerWidth >= 820) ||
       //     (window.innerWidth <= 1180 && window.innerWidth >= 820)
-      // ); 
+      // );
       setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600);
     };
 
@@ -69,6 +69,7 @@ function Section9() {
               justify-content: flex-end;
               overflow: hidden;
               padding: 44px 69px;
+              height: "100%";
             }
             @media (max-width: 991px) {
               .div {
@@ -121,9 +122,13 @@ function Section9() {
                 max-width: 100%;
               }
             }
+            // .div-5 {
+            //   margin-top: 6px;
+            //   font: 36px/120% Inter, sans-serif;
+            // }
             .div-5 {
               margin-top: 6px;
-              font: 36px/120% Inter, sans-serif;
+              font: 26px/120% Inter, sans-serif;
             }
             @media (max-width: 991px) {
               .div-5 {
@@ -132,7 +137,7 @@ function Section9() {
             }
             .div-6 {
               margin-top: 22px;
-              font: 400 32px/38px Roboto, -apple-system, Roboto, Helvetica,
+              font: 400 20px/38px Roboto, -apple-system, Roboto, Helvetica,
                 sans-serif;
             }
             @media (max-width: 991px) {
@@ -141,7 +146,7 @@ function Section9() {
               }
             }
             .div-7 {
-              margin-top: 56px;
+              margin-top: 36px;
               font: 400 16px/30px Inter, -apple-system, Roboto, Helvetica,
                 sans-serif;
             }
