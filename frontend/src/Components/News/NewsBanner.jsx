@@ -14,7 +14,8 @@ function NewsBanner() {
           volume={0}
           controls={false}
           width="100%"
-          height="599px"
+          // height="599px"
+          height="100%"
           className="player"
         />
         <div className="banner-text2">
