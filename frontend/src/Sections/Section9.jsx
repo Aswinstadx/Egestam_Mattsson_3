@@ -5,10 +5,11 @@ function Section9() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsIpad(
-        (window.innerWidth <= 1366 && window.innerWidth >= 1024) ||
-          (window.innerWidth <= 1180 && window.innerWidth >= 820)
-      ); // Assuming iPad width is less than or equal to 768px
+      // setIsIpad(
+      //   (window.innerWidth <= 1366 && window.innerWidth >= 820) ||
+      //     (window.innerWidth <= 1180 && window.innerWidth >= 820)
+      // );
+      setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600);
     };
 
     // Initial check
@@ -68,6 +69,7 @@ function Section9() {
               justify-content: flex-end;
               overflow: hidden;
               padding: 44px 69px;
+              height: "100%";
             }
             @media (max-width: 991px) {
               .div {
@@ -120,9 +122,13 @@ function Section9() {
                 max-width: 100%;
               }
             }
+            // .div-5 {
+            //   margin-top: 6px;
+            //   font: 36px/120% Inter, sans-serif;
+            // }
             .div-5 {
               margin-top: 6px;
-              font: 36px/120% Inter, sans-serif;
+              font: 26px/120% Inter, sans-serif;
             }
             @media (max-width: 991px) {
               .div-5 {
@@ -131,7 +137,7 @@ function Section9() {
             }
             .div-6 {
               margin-top: 22px;
-              font: 400 32px/38px Roboto, -apple-system, Roboto, Helvetica,
+              font: 400 20px/38px Roboto, -apple-system, Roboto, Helvetica,
                 sans-serif;
             }
             @media (max-width: 991px) {
@@ -140,7 +146,7 @@ function Section9() {
               }
             }
             .div-7 {
-              margin-top: 56px;
+              margin-top: 36px;
               font: 400 16px/30px Inter, -apple-system, Roboto, Helvetica,
                 sans-serif;
             }
@@ -200,7 +206,7 @@ function Section9() {
         </>
       ) : (
         <>
-          <div className="div">
+          <div className="div section9 mt-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6d82809e4fc7b7b527baac1ca86e6de7ff2a78b7206c23729340d106f561c945?apiKey=9739e863fc0441d3bd6e2249eccb2e49&"

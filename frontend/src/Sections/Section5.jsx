@@ -23,11 +23,12 @@ function Section5() {
     <div className="section5">
       <div className="container">
         <div className="row ">
-          {isIpad ? (
+          {isIpad || (window.innerWidth >= 1400 && window.innerWidth < 1500) ? (
             <>
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
-                <div className="image-container ">
+                <div className="image-container text-center ">
                   {/* <div className="overlay4"></div> */}
+                  <div className="dark-overlay"></div>
                   <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                     className="card2-im text-center"
@@ -39,12 +40,27 @@ function Section5() {
                       infrastruktur och fastighetslösningar? Bli en del av vårt
                       team & hjälp oss att bygga en hållbar framtid
                     </p>
+                    <button>
+                      Läs mer om lediga tjänster
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
               <div className="row ipad-cards">
-                <div className="col-md-6">
-                  <div className="ipad-card">
+                <div className="col-md-6 col-6">
+                  <div className="ipad-card card1">
                     <img
                       src={process.env.PUBLIC_URL + "/images/section5.png"}
                     />
@@ -66,8 +82,11 @@ function Section5() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="ipad-card" style={{ marginLeft: "84px" }}>
+                <div className="col-md-6 col-6">
+                  <div
+                    className="ipad-card ipad-air"
+                    style={{ marginLeft: "50px" }}
+                  >
                     <img
                       src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
                     />
@@ -134,11 +153,74 @@ function Section5() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12 col-12">
+              {/* <div className="col-md-6 col-sm-12 col-12">
                 <img
-                  src={process.env.PUBLIC_URL + "/images/section5_2.png"}
+                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                   className="card2-im"
                 />
+                <div className="card-image-content">
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>Läs mer om lediga tjänster</button>
+                </div>
+              </div> */}
+              <div className="col-md-6 col-sm-12 col-12 position-relative">
+                <div
+                  className="dark-overlay"
+                  style={{
+                    borderTopLeftRadius: "20px",
+                    borderTopRightRadius: "20px",
+
+                    left: "13px",
+                    width: "96%", // Set width to 100% of its container
+                    height: "72%", // Set height to 100% of its container
+                  }}
+                ></div>{" "}
+                {/* This will create the dark overlay */}
+                <img
+                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
+                  className="card2-im"
+                  style={{
+                    borderTopLeftRadius: "20px",
+                    borderTopRightRadius: "20px",
+                    maxWidth: "100%", // Set maximum width to 100% of its container
+                    height: "72%",
+                  }}
+                  alt="Background"
+                />
+                <div className="card-image-content">
+                  <h2>Jobba hos oss</h2>
+                  <p
+                    style={{
+                      maxWidth: "100%", // Set maximum width to 100% of its container
+                      width: "100%", // Ensure the width adjusts to its container
+                      maxHeight: "100%",
+                    }}
+                  >
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.31987L10.8956 4.38321L14.2289 7.71654L14.27 7.76321L14.3167 7.8321L14.35 7.89876L14.3722 7.96765L14.3856 8.02987L14.3911 8.10987L14.3878 8.16876L14.3722 8.2521L14.35 8.3221L14.2922 8.42543L14.2411 8.48876L10.8956 11.8365C10.7976 11.935 10.6663 11.9931 10.5275 11.9995C10.3888 12.006 10.2527 11.9602 10.146 11.8712C10.0394 11.7823 9.96988 11.6566 9.95128 11.519C9.93269 11.3813 9.96632 11.2417 10.0456 11.1277L10.1089 11.0499L12.4944 8.66543H2.72444C2.58561 8.66568 2.45172 8.61395 2.34913 8.52042C2.24653 8.42689 2.18268 8.29833 2.17014 8.16007C2.15759 8.02181 2.19727 7.88386 2.28135 7.77339C2.36544 7.66292 2.48783 7.58794 2.62444 7.56321L2.72444 7.55432H12.4944L10.1089 5.16987C10.017 5.07781 9.96037 4.95644 9.9488 4.8269C9.93723 4.69736 9.97147 4.56787 10.0456 4.46098L10.1089 4.38321C10.1892 4.30318 10.2921 4.24964 10.4037 4.22978C10.5153 4.20992 10.6303 4.22469 10.7333 4.2721L10.8178 4.31987Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </>
           )}

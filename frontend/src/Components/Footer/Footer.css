@@ -11,9 +11,9 @@ line-height: 38.4px; /* 120% */
     margin-left: -32px;
     color: #FFF;
 font-size: 20px;
+margin-bottom: 5px;
 
-
-line-height: 38px; /* 190% */
+line-height: 38px
 }
 
 .footer p{
@@ -34,8 +34,19 @@ line-height: 38px; /* 190% */
     position: relative;
 }
 .third-column {
-    left: 80px;
+    left: 10px;
+    top: 20px;
     position: relative;
+}
+.third-column h3{
+    top: 22px;
+    position: relative;
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 38.4px; /* 192% */
 }
 .third-column img{
     width: 268px;
@@ -58,7 +69,7 @@ img.footer-image{
 height: 104px;
 flex-shrink: 0;
 float: right;
-left: 200px;
+left: 23px;
 top: -90px;
 position: relative;
 }
@@ -86,6 +97,9 @@ line-height: 32px; /* 160% */
       left: 0px;
       position: relative;
     }
+    .third-column-p{
+        display: none;
+    }
   }
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -102,7 +116,7 @@ line-height: 32px; /* 160% */
         width: 203px;
 height: 97px;
 flex-shrink: 0;
-right: 87px;
+right: 17px;
 position: relative;
     }
     img.footer-image{
@@ -110,3 +124,15 @@ position: relative;
         position: relative;
     }
 }
+
+@media (min-width: 1600px) {
+    img.footer-image{
+        left: 0px;
+        top: -45px;
+        position: relative;
+    }
+    .footer h3{
+        left: -32px;
+        position: relative;
+    }
+  }

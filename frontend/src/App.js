@@ -14,6 +14,10 @@ import Accordion from "./Components/Accordion/Accordion";
 import Accordion1 from "./Components/Accordion/Accordion1";
 import Accordion2 from "./Components/Accordion/Accordion2";
 import Section9 from "./Sections/Section9";
+import Navbar from "./Components/Navbar/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeScreen from "./Screens/HomeScreen";
+import NewsScreen from "./Screens/NewsScreen";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -53,38 +57,13 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Banner />
-      <Section1 />
-      <Accordion />
-      <Accordion1 />
-      <Accordion2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <div className="ipad-block">
-        <Section7 />
-      </div>
-
-      {/* <Section8 /> */}
-      <div className="d-none d-sm-block">
-        <Section9 />
-      </div>
-      {/* <footer className="d-none d-sm-block">
-        <Footer />
-      </footer>
-      <footer className="d-block d-sm-none">
-        <MobileFooter />
-      </footer> */}
-      <footer className="d-none d-sm-block">
-        <Footer />
-      </footer>
-      {/* <footer className="d-block d-sm-none">
-        <MobileFooter />
-      </footer> */}
-    </div>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/news" element={<NewsScreen />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
