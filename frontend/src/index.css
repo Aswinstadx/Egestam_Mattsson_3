@@ -8,6 +8,9 @@
 a{
   text-decoration: none;
 }
+ol li{
+  list-style: none;
+}
 .navbar-container {
   transition: background-color 0.3s ease;
 }
@@ -1363,9 +1366,9 @@ flex-shrink: 0;
   /* 120% */
 }
 
-.footer ul li {
+/* .footer ul li {
   list-style: none;
-}
+} */
 
 .footer ul {
   left: -30px;

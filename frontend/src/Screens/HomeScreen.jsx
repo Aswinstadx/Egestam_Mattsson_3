@@ -48,7 +48,7 @@ function HomeScreen() {
         </div> */}
         <Section9 />
         <footer>
-          {/* <h1>{screenWidth}</h1> */}
+        
           <Footer />
         </footer>
       </div>

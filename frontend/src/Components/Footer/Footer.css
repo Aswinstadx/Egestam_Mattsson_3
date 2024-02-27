@@ -25,6 +25,13 @@ font-weight: 400;
 line-height: 38px; /* 190% */
 }
 
+.second-column_{
+    top: 5px;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+}
+
 .second-column{
     display: flex;
     justify-content: space-between;
@@ -40,6 +47,7 @@ line-height: 38px; /* 190% */
 }
 .third-column h3{
     top: 22px;
+    margin-left: 25px;
     position: relative;
     color: #FFF;
 font-family: Inter;
@@ -88,6 +96,19 @@ line-height: 32px; /* 160% */
     border-top: 2px solid rgba(255, 255, 255, 0.10);
     top: 50px;
     position: relative;
+}
+.footer-bold{
+    color: red;
+    color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px; /* 150% */
+}
+ol li{
+    color: white;
+    font-family: Inter;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1588px) {
