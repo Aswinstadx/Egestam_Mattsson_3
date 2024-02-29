@@ -47,10 +47,7 @@ function Section9() {
       {isMobile ? (
         <>
           <div className="text-center container-fluid mt-5 mobile-view">
-            <img
-              className="w-100"
-              src="https://s3-alpha-sig.figma.com/img/3d2b/1069/76dd178550f1c043f28749d1993999b7?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V2rxHvB1ngfS7aCLxupDNVsuGL7Tm4QhoVi3zB1U2arqepSD7-vJq0WJrrr2EF0RwHvYbCJmcYXg9utPNh3WkJACb8GFmouBioS~JKlc1~bxvY5K6Tzyr8NjOHaBFjYFWB28VcQVfXTEq1wbrFtZYINeFHSyQbXnlEjoa5t3XeGoLcsw1PCbxBQj~Id21KJbuNTwAa7egbDawYauB6VFw3H07VFKa8rKDPpxmh2rV0SVANpF~9A8dwVq3cxQdu2xQto8jzmC0bkCqvZmAgAsgMD1UqPT99I10NPpZwWqdOJ4oOTXI3pahPU3B4Nmfaniu4FcE5xl8fo1Ou2OqjTBOg__"
-            />
+            <img className="w-100" src={process.env.PUBLIC_URL + "/adv.png"} />
             <p className="mt-5">
               Egestam och Mattsson har antagit en policy som aktivt stödjer de
               globala målen för hållbar utveckling. Denna policy innefattar
@@ -230,7 +227,6 @@ function Section9() {
               }
             }
             .img {
-              aspect-ratio: 1.75;
               object-fit: auto;
               object-position: center;
               width: 100%;

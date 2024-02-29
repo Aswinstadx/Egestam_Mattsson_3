@@ -25,7 +25,7 @@ function Footer() {
             <li>Hem</li>
             <li>Hållbarhet</li>
             <li>Tjänter</li>
-            <li>Kontakta ossKontakta oss</li>
+            <li>Kontakta</li>
             <li>Jobba med oss</li>
           </ul>
         </div>
@@ -77,7 +77,8 @@ function Footer() {
           <img
             src={process.env.PUBLIC_URL + "/images/logo3.png"}
             alt="Thumbnail"
-            style={{marginTop:"230px",left:'150px',position:'relative'}}
+
+            style={{marginTop:"230px",position:'relative'}}
           />
         </div>
       </div>

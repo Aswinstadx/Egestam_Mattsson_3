@@ -24,7 +24,10 @@ ol li{
   color: white;
   /* Color on hover */
 }
-
+.footer-column-5 img{
+  left: 150px;
+  position: relative;
+}
 .navbar-container .nav-link:visited {
   color: var(--egestam-mattsson, #fff);
   /* Color for visited links */
@@ -3119,4 +3122,25 @@ font-weight: 400;
 line-height: 29.25px;
 width: 1178px;
 
+}
+@media only screen and (min-width: 1000px) and (max-width: 1444px) {
+  .footer-column-5img{
+    left: -100px;
+    position: relative;
+  }
+  .footer-column-5 img{
+    left: 49px;
+    position: relative;
+  }
+  .card-image-content{
+    left: 73%;
+    position: absolute;
+  }
+  .card-image-content h2{
+
+  }
+  /* .card-image-content p{
+    width: 100%;
+    max-width: 100%;
+  } */
 }
