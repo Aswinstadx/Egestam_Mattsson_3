@@ -1126,8 +1126,10 @@ img.card2-im {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    /* background: var(--egestam-mattsson, #89BF50);
+    background: rgba(137, 191, 80, 0.14); */
     background: var(--egestam-mattsson, #89BF50);
-    background: rgba(137, 191, 80, 0.14);
+
   }
 
   .section3 p {
@@ -1142,6 +1144,13 @@ img.card2-im {
     font-style: normal;
     font-weight: 400;
     line-height: 36.75px;
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 36.75px; /* 153.125% */
     /* 153.125% */
   }
 
@@ -1155,6 +1164,14 @@ img.card2-im {
     line-height: 24px;
     /* 150% */
     text-decoration-line: underline;
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-decoration-line: underline;
   }
 
   .section4 {
