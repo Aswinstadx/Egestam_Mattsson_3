@@ -12,9 +12,31 @@ import Section7 from "../Sections/Section1/Section7";
 import Section9 from "../Sections/Section9";
 import Accordion from "../Components/Accordion/Accordion";
 import Footer from "../Components/Footer/Footer";
+import Section10 from "../Sections/Section10";
+import MobileFooter from "../Components/Footer/MobileFooter";
 
 function HomeScreen() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  const [isIpad, setIsIpad] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1084);
+      setIsIpad(window.innerWidth > 1085 && window.innerWidth <= 1366);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,10 +54,22 @@ function HomeScreen() {
       {console.log("Screen width : ", screenWidth)}
       <div>
         <Banner />
-        <Section1 />
-        <Accordion />
-        <Accordion1 />
-        <Accordion2 />
+        {!isMobile ? (
+          <>
+            <Section1 />
+            <Accordion />
+            <Accordion1 />
+            <Accordion2 />
+          </>
+        ) : (
+          <div style={{ top: "-12px", position: "relative" }}>
+            <Accordion />
+            <Accordion1 />
+            <Accordion2 />
+            <Section1 />
+          </div>
+        )}
+        {/* <Section1 /> */}
         <Section3 />
         <Section4 />
         <Section5 />
@@ -47,10 +81,23 @@ function HomeScreen() {
           <Section7 />
         </div> */}
         <Section9 />
-        <footer>
+        {isMobile && <Section10 />}
+        {/* <footer>
         
           <Footer />
-        </footer>
+        </footer> */}
+        {/* {isMobile && ( */}
+        {isMobile && (
+          <footer style={{ top: isMobile && "180px", position: "relative" }}>
+            <MobileFooter />
+          </footer>
+        )}
+        {!isMobile && (
+          <footer style={{ top: isMobile && "180px", position: "relative" }}>
+            <Footer />
+          </footer>
+        )}
+        {/* )} */}
       </div>
     </div>
   );

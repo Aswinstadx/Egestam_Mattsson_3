@@ -59,6 +59,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      {console.log("window.inner---------", window.innerWidth)}
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />

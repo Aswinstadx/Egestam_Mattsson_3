@@ -3,6 +3,24 @@ import React, { useEffect, useState } from "react";
 function Section5() {
   const [isIpad, setIsIpad] = useState(false);
 
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 599);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1084);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600); // Assuming iPad width is less than or equal to 768px
@@ -169,15 +187,16 @@ function Section5() {
                 </div>
               </div> */}
               <div className="col-md-6 col-sm-12 col-12 position-relative">
+                {console.log("ISMOBILE22222222222222", isMobile)}
                 <div
                   className="dark-overlay"
                   style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
+                    borderTopLeftRadius: !isMobile && "20px",
+                    borderTopRightRadius: !isMobile && "20px",
 
                     left: "13px",
-                    width: "96%", // Set width to 100% of its container
-                    height: "72%", // Set height to 100% of its container
+                    width: isMobile ? "94%" : "96%", // Set width to 100% of its container
+                    height: isMobile ? "101%" : "72%", // Set height to 100% of its container
                   }}
                 ></div>{" "}
                 {/* This will create the dark overlay */}
@@ -185,20 +204,26 @@ function Section5() {
                   src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                   className="card2-im"
                   style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
+                    borderTopLeftRadius: !isMobile && "20px",
+                    borderTopRightRadius: !isMobile && "20px",
                     maxWidth: "100%", // Set maximum width to 100% of its container
-                    height: "72%",
+                    height: isMobile ? "100%" : "72%",
+                    width: "100%",
                   }}
                   alt="Background"
                 />
-                <div className="card-image-content">
+                <div
+                  className="card-image-content"
+                  style={{ marginLeft: isMobile && "20px" }}
+                >
                   <h2>Jobba hos oss</h2>
                   <p
                     style={{
                       maxWidth: "100%", // Set maximum width to 100% of its container
                       width: "100%", // Ensure the width adjusts to its container
                       maxHeight: "100%",
+                      color: isMobile && "white",
+                      width: isMobile && "308px",
                     }}
                   >
                     Är du intresserad av att vara med och forma framtidens

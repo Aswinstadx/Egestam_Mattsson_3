@@ -145,6 +145,7 @@ const Header = () => {
                   height="48"
                   viewBox="0 0 48 48"
                   fill="none"
+                  style={{color:'white'}}
                 >
                   <rect
                     x="12"

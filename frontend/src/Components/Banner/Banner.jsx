@@ -26,10 +26,11 @@ function Banner() {
   return (
     <div className="banner-container">
       <div className="banner-overlay" />
+
       {isMobile ? (
         <>
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/mobile.mp4"}
+            url={process.env.PUBLIC_URL + "/videos/banner_mobile.mp4"}
             playing={true}
             playsinline
             loop={true}
@@ -92,11 +93,12 @@ function Banner() {
           className="player"
         />
       )}
-      <div className="banner-text">
-        <h1>
+      <div className="banner-text mt-5">
+        {/* <h1>
           EL, Teknik & Installationer för framtiden med{" "}
           <span>hållbara framsteg</span>{" "}
-        </h1>
+        </h1> */}
+        <h1>EL, Teknik & Installationer för framtiden med <span>hållbara framsteg</span></h1>
         <p>
           Med målet att vara marknadsledande, kombinerar Egestam och Mattsson
           expertkunskap, engagemang och innovation för att bygga varaktiga

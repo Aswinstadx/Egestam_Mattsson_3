@@ -3,12 +3,31 @@ import React, { useEffect, useState } from "react";
 function Section9() {
   const [isIpad, setIsIpad] = useState(false);
 
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 500);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1084);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     const handleResize = () => {
       // setIsIpad(
       //   (window.innerWidth <= 1366 && window.innerWidth >= 820) ||
       //     (window.innerWidth <= 1180 && window.innerWidth >= 820)
       // );
+
       setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600);
     };
 
@@ -25,7 +44,29 @@ function Section9() {
   }, []);
   return (
     <div>
-      {!isIpad ? (
+      {isMobile ? (
+        <>
+          <div className="text-center container-fluid mt-5 mobile-view">
+            <img
+              className="w-100"
+              src="https://s3-alpha-sig.figma.com/img/3d2b/1069/76dd178550f1c043f28749d1993999b7?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V2rxHvB1ngfS7aCLxupDNVsuGL7Tm4QhoVi3zB1U2arqepSD7-vJq0WJrrr2EF0RwHvYbCJmcYXg9utPNh3WkJACb8GFmouBioS~JKlc1~bxvY5K6Tzyr8NjOHaBFjYFWB28VcQVfXTEq1wbrFtZYINeFHSyQbXnlEjoa5t3XeGoLcsw1PCbxBQj~Id21KJbuNTwAa7egbDawYauB6VFw3H07VFKa8rKDPpxmh2rV0SVANpF~9A8dwVq3cxQdu2xQto8jzmC0bkCqvZmAgAsgMD1UqPT99I10NPpZwWqdOJ4oOTXI3pahPU3B4Nmfaniu4FcE5xl8fo1Ou2OqjTBOg__"
+            />
+            <p className="mt-5">
+              Egestam och Mattsson har antagit en policy som aktivt stödjer de
+              globala målen för hållbar utveckling. Denna policy innefattar
+              åtaganden att minska miljöpåverkan från verksamheten, främja
+              energieffektivitet i alla projekt, och bidra till att bygga
+              hållbara samhällen. Företaget strävar efter att integrera hållbara
+              metoder i alla aspekter av vår affärsmodell, från design och
+              installation till drift och underhåll. Genom att arbeta nära med
+              kunder och samarbetspartners, siktar Egestam och Mattsson på att
+              vara en drivkraft för positiv förändring och innovation inom sitt
+              område, i linje med de globala hållbarhetsmålen.
+            </p>
+            <button className="text-center">Hållbarhet</button>
+          </div>
+        </>
+      ) : !isIpad ? (
         <>
           <div className="div section9">
             <div className="div-2">

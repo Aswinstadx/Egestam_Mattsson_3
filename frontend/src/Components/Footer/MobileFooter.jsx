@@ -46,14 +46,14 @@ function MobileFooter() {
               />
               <div className="div-27">Facebook</div>
             </div>
-            <div className="div-28">
+            {/* <div className="div-28">
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&"
                 className="img-3"
               />
               <div className="div-29">Instagram</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -62,13 +62,14 @@ function MobileFooter() {
           border: 1px solid var(--egestam-mattsson, #89bf50);
           background-color: var(--egestam-mattsson, #89bf50);
           display: flex;
-          max-width: 390px;
+          // max-width: 390px;
           flex-direction: column;
           font-size: 16px;
           color: #fff;
           font-weight: 400;
           line-height: 150%;
           padding: 13px 0 50px;
+          width: 100%;
         }
         .div-2 {
           display: flex;
