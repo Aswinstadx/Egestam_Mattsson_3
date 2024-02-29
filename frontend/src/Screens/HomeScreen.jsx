@@ -65,8 +65,8 @@ function HomeScreen() {
 
         <Section3 />
         <Section4 />
-        {/* <Section5 /> */}
-        {/* <Section6 /> */}
+        <Section5 />
+        <Section6 />
         {/* <div className="ipad-block">
           <Section7 />
         </div> */}

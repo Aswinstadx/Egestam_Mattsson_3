@@ -1043,14 +1043,14 @@ img.card2-im {
   }
 
   .banner-text_2 p {
-    width: 372px;
+    width: 284px;
     height: 142px;
     flex-shrink: 0;
     color: #fff;
     top: 10px;
     position: relative;
-    /* left: 52px; */
-
+    left: 52px;
+    font-size: 12px;
   }
 
   .section1 {
@@ -1239,14 +1239,17 @@ line-height: 20px; /* 125% */
     display: flex;
     justify-content: left;
     padding: 0;
-    margin-top: 70px;
+    margin-top: 100px;
   }
-
+  .section5-content{
+    left: 10px;
+    position: relative;
+  }
   .section5 img {
     width: 323px;
     height: 266.538px;
     flex-shrink: 0;
-    left: 0;
+    left: 10px;
     position: relative;
   }
 
@@ -1306,9 +1309,17 @@ line-height: 20px; /* 125% */
     line-height: 62.06px;
     /* 172.389% */
     top: 20px;
+    left: 12px;
     position: relative;
   }
-
+  .card-content{
+    left: 12px;
+    position: relative;
+  }
+  .section6 img{
+    left: 12px;
+    position: relative;
+  }
   .place {
     color: #727272;
     font-family: Inter;
