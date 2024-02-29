@@ -2,6 +2,21 @@ import React, { useEffect, useState } from "react";
 
 function Section5() {
   const [isIpad, setIsIpad] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -172,12 +187,12 @@ function Section5() {
                 <div
                   className="dark-overlay"
                   style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
+                    borderTopLeftRadius: !isMobile && "20px",
+                    borderTopRightRadius: !isMobile && "20px",
 
                     left: "13px",
                     width: "96%", // Set width to 100% of its container
-                    height: "72%", // Set height to 100% of its container
+                    height: !isMobile && "72%",
                   }}
                 ></div>{" "}
                 {/* This will create the dark overlay */}
@@ -188,7 +203,7 @@ function Section5() {
                     borderTopLeftRadius: "20px",
                     borderTopRightRadius: "20px",
                     maxWidth: "100%", // Set maximum width to 100% of its container
-                    height: "72%",
+                    height: !isMobile && "72%",
                   }}
                   alt="Background"
                 />
