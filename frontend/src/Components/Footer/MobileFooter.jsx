@@ -69,6 +69,9 @@ function MobileFooter() {
           font-weight: 400;
           line-height: 150%;
           padding: 13px 0 50px;
+          top: 0px;
+          left: -60px;
+          position: relative;
         }
         .div-2 {
           display: flex;
@@ -142,11 +145,15 @@ function MobileFooter() {
         }
         .div-14 {
           font-family: Inter, sans-serif;
+          left: -11px;
+          position: relative;
         }
         .div-15 {
           font-family: Inter, sans-serif;
           flex-grow: 1;
           flex-basis: auto;
+          left: 104px;
+          position: relative;
         }
         .div-16 {
           align-self: center;

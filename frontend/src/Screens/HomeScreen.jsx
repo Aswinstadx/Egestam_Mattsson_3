@@ -13,6 +13,7 @@ import Section9 from "../Sections/Section9";
 import Accordion from "../Components/Accordion/Accordion";
 import Footer from "../Components/Footer/Footer";
 import MobileOnly from "../Sections/MobileOnly";
+import MobileFooter from "../Components/Footer/MobileFooter";
 
 function HomeScreen() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -80,9 +81,17 @@ function HomeScreen() {
             <Section9 />
           </>
         )}
-        {/* <footer>
-          <Footer />
-        </footer> */}
+        <footer>
+          {isMobile ? (
+            <>
+              <MobileFooter />
+            </>
+          ) : (
+            <>
+              <Footer />
+            </>
+          )}
+        </footer>
       </div>
     </div>
   );

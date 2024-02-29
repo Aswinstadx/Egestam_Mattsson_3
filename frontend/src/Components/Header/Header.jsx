@@ -7,7 +7,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
   const [isIpad, setIsIpad] = useState(false);
-  const [navExpanded,setNavExpanded] = useState(false)
+  const [navExpanded, setNavExpanded] = useState(false);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
