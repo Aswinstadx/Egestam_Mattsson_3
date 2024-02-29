@@ -12,6 +12,7 @@ import Section7 from "../Sections/Section1/Section7";
 import Section9 from "../Sections/Section9";
 import Accordion from "../Components/Accordion/Accordion";
 import Footer from "../Components/Footer/Footer";
+import MobileOnly from "../Sections/MobileOnly";
 
 function HomeScreen() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -67,10 +68,18 @@ function HomeScreen() {
         <Section4 />
         <Section5 />
         <Section6 />
-        {/* <div className="ipad-block">
-          <Section7 />
-        </div> */}
-        {/* <Section9 /> */}
+        {isMobile ? (
+          <>
+            <MobileOnly />
+          </>
+        ) : (
+          <>
+            <div className="ipad-block">
+              <Section7 />
+            </div>
+            <Section9 />
+          </>
+        )}
         {/* <footer>
           <Footer />
         </footer> */}
