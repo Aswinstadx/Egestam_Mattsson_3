@@ -7,6 +7,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
   const [isIpad, setIsIpad] = useState(false);
+  const [navExpanded,setNavExpanded] = useState(false)
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -87,27 +88,82 @@ const Header = () => {
                   />
                 )}
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mx-auto">
-                  <Nav.Link
-                    href="#home"
-                    style={{
-                      color: isSticky
-                        ? "white"
-                        : "var(--egestam-mattsson, #89BF50)",
-                    }}
+              <Navbar.Toggle
+                aria-controls="basic-navbar-nav"
+                className={`custom-toggler${navExpanded ? " open" : ""}`}
+                onClick={() => setNavExpanded(!navExpanded)}
+              >
+                {!navExpanded ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
                   >
-                    Hem
-                  </Nav.Link>
-                  <Nav.Link href="#link">Hållbarhet</Nav.Link>
-                  <Nav.Link href="#link">Tjänster</Nav.Link>
-                  <Nav.Link href="#link">Nyheter</Nav.Link>
-                  <Nav.Link href="#link">Kontakt</Nav.Link>
-                  <Nav.Link href="#link">Jobba med oss</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
+                    <rect
+                      x="12"
+                      y="8.33008"
+                      width="24"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="12"
+                      y="15.4902"
+                      width="24"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                    <rect
+                      x="12"
+                      y="22.6401"
+                      width="24"
+                      height="2"
+                      rx="1"
+                      fill="white"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      fill="white"
+                    />
+                  </svg>
+                )}
+              </Navbar.Toggle>
             </div>
+            <Navbar.Collapse
+              id="basic-navbar-nav"
+              className="full-width-collapse"
+            >
+              <Nav className="mx-auto">
+                <Nav.Link
+                  href="#home"
+                  style={{
+                    color: isSticky
+                      ? "white"
+                      : "var(--egestam-mattsson, #89BF50)",
+                  }}
+                >
+                  Hem
+                </Nav.Link>
+                <Nav.Link href="#link">Hållbarhet</Nav.Link>
+                <Nav.Link href="#link">Tjänster</Nav.Link>
+                <Nav.Link href="#link">Nyheter</Nav.Link>
+                <Nav.Link href="#link">Kontakt</Nav.Link>
+                <Nav.Link href="#link">Jobba med oss</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
         </>
       ) : (
