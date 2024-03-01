@@ -11,9 +11,15 @@ function Accordion1({ title, content }) {
   return (
     <>
       <div className="accordion">
-        <div className="accordion-header" onClick={toggleAccordion} style={{backgroundColor:'#00354E'}}>
+        <div
+          className="accordion-header"
+          onClick={toggleAccordion}
+          style={{ backgroundColor: "#00354E" }}
+        >
           {/* <h3>{title}</h3> */}
-          <h3>Installation</h3>
+          <div className="container">
+            <h3>Installation</h3>
+          </div>
           <span className="accord-icon">
             {isOpen ? (
               <svg

@@ -17,7 +17,9 @@ function Accordion1({ title, content }) {
           style={{ backgroundColor: "#89BF50" }}
         >
           {/* <h3>{title}</h3> */}
-          <h3>Renovering</h3>
+          <div className="container">
+            <h3>Renovering</h3>
+          </div>
           <span className="accord-icon">
             {isOpen ? (
               <svg

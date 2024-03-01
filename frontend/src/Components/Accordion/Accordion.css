@@ -36,7 +36,8 @@
 }
 
 .accordion-header h3 {
-  left: 250px;
+  margin-left: 40px;
+  /* left: 250px; */
   position: relative;
   color: #FFF;
   font-family: Inter;
