@@ -1328,7 +1328,14 @@ img.card2-im {
     /* 131.25% */
 
   }
-
+  .section5-content h2{
+    color: #003A3A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32.56px; /* 162.8% */
+  }
   .section5 h6 {
     color: #003A3A;
     font-family: Inter;

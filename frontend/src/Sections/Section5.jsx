@@ -40,6 +40,7 @@ function Section5() {
         <div className="row ">
           {isIpad || (window.innerWidth >= 1400 && window.innerWidth < 1500) ? (
             <>
+              {console.log("1111111111111")}
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container text-center ">
                   {/* <div className="overlay4"></div> */}
@@ -148,10 +149,12 @@ function Section5() {
             </>
           ) : (
             <>
+              {console.log("2222222222222")}
               <div className="col-md-6 col-sm-12 col-12">
                 <div>
                   <img src={process.env.PUBLIC_URL + "/images/section5.png"} />
                   <div className="section5-content">
+                    {/* <h2 style={{color:'#003A3A',fontFamily:'Inter',fontSize:'20px',fontWeight:700}}>VÅRT MOTTO </h2> */}
                     <h2>VÅRT MOTTO </h2>
                     <h6>
                       Kontrollerad riskhantering med förankring i god affärsetik
@@ -214,7 +217,7 @@ function Section5() {
                       maxWidth: "100%", // Set maximum width to 100% of its container
                       width: "100%", // Ensure the width adjusts to its container
                       maxHeight: "100%",
-                      color:isMobile && 'white'
+                      color: isMobile && "white",
                     }}
                   >
                     Är du intresserad av att vara med och forma framtidens

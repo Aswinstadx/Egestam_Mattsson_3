@@ -85,7 +85,7 @@ const Header = () => {
               <Navbar.Brand href="#home">
                 {isSticky ? (
                   <img
-                    src={process.env.PUBLIC_URL + "/images/logo2.png"}
+                    src={process.env.PUBLIC_URL + "/images/logo3.png"}
                     alt="Thumbnail"
                     className="logo"
                   />
