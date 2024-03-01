@@ -32,6 +32,7 @@ function Banner() {
             url={process.env.PUBLIC_URL + "/videos/banner_mobile.mp4"}
             playing={true}
             playsinline
+            playsInline
             loop={true}
             volume={0}
             controls={false}

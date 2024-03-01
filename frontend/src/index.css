@@ -801,6 +801,20 @@ footer {
   z-index: 999;
 }
 
+.section5 .dark-overlay {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 770px;
+  height: 415px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity as needed */
+  z-index: 999;
+  margin-top: 18px;
+  left: 10px;
+  position: absolute;
+}
+
 .card2-im {
   width: 100%;
   height: auto;
@@ -890,6 +904,9 @@ img.card2-im {
     left: 10px;
     position: relative;
   }
+  .navbar-nav{
+    width: 100vw;
+  }
   /* Move the search and menu icons to the right side */
   .navbar-nav.ml-auto {
     margin-left: auto;
@@ -941,8 +958,20 @@ img.card2-im {
     /* Set the background color here */
     padding-left: 0;
     padding-right: 0;
+    left: -20px;
+    position: relative;
+    top: 55px;
+    height: 90vh;
   }
-
+  .navbar-container .nav-link:visited{
+    color:yellow;
+    color: #00354E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 25.6px; /* 128% */
+  }
   .section1 {
     top: -13px;
     position: relative;
@@ -1041,7 +1070,11 @@ img.card2-im {
     line-height: 30px;
     text-transform: uppercase;
   }
-
+  .card-image-content{
+    top: 250px;
+    position: absolute;
+    margin-left: 12px;
+  }
   .banner-text_2 p {
     width: 284px;
     height: 142px;
@@ -1234,7 +1267,10 @@ line-height: 20px; /* 125% */
     left: 15px;
     position: relative;
   }
-
+  .card-image-content button{
+    top: -100px;
+    position: relative;
+  }
   .section5 {
     display: flex;
     justify-content: left;
@@ -1261,6 +1297,13 @@ line-height: 20px; /* 125% */
     font-weight: 700;
     line-height: 32.56px;
     /* 162.8% */
+    color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px; /* 131.25% */
+
   }
 
   .section5 h6 {
@@ -1277,7 +1320,7 @@ line-height: 20px; /* 125% */
 
   .section5 p {
     color: #00354E;
-    font-family: Roboto;
+    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -1286,6 +1329,7 @@ line-height: 20px; /* 125% */
     display: flex;
     width: 333px;
     height: 278px;
+    
   }
 
   .section5 img.card2-im {
@@ -1293,6 +1337,8 @@ line-height: 20px; /* 125% */
     height: 415.8px;
     margin-top: 20px;
     height: 415px;
+    height: 415px;
+    margin-left: -5px;
   }
 
   .section6 {

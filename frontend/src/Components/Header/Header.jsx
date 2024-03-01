@@ -11,6 +11,14 @@ const Header = () => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const headerStyle = {
+    backgroundColor: navExpanded
+      ? "#89BF50"
+      : isSticky
+      ? "rgba(137, 191, 80, 0.93)"
+      : "transparent",
+  };
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -62,14 +70,15 @@ const Header = () => {
   return (
     <div>
       {!isIpad ? (
-        <>
+        <header>
           <Navbar
             expand="lg"
             className={`navbar-container${isSticky ? " sticky" : ""}`}
             style={{
-              backgroundColor: isSticky
-                ? "rgba(137, 191, 80, 0.93)"
-                : "transparent",
+              backgroundColor:
+                isSticky || navExpanded
+                  ? "rgba(137, 191, 80, 0.93)"
+                  : "transparent",
             }}
           >
             <div className="container-fluid">
@@ -88,6 +97,7 @@ const Header = () => {
                   />
                 )}
               </Navbar.Brand>
+
               <Navbar.Toggle
                 aria-controls="basic-navbar-nav"
                 className={`custom-toggler${navExpanded ? " open" : ""}`}
@@ -133,6 +143,7 @@ const Header = () => {
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
+                    style={{ overflow: "auto", zIndex: "999" }}
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -165,7 +176,7 @@ const Header = () => {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        </>
+        </header>
       ) : (
         <>
           <nav

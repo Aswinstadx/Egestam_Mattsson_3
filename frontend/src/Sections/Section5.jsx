@@ -190,8 +190,8 @@ function Section5() {
                     borderTopLeftRadius: !isMobile && "20px",
                     borderTopRightRadius: !isMobile && "20px",
 
-                    left: "13px",
-                    width: "96%", // Set width to 100% of its container
+                    left: "16px",
+                    width: "95%", // Set width to 100% of its container
                     height: !isMobile && "72%",
                   }}
                 ></div>{" "}
@@ -200,8 +200,8 @@ function Section5() {
                   src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                   className="card2-im"
                   style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
+                    borderTopLeftRadius: !isMobile && "20px",
+                    borderTopRightRadius: !isMobile && "20px",
                     maxWidth: "100%", // Set maximum width to 100% of its container
                     height: !isMobile && "72%",
                   }}
@@ -214,6 +214,7 @@ function Section5() {
                       maxWidth: "100%", // Set maximum width to 100% of its container
                       width: "100%", // Ensure the width adjusts to its container
                       maxHeight: "100%",
+                      color:isMobile && 'white'
                     }}
                   >
                     Är du intresserad av att vara med och forma framtidens
