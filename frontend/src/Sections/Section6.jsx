@@ -23,7 +23,7 @@ function Section6() {
     <div className="section6">
       <div className="container">
         <h2>Nyheter</h2>
-        {isIpad || (window.innerWidth >= 1400 && window.innerWidth < 1500) ? (
+        {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
           <>
             <div className="container">
               <div className="row mt-3">

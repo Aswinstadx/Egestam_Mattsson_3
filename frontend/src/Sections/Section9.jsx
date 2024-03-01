@@ -129,6 +129,8 @@ function Section9() {
             .div-5 {
               margin-top: 6px;
               font: 26px/120% Inter, sans-serif;
+              font-weight: 700;
+
             }
             @media (max-width: 991px) {
               .div-5 {
@@ -168,6 +170,7 @@ function Section9() {
               padding: 22px 60px;
               font: 20px/160% Montserrat, -apple-system, Roboto, Helvetica,
                 sans-serif;
+              font-weight:700
             }
             @media (max-width: 991px) {
               .div-8 {

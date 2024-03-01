@@ -442,17 +442,19 @@ img.logo {
   font-style: normal;
   font-weight: 400;
   line-height: 32.56px;
+  width: 475px;
 }
 
 .section5 p {
   color: #00354E;
   font-family: Roboto;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 23.94px;
   /* 119.7% */
-  width: 575px;
+  width: 475px;
   flex-shrink: 0;
   top: 7px;
   position: relative;
@@ -1626,9 +1628,73 @@ line-height: 32.56px; /* 162.8% */
 
   .section5 img.card2-im {
     width: 550px;
-
+    width: 921px;
+height: 537px;
+flex-shrink: 0;
   }
 
+  .image-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* top: -100px;
+    position: relative; */
+  }
+  .image-container img{
+    margin-left: 80px;
+    border-radius: 28px;
+
+  }
+  .image-content_{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+  }
+  .image-content_ h2{
+    color: #FFF;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 42px; /* 87.5% */
+  }
+  .image-content_  p{
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+
+  }
+  .image-content_ button{
+    border-radius: 48px;
+border: 1px solid #00354E;
+background: #00354E;
+display: flex;
+width: 268.28px;
+padding: 9px 17px;
+justify-content: center;
+align-items: center;
+gap: 13.28px;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+margin-top: 20px;
+top: 35px;
+position: relative;
+  }
+  .ipad-cards{
+    margin-top: 80px;
+  }
   .dark-overlay {
     position: absolute;
     top: 10px;
@@ -1638,6 +1704,9 @@ line-height: 32.56px; /* 162.8% */
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
+  img.ipad-im {
+   height: 308px;
+}
 
   .section5 p {
     width: 500px;
@@ -3031,6 +3100,43 @@ line-height: 32.56px; /* 162.8% */
   .desktop-only {
     display: block;
   }
+  .ipad-card-content{
+    top: 50px;
+    position: relative;
+  }
+  .ipad-card-content h6{
+    width: 327.54px;
+    margin-top: 21px;
+  }
+  .ipad-card-content-btns{
+    display: flex;
+    flex-direction: column;
+  }
+  .ipad-card-content-btns button{
+    margin-top: 10px;
+    border-radius: 48px;
+border: 1px solid #00354E;
+background: #00354E;
+height: 38px;
+color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+border: none;
+outline: none;
+  }
+  .ipad-card-content-btns button:nth-child(1) {
+    width: 242.218px;
+
+}
+.ipad-card-content-btns button:nth-child(2) {
+  width: 197.67px;
+  top: 2px;
+  position: relative;
+
+}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {

@@ -63,7 +63,7 @@ function HomeScreen() {
             <Accordion1 />
             <Accordion2 />
           </>
-        )}
+        )} 
 
         <Section3 />
         <Section4 />

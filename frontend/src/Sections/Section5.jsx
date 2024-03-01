@@ -38,15 +38,19 @@ function Section5() {
     <div className="section5">
       <div className="container">
         <div className="row ">
-          {isIpad || (window.innerWidth >= 1400 && window.innerWidth < 1500) ? (
+          {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
             <>
               {console.log("1111111111111")}
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container text-center ">
                   {/* <div className="overlay4"></div> */}
                   {/* <div className="dark-overlay"></div> */}
-                  <img
+                  {/* <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
+                    className="card2-im text-center"
+                  /> */}
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
                     className="card2-im text-center"
                   />
                   <div className="image-content_">
@@ -105,6 +109,7 @@ function Section5() {
                   >
                     <img
                       src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
+                      className="ipad-im"
                     />
                     <div className="ipad-card-content">
                       <h2>Hör av dig till oss </h2>
@@ -149,7 +154,6 @@ function Section5() {
             </>
           ) : (
             <>
-              {console.log("2222222222222")}
               <div className="col-md-6 col-sm-12 col-12">
                 <div>
                   <img src={process.env.PUBLIC_URL + "/images/section5.png"} />
