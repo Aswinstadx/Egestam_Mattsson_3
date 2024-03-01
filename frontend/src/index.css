@@ -114,6 +114,7 @@ a.active {
 /* Style for search and menu icons */
 .navbar-nav .nav-link {
   margin-left: 45px;
+  white-space: nowrap;
 }
 
 /* Style for hamburger menu icon */
