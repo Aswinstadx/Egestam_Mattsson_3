@@ -43,7 +43,7 @@ function Section5() {
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container text-center ">
                   {/* <div className="overlay4"></div> */}
-                  <div className="dark-overlay"></div>
+                  {/* <div className="dark-overlay"></div> */}
                   <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                     className="card2-im text-center"
@@ -184,7 +184,7 @@ function Section5() {
                 </div>
               </div> */}
               <div className="col-md-6 col-sm-12 col-12 position-relative">
-                <div
+                {/* <div
                   className="dark-overlay"
                   style={{
                     borderTopLeftRadius: !isMobile && "20px",
@@ -194,7 +194,7 @@ function Section5() {
                     width: "95%", // Set width to 100% of its container
                     height: !isMobile && "72%",
                   }}
-                ></div>{" "}
+                ></div>{" "} */}
                 {/* This will create the dark overlay */}
                 <img
                   src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}

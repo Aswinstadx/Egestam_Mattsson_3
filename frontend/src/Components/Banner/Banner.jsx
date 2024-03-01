@@ -29,7 +29,7 @@ function Banner() {
       {isMobile ? (
         <>
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/banner_mobile.mp4"}
+            url={process.env.PUBLIC_URL + "/videos/banner_mobile_2.mp4"}
             playing={true}
             playsinline
             playsInline
@@ -55,7 +55,7 @@ function Banner() {
             className="player"
           /> */}
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/banner_tablet.mp4"}
+            url={process.env.PUBLIC_URL + "/videos/banner_ipad_2.mp4"}
             playing={true}
             playsinline
             loop={true}
@@ -82,7 +82,8 @@ function Banner() {
         </>
       ) : (
         <ReactPlayer
-          url={BANNER_VIDEO}
+          // url={BANNER_VIDEO}
+          url={process.env.PUBLIC_URL + "/videos/banner_desktop_2.mp4"}
           playing={true}
           playsinline
           loop={true}
