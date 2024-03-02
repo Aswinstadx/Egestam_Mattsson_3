@@ -194,7 +194,7 @@ const Header = () => {
                 </Nav.Link>
                 <Nav.Link href="#link">Hållbarhet</Nav.Link>
                 <Nav.Link href="#link">Tjänster</Nav.Link>
-                <Nav.Link href="#link">Nyheter</Nav.Link>
+                <Nav.Link href="/news">Nyheter</Nav.Link>
                 <Nav.Link href="#link">Kontakt</Nav.Link>
                 <Nav.Link href="#link">Jobba med oss</Nav.Link>
               </Nav>
@@ -321,7 +321,7 @@ const Header = () => {
                     <li class="nav-item">
                       <a
                         class="nav-link"
-                        href="#"
+                        href="/news"
                         style={{ color: "#00354E", fontWeight: 600 }}
                       >
                         Nyheter

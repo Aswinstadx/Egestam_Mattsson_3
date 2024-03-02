@@ -229,8 +229,8 @@ img.logo {
 .banner-text2 {
   position: absolute;
   /* top: 50%; */
-  top: 70%;
-  left: 40%;
+  top: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
   /* text-align: center; */
   color: #fff;
