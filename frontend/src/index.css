@@ -37,7 +37,28 @@ button {
   height: 99px;
   z-index: 1000;
 }
-
+.card-select{
+  color: #00354E;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.5px; /* 125% */
+width: 152px;
+height: 48.25px;
+/* padding: 16.625px 7.75px 16.625px 129.25px; */
+border-radius: 28px;
+background: transparent;
+outline: none;
+appearance: none; /* Remove default arrow icon */
+-webkit-appearance: none; /* For Safari */
+-moz-appearance: none; /* For Firefox */
+background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13.3546 0.648324C13.1686 0.462277 12.8662 0.462277 12.6802 0.648324L6.74995 6.59018L0.808094 0.648324C0.622048 0.462277 0.319722 0.462277 0.133676 0.648324C-0.052371 0.83437 -0.052371 1.1367 0.133676 1.32274L6.40112 7.59019C6.49414 7.68321 6.61042 7.72972 6.73833 7.72972C6.85461 7.72972 6.98251 7.68321 7.07554 7.59019L13.343 1.32274C13.5407 1.1367 13.5407 0.83437 13.3546 0.648324Z" fill="black"/></svg>'); /* Add custom SVG as background image */
+background-repeat: no-repeat;
+background-position: right 8px center; /* Adjusted position */
+  padding-right: 25px; /* Adjusted padding */
+}
 .text-roboto {
   color: #FFF;
   font-family: Roboto;
