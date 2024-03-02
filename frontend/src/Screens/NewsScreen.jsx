@@ -6,6 +6,7 @@ import MobileFooter from "../Components/Footer/MobileFooter";
 
 function NewsScreen() {
   const [isMobile, setIsMobile] = useState(false);
+  
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -22,7 +23,7 @@ function NewsScreen() {
   return (
     <div>
       <NewsBanner />
-      <div className="container">
+      {/* <div className="container">
         {!isMobile && (
           <>
             <select
@@ -45,7 +46,7 @@ function NewsScreen() {
         <div className="" style={{ float: "right" }}>
           <select
             className="mt-5 card-select"
-            style={{ top: "22px", position: "relative", float: "right" }}
+            style={{ top: !isMobile && "22px", position: "relative", float: "right" }}
           >
             <option>Visa fler</option>
             <option>Kategori</option>
@@ -58,7 +59,7 @@ function NewsScreen() {
       {isMobile && (
         <footer
           style={{
-            top: isMobile && "250px",
+            top: isMobile && "50px",
             position: "relative",
             width: "100%",
           }}
@@ -75,6 +76,7 @@ function NewsScreen() {
           <Footer />
         </footer>
       )}
+    </div> */}
     </div>
   );
 }
