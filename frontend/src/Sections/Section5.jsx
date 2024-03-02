@@ -40,6 +40,95 @@ function Section5() {
         <div className="row ">
           {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
             <>
+              <div
+                className="text-center d-flex justify-content-center align-items-center position-relative"
+                style={{ flexDirection: "column" }}
+              >
+                <img
+                  src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
+                  className="card2-im text-center justify-content-center"
+                />
+                {/* <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left"> */}
+                <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left">
+                  <h2 className="text-left">Jobba hos oss</h2>
+                  <p className="text-left">
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                className="text-center d-flex justify-content-center align-items-center"
+                style={{ flexDirection: "column" }}
+              >
+                {/* <img
+                  src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
+                  className="card2-im text-center justify-content-center"
+                />
+                <div>
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div> */}
+                {/* <div className="image-content_">
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div> */}
+              </div>
               {console.log("1111111111111")}
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container text-center ">
@@ -49,9 +138,9 @@ function Section5() {
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                     className="card2-im text-center"
                   /> */}
-                  <img
+                  {/* <img
                     src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
-                    className="card2-im text-center"
+                    className="card2-im text-center justify-content-center"
                   />
                   <div className="image-content_">
                     <h2>Jobba hos oss</h2>
@@ -75,7 +164,7 @@ function Section5() {
                         />
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="row ipad-cards">
