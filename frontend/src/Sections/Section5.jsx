@@ -268,17 +268,19 @@ function Section5() {
               </div>
 
               <div className="col-md-6 col-sm-12 col-12 position-relative">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
-                  className="card2-im"
-                  style={{
-                    borderTopLeftRadius: !isMobile && "20px",
-                    borderTopRightRadius: !isMobile && "20px",
-                    maxWidth: "100%", // Set maximum width to 100% of its container
-                    height: !isMobile && "72%",
-                  }}
-                  alt="Background"
-                />
+                <div style={{ padding: 0 }}>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
+                    className="card2-im"
+                    style={{
+                      borderTopLeftRadius: !isMobile && "20px",
+                      borderTopRightRadius: !isMobile && "20px",
+                      maxWidth: "100%", // Set maximum width to 100% of its container
+                      height: !isMobile && "72%",
+                    }}
+                    alt="Background"
+                  />
+                </div>
                 <div className="card-image-content">
                   <h2>Jobba hos oss</h2>
                   <p

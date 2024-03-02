@@ -986,7 +986,45 @@ img.card2-im {
     top: -13px;
     position: relative;
   }
-
+  .section1-mobile-view{
+    padding: 10px;
+    min-height: 400px;
+    height: auto;
+  }
+  .section1-mobile-view h1{
+    color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 138.889% */
+left: 11px;
+position: relative;
+top: 3px;
+  }
+.section1-mobile-view p{
+  width: 343px;
+height: 300px;
+flex-shrink: 0;
+color: #00354E;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+left: 15px;
+position: relative;
+top: 60px;
+}
+.section1-mobile-view button{
+  top: 20px;
+  position: relative;
+  margin-bottom: 45px;
+}
+.section1-mobile-view .section-header{
+  top: 33px;
+  position: relative;
+}
   .navbar-container.sticky img.logo {
     left: 10px;
     position: absolute;
@@ -3291,4 +3329,8 @@ outline: none;
   .footer h3 {
     margin-left: -31px;
   }
+}
+
+@media screen and (min-width: 1600px) {
+ 
 }
