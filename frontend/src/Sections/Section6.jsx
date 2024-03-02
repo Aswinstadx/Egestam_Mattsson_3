@@ -212,17 +212,27 @@ function Section6() {
             <div className="row mt-3">
               <div className="col-md-4">
                 <div className="card-sm">
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/card1-im.png"}
-                    className="card-im"
-                  />
+                  {console.log("IS MOBILE : ", isMobile)}
+                  {isMobile ? (
+                    <img
+                      src={
+                        process.env.PUBLIC_URL + `/images/card1-im_mobile.png`
+                      }
+                      className="card-im"
+                    />
+                  ) : (
+                    <img
+                      src={process.env.PUBLIC_URL + `/images/card1-im.png`}
+                      className="card-im"
+                    />
+                  )}
                   <div className="card-content mt-3">
                     <h6 className="place">nyheter</h6>
                     <h6 className="date">2023-11-21 08:00</h6>
                     <h4 className="title">
                       Optimerade miljöer för ett hållbart liv
                     </h4>
-                    <p>
+                    <p className="mt-3">
                       Med teknikens framsteg utrustas fastigheter med avancerade
                       funktioner. Grundläggande system såsom el, VVS,
                       uppvärmning, kylning, ventilation, belysning, brandskydd,
@@ -257,7 +267,7 @@ function Section6() {
                       Egestam och Mattsson leder vägen i digitaliseringens era
                     </h6>
                     <p
-                      className="second-p"
+                      className="second-p mt-4"
                       style={{ top: "-10px", position: "relative" }}
                     >
                       I en tid där digitalisering och teknologisk innovation

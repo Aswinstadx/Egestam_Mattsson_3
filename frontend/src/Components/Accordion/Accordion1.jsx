@@ -79,7 +79,10 @@ function Accordion1({ title, content }) {
                 innovation. Kontakta oss för att diskutera dina renoveringsbehov
                 och få en skräddarsydd offert från branschens experter.
               </p>
-              <button>Kontakta oss</button>
+              <div className="accordion-btn">
+                <button>Kontakta oss</button>
+              </div>
+              {/* <button>Kontakta oss</button> */}
             </div>
           </div>
         )}

@@ -184,11 +184,11 @@ const Header = () => {
               <Nav className="mx-auto">
                 <Nav.Link
                   href="#home"
-                  style={{
-                    color: isSticky
-                      ? "white"
-                      : "var(--egestam-mattsson, #89BF50)",
-                  }}
+                  // style={{
+                  //   color: isSticky
+                  //     ? "white"
+                  //     : "var(--egestam-mattsson, #89BF50)",
+                  // }}
                 >
                   Hem
                 </Nav.Link>

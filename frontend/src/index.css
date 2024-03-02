@@ -37,6 +37,74 @@ button {
   height: 99px;
   z-index: 1000;
 }
+
+
+
+
+
+
+
+
+
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20px;
+  color: white;
+  /* text-align: center; */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to improve readability */
+}
+
+.text-overlay h1 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px; /* 118.75% */
+  left: 20px;
+  position: relative;
+}
+
+.text-overlay p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  left: 20px;
+  position: relative;
+  width: 908px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card-select{
   color: #00354E;
 text-align: center;
@@ -211,6 +279,8 @@ img.logo {
   /* Text color */
   width: 1060px;
 }
+
+
 
 .banner-text h1 {
   color: #FFF;
@@ -1002,7 +1072,10 @@ img.card2-im {
     line-height: 25.6px;
     /* 128% */
   }
-
+.accordion-btn{
+  display: flex;
+  justify-content: center;
+}
   .section1 {
     top: -13px;
     position: relative;
@@ -1057,7 +1130,52 @@ top: 60px;
     margin-left: 20px;
     position: absolute;
   }
-
+  .video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    color: white;
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to improve readability */
+  }
+  
+  .text-overlay h1 {
+    color: #FFF;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 76px; /* 118.75% */
+    margin-bottom: 10px;
+    left: 20px;
+    position: relative;
+  }
+  
+  .text-overlay p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 125% */
+    line-height: 1.5;
+    max-width: 80%;
+    left: 20px;
+    position: relative;
+  }
+  
   .banner-text h1 {
     color: #FFF;
     text-align: center;
@@ -1828,6 +1946,49 @@ position: relative;
     text-align: left;
   }
 
+  .video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    color: white;
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to improve readability */
+  }
+  
+  .text-overlay h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px; /* 118.75% */
+    left: 20px;
+    position: relative;
+  }
+  
+  .text-overlay p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 175% */
+    left: 20px;
+    position: relative;
+    width: 754px;
+  }
   img.footer-image {
     top: -49px;
     left: -100px;
@@ -1847,6 +2008,14 @@ position: relative;
   }
 
   .banner-text {
+    width: 800px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner-text-3 {
     width: 800px;
     position: absolute;
     top: 60%;

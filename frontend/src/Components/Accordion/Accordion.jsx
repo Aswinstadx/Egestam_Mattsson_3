@@ -75,7 +75,12 @@ function Accordion({ title, content }) {
                 för att leverera högkvalitativa installationer. Kontakta oss för
                 att ta det första steget mot en framtidssäker fastighet.
               </p>
-              <button>Kontakta oss</button>
+              {/* <div className="text-center">
+                <button className="text-center">Kontakta oss</button>
+              </div> */}
+              <div className="accordion-btn">
+                <button>Kontakta oss</button>
+              </div>
             </div>
           </div>
         )}

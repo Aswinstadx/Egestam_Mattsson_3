@@ -78,7 +78,10 @@ function Accordion1({ title, content }) {
                 utforska hur vi kan transformera ditt utrymme till en
                 intelligent och energismart miljö.
               </p>
-              <button>Kontakta oss</button>
+              {/* <button>Kontakta oss</button> */}
+              <div className="accordion-btn">
+                <button>Kontakta oss</button>
+              </div>
             </div>
           </div>
         )}
