@@ -40,6 +40,7 @@ function Section5() {
         <div className="row ">
           {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
             <>
+              {console.log("##################")}
               <div
                 className="text-center d-flex justify-content-center align-items-center position-relative"
                 style={{ flexDirection: "column" }}
@@ -243,6 +244,7 @@ function Section5() {
             </>
           ) : (
             <>
+              {console.log("===================")}
               <div className="col-md-6 col-sm-12 col-12">
                 <div>
                   <img src={process.env.PUBLIC_URL + "/images/section5.png"} />
@@ -264,34 +266,8 @@ function Section5() {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-md-6 col-sm-12 col-12">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
-                  className="card2-im"
-                />
-                <div className="card-image-content">
-                  <h2>Jobba hos oss</h2>
-                  <p>
-                    Är du intresserad av att vara med och forma framtidens
-                    infrastruktur och fastighetslösningar? Bli en del av vårt
-                    team & hjälp oss att bygga en hållbar framtid
-                  </p>
-                  <button>Läs mer om lediga tjänster</button>
-                </div>
-              </div> */}
-              <div className="col-md-6 col-sm-12 col-12 position-relative">
-                {/* <div
-                  className="dark-overlay"
-                  style={{
-                    borderTopLeftRadius: !isMobile && "20px",
-                    borderTopRightRadius: !isMobile && "20px",
 
-                    left: "16px",
-                    width: "95%", // Set width to 100% of its container
-                    height: !isMobile && "72%",
-                  }}
-                ></div>{" "} */}
-                {/* This will create the dark overlay */}
+              <div className="col-md-6 col-sm-12 col-12 position-relative">
                 <img
                   src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                   className="card2-im"
