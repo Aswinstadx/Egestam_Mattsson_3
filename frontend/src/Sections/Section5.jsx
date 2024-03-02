@@ -2,6 +2,21 @@ import React, { useEffect, useState } from "react";
 
 function Section5() {
   const [isIpad, setIsIpad] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,15 +38,110 @@ function Section5() {
     <div className="section5">
       <div className="container">
         <div className="row ">
-          {isIpad || (window.innerWidth >= 1400 && window.innerWidth < 1500) ? (
+          {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
             <>
+              {console.log("##################")}
+              <div
+                className="text-center d-flex justify-content-center align-items-center position-relative"
+                style={{ flexDirection: "column" }}
+              >
+                <img
+                  src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
+                  className="card2-im text-center justify-content-center"
+                />
+                {/* <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left"> */}
+                <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left">
+                  <h2 className="text-left">Jobba hos oss</h2>
+                  <p className="text-left">
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                className="text-center d-flex justify-content-center align-items-center"
+                style={{ flexDirection: "column" }}
+              >
+                {/* <img
+                  src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
+                  className="card2-im text-center justify-content-center"
+                />
+                <div>
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div> */}
+                {/* <div className="image-content_">
+                  <h2>Jobba hos oss</h2>
+                  <p>
+                    Är du intresserad av att vara med och forma framtidens
+                    infrastruktur och fastighetslösningar? Bli en del av vårt
+                    team & hjälp oss att bygga en hållbar framtid
+                  </p>
+                  <button>
+                    Läs mer om lediga tjänster
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.8178 4.21001L10.8955 4.27334L14.2289 7.60668L14.27 7.65334L14.3166 7.72223L14.35 7.7889L14.3722 7.85779L14.3855 7.92001L14.3911 8.00001L14.3878 8.0589L14.3722 8.14223L14.35 8.21223L14.2922 8.31557L14.2411 8.3789L10.8955 11.7267C10.7975 11.8251 10.6662 11.8833 10.5275 11.8897C10.3888 11.8961 10.2527 11.8503 10.146 11.7614C10.0393 11.6724 9.96986 11.5467 9.95127 11.4091C9.93267 11.2715 9.96631 11.1319 10.0455 11.0178L10.1089 10.94L12.4944 8.55557H2.72443C2.5856 8.55582 2.4517 8.50409 2.34911 8.41056C2.24652 8.31702 2.18266 8.18847 2.17012 8.05021C2.15758 7.91195 2.19725 7.774 2.28134 7.66353C2.36542 7.55306 2.48782 7.47808 2.62443 7.45334L2.72443 7.44445H12.4944L10.1089 5.06001C10.017 4.96795 9.96036 4.84658 9.94878 4.71704C9.93721 4.5875 9.97145 4.45801 10.0455 4.35112L10.1089 4.27334C10.1892 4.19332 10.2921 4.13978 10.4037 4.11992C10.5153 4.10006 10.6303 4.11482 10.7333 4.16223L10.8178 4.21001Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div> */}
+              </div>
+              {console.log("1111111111111")}
               <div className="col-md-6 col-sm-12 col-12 ipad-im">
                 <div className="image-container text-center ">
                   {/* <div className="overlay4"></div> */}
-                  <div className="dark-overlay"></div>
-                  <img
+                  {/* <div className="dark-overlay"></div> */}
+                  {/* <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
                     className="card2-im text-center"
+                  /> */}
+                  {/* <img
+                    src={process.env.PUBLIC_URL + "/images/macbook_im.png"}
+                    className="card2-im text-center justify-content-center"
                   />
                   <div className="image-content_">
                     <h2>Jobba hos oss</h2>
@@ -55,7 +165,7 @@ function Section5() {
                         />
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="row ipad-cards">
@@ -89,6 +199,7 @@ function Section5() {
                   >
                     <img
                       src={process.env.PUBLIC_URL + "/images/section7-im2.png"}
+                      className="ipad-im"
                     />
                     <div className="ipad-card-content">
                       <h2>Hör av dig till oss </h2>
@@ -133,10 +244,12 @@ function Section5() {
             </>
           ) : (
             <>
+              {console.log("===================")}
               <div className="col-md-6 col-sm-12 col-12">
                 <div>
                   <img src={process.env.PUBLIC_URL + "/images/section5.png"} />
                   <div className="section5-content">
+                    {/* <h2 style={{color:'#003A3A',fontFamily:'Inter',fontSize:'20px',fontWeight:700}}>VÅRT MOTTO </h2> */}
                     <h2>VÅRT MOTTO </h2>
                     <h6>
                       Kontrollerad riskhantering med förankring i god affärsetik
@@ -153,45 +266,21 @@ function Section5() {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-md-6 col-sm-12 col-12">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
-                  className="card2-im"
-                />
-                <div className="card-image-content">
-                  <h2>Jobba hos oss</h2>
-                  <p>
-                    Är du intresserad av att vara med och forma framtidens
-                    infrastruktur och fastighetslösningar? Bli en del av vårt
-                    team & hjälp oss att bygga en hållbar framtid
-                  </p>
-                  <button>Läs mer om lediga tjänster</button>
-                </div>
-              </div> */}
-              <div className="col-md-6 col-sm-12 col-12 position-relative">
-                <div
-                  className="dark-overlay"
-                  style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
 
-                    left: "13px",
-                    width: "96%", // Set width to 100% of its container
-                    height: "72%", // Set height to 100% of its container
-                  }}
-                ></div>{" "}
-                {/* This will create the dark overlay */}
-                <img
-                  src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
-                  className="card2-im"
-                  style={{
-                    borderTopLeftRadius: "20px",
-                    borderTopRightRadius: "20px",
-                    maxWidth: "100%", // Set maximum width to 100% of its container
-                    height: "72%",
-                  }}
-                  alt="Background"
-                />
+              <div className="col-md-6 col-sm-12 col-12 position-relative">
+                <div style={{ padding: 0 }}>
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
+                    className="card2-im"
+                    style={{
+                      borderTopLeftRadius: !isMobile && "20px",
+                      borderTopRightRadius: !isMobile && "20px",
+                      maxWidth: "100%", // Set maximum width to 100% of its container
+                      height: !isMobile && "72%",
+                    }}
+                    alt="Background"
+                  />
+                </div>
                 <div className="card-image-content">
                   <h2>Jobba hos oss</h2>
                   <p
@@ -199,6 +288,7 @@ function Section5() {
                       maxWidth: "100%", // Set maximum width to 100% of its container
                       width: "100%", // Ensure the width adjusts to its container
                       maxHeight: "100%",
+                      color: isMobile && "white",
                     }}
                   >
                     Är du intresserad av att vara med och forma framtidens

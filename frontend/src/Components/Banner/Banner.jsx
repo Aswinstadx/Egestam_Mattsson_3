@@ -29,9 +29,10 @@ function Banner() {
       {isMobile ? (
         <>
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/mobile.mp4"}
+            url={process.env.PUBLIC_URL + "/videos/banner_mobile_2.mp4"}
             playing={true}
             playsinline
+            playsInline
             loop={true}
             volume={0}
             controls={false}
@@ -54,7 +55,7 @@ function Banner() {
             className="player"
           /> */}
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/banner_tablet.mp4"}
+            url={process.env.PUBLIC_URL + "/videos/banner_ipad_2.mp4"}
             playing={true}
             playsinline
             loop={true}
@@ -81,7 +82,8 @@ function Banner() {
         </>
       ) : (
         <ReactPlayer
-          url={BANNER_VIDEO}
+          // url={BANNER_VIDEO}
+          url={process.env.PUBLIC_URL + "/videos/banner_desktop_2.mp4"}
           playing={true}
           playsinline
           loop={true}
@@ -92,18 +94,36 @@ function Banner() {
           className="player"
         />
       )}
-      <div className="banner-text">
-        <h1>
-          EL, Teknik & Installationer för framtiden med{" "}
-          <span>hållbara framsteg</span>{" "}
-        </h1>
-        <p>
-          Med målet att vara marknadsledande, kombinerar Egestam och Mattsson
-          expertkunskap, engagemang och innovation för att bygga varaktiga
-          kundrelationer och leverera arbete med fokus på kvalitet,
-          miljömedvetenhet och säkerhet.
-        </p>
-      </div>
+      {isMobile ? (
+        <div className="banner-text_2 text-center">
+          <h1>
+            EL, Teknik & Installationer för framtiden med <br />
+            <span>hållbara framsteg</span>
+          </h1>
+          <p>
+            Med målet att vara marknadsledande, kombinerar Egestam och Mattsson
+            expertkunskap, engagemang och innovation för att bygga varaktiga
+            kundrelationer och leverera arbete med fokus på kvalitet,
+            miljömedvetenhet och säkerhet.
+          </p>
+        </div>
+      ) : (
+        <>
+          {" "}
+          <div className="banner-text">
+            <h1>
+              EL, Teknik & Installationer för framtiden med{" "}
+              <span>hållbara framsteg</span>{" "}
+            </h1>
+            <p>
+              Med målet att vara marknadsledande, kombinerar Egestam och
+              Mattsson expertkunskap, engagemang och innovation för att bygga
+              varaktiga kundrelationer och leverera arbete med fokus på
+              kvalitet, miljömedvetenhet och säkerhet.
+            </p>
+          </div>
+        </>
+      )}
     </div>
   );
 }

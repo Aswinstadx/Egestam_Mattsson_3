@@ -172,7 +172,7 @@ function Footer() {
         <div className="col-md-4 third-column">
           <h3>Gasellvinnare</h3>
           <div>
-            <img src="https://s3-alpha-sig.figma.com/img/5983/df28/7846bede6dc31da5ace6c61a21b37fd5?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cHJewHrNYfLIIvQ4u-hClswBcOlyHYVJSvCsnqmtV3yVPusU7WL8t6tdSiE6RipIO-nGYYYLjfVsm0jwv3PC2OekIuJGrYSTGmfyZcphca6bynbQj4uFhYSyg-phl89K1tfM10gHGl1hLP5WhRsenO~9xemx1egnGOqtNfbfB1rXCiGboMlpNRdFthd6brh4hIXJUXgQ6mhrnirrQezrUNmiQVC7Za2NuZpbz0tQHA9kLUhOkBOxOYcHCQlnlyo65gtRJua7AnSpZEZnexVoMJjw6m7ahMtXDuanZprGOHfIR7RJf285IMQhhIdesSGSZuvi1TaIQ5nHcPpYkmocVA__" />
+            <img src={process.env.PUBLIC_URL + "/images/card3-im.png"} />
           </div>
           <p className="third-column-p">
             Med målet att vara marknadsledande, kombinerar Egestam och Mattsson
@@ -183,7 +183,7 @@ function Footer() {
         </div>
       </div>
       <img
-        src="https://s3-alpha-sig.figma.com/img/2efb/d2df/887a0c4388ef2816f7d81d2cb5aea050?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~8mmnSgdI9Wgo-zl9o19UBJUeAUD2AO0mSnABPPrnCWWIsZcM405UBIfAw3FAXkXKjOTFWP9AabUbG033spGSdqxNkUnRTWKmbxAKQTDKkWjfD9NCW8KOFqi2U8VkYzvRmvU9QvvkjMYHKivqt2tp23aK6-qZLLpu0Cg7Tqfsz45NKXRbsQehR0Oz~hCxHKUUHPD-weZtkZROFPtcmVJueaE97QoKBQPXPF6s3upGz2mSQVOat~7SI3gEd2dGriQuhLGrOs5PypG7LB9t-~bNk--ae1zjhoSXUZmusk9wZysJLpYjN93fZc2AEr~QHcGprSe0hLLk4GAdHRVrCrxg__"
+        src={process.env.PUBLIC_URL + "/images/logo3.png"}
         className="footer-image"
       />
       <div className="line"></div>

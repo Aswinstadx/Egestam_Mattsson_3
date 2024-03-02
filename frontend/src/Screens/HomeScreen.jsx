@@ -12,9 +12,26 @@ import Section7 from "../Sections/Section1/Section7";
 import Section9 from "../Sections/Section9";
 import Accordion from "../Components/Accordion/Accordion";
 import Footer from "../Components/Footer/Footer";
+import MobileOnly from "../Sections/MobileOnly";
+import MobileFooter from "../Components/Footer/MobileFooter";
 
 function HomeScreen() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,24 +49,48 @@ function HomeScreen() {
       {console.log("Screen width : ", screenWidth)}
       <div>
         <Banner />
-        <Section1 />
-        <Accordion />
-        <Accordion1 />
-        <Accordion2 />
+        {isMobile ? (
+          <div style={{ top: "-12px", position: "relative" }}>
+            <Accordion />
+            <Accordion1 />
+            <Accordion2 />
+            <Section1 />
+          </div>
+        ) : (
+          <>
+            <Section1 />
+            <Accordion />
+            <Accordion1 />
+            <Accordion2 />
+          </>
+        )} 
+
         <Section3 />
         <Section4 />
         <Section5 />
         <Section6 />
-        <div className="ipad-block">
-          <Section7 />
-        </div>
-        {/* <div>
-          <Section7 />
-        </div> */}
-        <Section9 />
+        {isMobile ? (
+          <>
+            <MobileOnly />
+          </>
+        ) : (
+          <>
+            <div className="ipad-block">
+              <Section7 />
+            </div>
+            <Section9 />
+          </>
+        )}
         <footer>
-          {/* <h1>{screenWidth}</h1> */}
-          <Footer />
+          {isMobile ? (
+            <>
+              <MobileFooter />
+            </>
+          ) : (
+            <>
+              <Footer />
+            </>
+          )}
         </footer>
       </div>
     </div>

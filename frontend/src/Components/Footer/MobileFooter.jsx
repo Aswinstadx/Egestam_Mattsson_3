@@ -12,8 +12,12 @@ function MobileFooter() {
           />
           <div className="div-3">Kontakt</div>
           <div className="div-4">Egestam Mattsson El & Data AB</div>
-          <div className="div-5">Ridspögatan 15a</div>
-          <div className="div-6">213 77 Malmö</div>
+          <div className="div-5" style={{ top: "-15px", position: "relative" }}>
+            Ridspögatan 15a
+          </div>
+          <div className="div-6" style={{ top: "-29px", position: "relative" }}>
+            213 77 Malmö
+          </div>
           <div className="div-7">
             <div className="div-8">Tel: </div>
             <div className="div-9">040-6170166</div>
@@ -46,14 +50,14 @@ function MobileFooter() {
               />
               <div className="div-27">Facebook</div>
             </div>
-            <div className="div-28">
+            {/* <div className="div-28">
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/6c24fcb2-18bd-4134-97c8-bbc51df5575e?apiKey=9739e863fc0441d3bd6e2249eccb2e49&"
                 className="img-3"
               />
               <div className="div-29">Instagram</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -69,6 +73,9 @@ function MobileFooter() {
           font-weight: 400;
           line-height: 150%;
           padding: 13px 0 50px;
+          top: 0px;
+          left: -60px;
+          position: relative;
         }
         .div-2 {
           display: flex;
@@ -94,6 +101,7 @@ function MobileFooter() {
         .div-4 {
           font-family: Inter, sans-serif;
           margin: 22px 0 0 11px;
+          white-space:nowrap
         }
         .div-5 {
           font-family: Inter, sans-serif;
@@ -120,6 +128,8 @@ function MobileFooter() {
           display: flex;
           gap: 14px;
           margin: 12px 0 0 11px;
+          top:'-15px;
+          position:relative;
         }
         .div-11 {
           font-family: Montserrat, sans-serif;
@@ -139,14 +149,20 @@ function MobileFooter() {
           font-size: 18px;
           font-weight: 600;
           padding: 34px 31px 2px;
+          left:10px;
+          position:relative
         }
         .div-14 {
           font-family: Inter, sans-serif;
+          left: -11px;
+          position: relative;
         }
         .div-15 {
           font-family: Inter, sans-serif;
           flex-grow: 1;
           flex-basis: auto;
+          left: 104px;
+          position: relative;
         }
         .div-16 {
           align-self: center;
@@ -161,6 +177,8 @@ function MobileFooter() {
           display: flex;
           flex-direction: column;
           padding: 0 20px;
+          left:10px;
+          position:relative;
         }
         .div-18 {
           font-family: Inter, sans-serif;
@@ -190,6 +208,8 @@ function MobileFooter() {
           white-space: nowrap;
           margin: auto 0;
           padding: 0 20px;
+          left:12px;
+          position:relative;
         }
         .div-24 {
           font-family: Inter, sans-serif;
