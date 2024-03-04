@@ -19,6 +19,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./Screens/HomeScreen";
 import NewsScreen from "./Screens/NewsScreen";
 import NewsDetailsScreen from "./Screens/NewsDetailsScreen";
+import Sustainability from "./Screens/Sustainability";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,6 +65,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/news" element={<NewsScreen />} />
         <Route path="/news/:id" element={<NewsDetailsScreen />} />
+        <Route path="/sustainability" element={<Sustainability />} />
       </Routes>
     </BrowserRouter>
   );
