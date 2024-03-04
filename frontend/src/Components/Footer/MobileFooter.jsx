@@ -50,7 +50,7 @@ function MobileFooter() {
               />
               <div className="div-27">Facebook</div>
             </div>
-            
+
             {/* <div className="div-28">
               <img
                 loading="lazy"

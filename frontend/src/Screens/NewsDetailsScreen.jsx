@@ -36,6 +36,18 @@ function NewsDetailsScreen() {
         <div className="news-details-content">
           <ul>
             <li>
+              <h5>Optimerad energieffektivitet</h5>
+              <p>
+                I en värld som ständigt strävar efter att minska sin
+                klimatpåverkan är effektiv energianvändning en av de mest
+                kritiska utmaningarna. Som ledande inom el- och
+                datanätverksinstallationer har Egestam & Mattsson tagit på sig
+                att vara en föregångare när det gäller att leverera
+                energieffektiva lösningar för fastigheter och infrastruktur.
+              </p>
+            </li>
+
+            <li>
               <h5>Hållbarhetsfokus</h5>
               <p>
                 För oss på Egestam & Mattsson är hållbarhet central i allt vi
@@ -139,6 +151,26 @@ function NewsDetailsScreen() {
         <RelatedNews />
         <Section6 />
       </div>
+      {isMobile && (
+        <footer
+          style={{
+            top: isMobile && "50px",
+            position: "relative",
+            width: "100%",
+          }}
+        >
+          {isMobile && <MobileFooter />}
+        </footer>
+      )}
+
+      {!isMobile && (
+        <footer
+          className="w-100 mt-5"
+          style={{ top: "50px", position: "relative" }}
+        >
+          <Footer />
+        </footer>
+      )}
     </div>
   );
 }

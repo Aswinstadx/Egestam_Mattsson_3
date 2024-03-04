@@ -43,9 +43,10 @@ function NewsScreen() {
             <Card key={index} title={`Card ${index + 1}`} />
           ))}
         </div>
+
         <div className="" style={{ float: "right" }}>
           <select
-            className="mt-5 card-select"
+            className="mt-5 card-select2"
             style={{
               top: !isMobile && "22px",
               position: "relative",

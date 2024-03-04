@@ -216,11 +216,19 @@ const Header = () => {
           >
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img
-                  src={process.env.PUBLIC_URL + "/logo.png"}
-                  alt="Thumbnail"
-                  className="logo"
-                />
+                {isSticky ? (
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/logo3.png"}
+                    alt="Thumbnail"
+                    className="logo"
+                  />
+                ) : (
+                  <img
+                    src={process.env.PUBLIC_URL + "/logo.png"}
+                    alt="Thumbnail"
+                    className="logo"
+                  />
+                )}
               </a>
               <button
                 class="navbar-toggler"
@@ -277,7 +285,7 @@ const Header = () => {
                 tabindex="-1"
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel"
-                style={{ background: "#89BF50" }}
+                style={{ background: "#89BF50", height: "100vh" }}
               >
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
