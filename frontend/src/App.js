@@ -18,6 +18,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./Screens/HomeScreen";
 import NewsScreen from "./Screens/NewsScreen";
+import NewsDetailsScreen from "./Screens/NewsDetailsScreen";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -62,6 +63,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/news" element={<NewsScreen />} />
+        <Route path="/news/:id" element={<NewsDetailsScreen />} />
       </Routes>
     </BrowserRouter>
   );

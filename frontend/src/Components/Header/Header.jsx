@@ -183,7 +183,7 @@ const Header = () => {
             >
               <Nav className="mx-auto">
                 <Nav.Link
-                  href="#home"
+                  href="/"
                   // style={{
                   //   color: isSticky
                   //     ? "white"
@@ -294,7 +294,7 @@ const Header = () => {
                       <a
                         class="nav-link active"
                         aria-current="page"
-                        href="#"
+                        href="/"
                         style={{ color: "#00354E", fontWeight: 600 }}
                       >
                         Hem

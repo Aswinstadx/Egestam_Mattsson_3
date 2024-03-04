@@ -58,7 +58,7 @@
 }
 
 .third-column img {
-    width: 268px;
+    width: 217px;
     height: 128px;
     flex-shrink: 0;
 }
@@ -108,8 +108,9 @@ img.footer-image {
 @media only screen and (min-width: 1000px) and (max-width: 1588px) {
 
     img.footer-image {
-        top: -49px;
-        left: 0px;
+        /* top: -80px; */
+        top: -50px;
+        left: 56px;
         position: relative;
     }
 
@@ -148,8 +149,8 @@ img.footer-image {
 
 @media (min-width: 1600px) {
     img.footer-image {
-        left: 0px;
-        top: -45px;
+        left: 102px;
+        top: -85px;
         position: relative;
     }
 
