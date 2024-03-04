@@ -2432,7 +2432,8 @@ line-height: 21px; /* 150% */
     /* Adjust as needed */
     height: 300px;
     /* Adjust as needed */
-    background-image: url('https://s3-alpha-sig.figma.com/img/ec6b/e842/7ccfd23a9f3bc48ec821a5819b15fe97?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtnB1gTM1BsKSsIDOOfafD6CQZGBRTr9F8IlozL~We5iYWYZXbYe4LigH3auBBTY8fhNenqnP3sSBwRD6SqjZvZOj3RDPlMyKRrEyx78K3nj5IgvVGOtmI49cDKpaxlq5~Ij9vh-rrq9A9NjC6QGZ~zFc~~sosDk286cJKIeGHbvYym63~s90Z3JdhtRgvu520DxAoqgiAHfHzcVXAsn9oadJfkQFGR6QO7jxgwoC-GnNtHOSBOQ4CPZ3in4GRJItFw84TBFZ~HRQmUVfPylQlKbIaJ5mEfGXVm8y2DqcQrKUQoDe8A0BvPUaoN4QaQpYnfzMuzORv2E0RRZSSxF6w__');
+    /* background-image: url('https://s3-alpha-sig.figma.com/img/ec6b/e842/7ccfd23a9f3bc48ec821a5819b15fe97?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TtnB1gTM1BsKSsIDOOfafD6CQZGBRTr9F8IlozL~We5iYWYZXbYe4LigH3auBBTY8fhNenqnP3sSBwRD6SqjZvZOj3RDPlMyKRrEyx78K3nj5IgvVGOtmI49cDKpaxlq5~Ij9vh-rrq9A9NjC6QGZ~zFc~~sosDk286cJKIeGHbvYym63~s90Z3JdhtRgvu520DxAoqgiAHfHzcVXAsn9oadJfkQFGR6QO7jxgwoC-GnNtHOSBOQ4CPZ3in4GRJItFw84TBFZ~HRQmUVfPylQlKbIaJ5mEfGXVm8y2DqcQrKUQoDe8A0BvPUaoN4QaQpYnfzMuzORv2E0RRZSSxF6w__'); */
+    background-image: url('../public/images/section_4_banner_image.png');
     background-size: cover;
     background-position: center;
     height: 433px;
