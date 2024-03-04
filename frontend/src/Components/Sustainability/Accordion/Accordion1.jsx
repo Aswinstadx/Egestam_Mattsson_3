@@ -64,7 +64,7 @@ function Accordion1({ title, content }) {
             style={{ backgroundColor: "#FFF" }}
           >
             {/* <p>{content}</p> */}
-            <div style={{ margin: "-20px" }}>
+            <div style={{ margin: "-10px" }}>
               <img
                 src={process.env.PUBLIC_URL + "/images/card1-im.png"}
                 className="w-100"
