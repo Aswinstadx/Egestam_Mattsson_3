@@ -183,3 +183,31 @@ flex-shrink: 0;
     left: -5px;
     position: relative;
   }
+
+  @media (max-width: 768px) {
+    .section_sustain p{
+        color: #00354E;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 181.25% */
+width: 348px;
+height: 294px;
+    }
+    .section_sustain{
+        
+    }
+    .sustainability-page-section-3 p{
+        width: 300px;
+        color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+left: 31px;
+position: relative;
+    }
+  }
