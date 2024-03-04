@@ -24,21 +24,7 @@ function NewsScreen() {
     <div>
       <NewsBanner />
       <div className="container">
-        {!isMobile && (
-          <>
-            <select
-              className="mt-5 card-select"
-              style={{ top: "22px", position: "relative" }}
-            >
-              <option>Kategori</option>
-              <option>Kategori</option>
-              <option>Kategori</option>
-              <option>Kategori</option>
-              <option>Kategori</option>
-            </select>
-          </>
-        )}
-        <div className="card-container mt-5">
+        <div className="card-container">
           {[...Array(9)].map((_, index) => (
             <Card key={index} title={`Card ${index + 1}`} />
           ))}
