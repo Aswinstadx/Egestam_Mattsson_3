@@ -177,4 +177,9 @@ flex-shrink: 0;
   .sustainable-overlay h4 {
     text-align: left; /* Align h4 text to the left */
   }
-  
+  .sus-arrow-icon{
+    height: 32px;
+    width: 32px;
+    left: -5px;
+    position: relative;
+  }

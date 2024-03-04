@@ -119,6 +119,29 @@ function Sustainability() {
                 <br />
                 <div style={{ textAlign: "center" }}>
                   <h4>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      className="sus-arrow-icon"
+                    >
+                      <path
+                        d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Hållbar energi för alla
                     <br />
                   </h4>
@@ -137,6 +160,29 @@ function Sustainability() {
                 />
                 <div style={{ textAlign: "center" }}>
                   <h4>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      className="sus-arrow-icon"
+                    >
+                      <path
+                        d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Anständiga arbetsvillkor och ekonomisk tillväxt
                     <br />
                   </h4>
@@ -158,6 +204,29 @@ function Sustainability() {
                 />
                 <div style={{ width: "100%", textAlign: "center" }}>
                   <h4>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      className="sus-arrow-icon"
+                    >
+                      <path
+                        d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Industri, innovation och infrastruktur
                     <br />
                   </h4>
@@ -177,6 +246,29 @@ function Sustainability() {
                 />
                 <div style={{ width: "100%", textAlign: "center" }}>
                   <h4>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      className="sus-arrow-icon"
+                    >
+                      <path
+                        d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Hållbara städer och samhällen
                     <br />
                   </h4>
@@ -197,16 +289,30 @@ function Sustainability() {
                   src={process.env.PUBLIC_URL + "/images/DALL_5.png"}
                 />
                 <div style={{ textAlign: "center" }}>
-                  <h4
-                    style={{
-                      color: "black",
-                      fontSize: 20,
-                      fontFamily: "Inter",
-                      fontWeight: "700",
-                      lineHeight: 2,
-                      wordWrap: "break-word",
-                    }}
-                  >
+                  <h4>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      className="sus-arrow-icon"
+                    >
+                      <path
+                        d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
+                        stroke="#00354E"
+                        stroke-width="1.28583"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                     Bekämpa klimatförändringarna
                     <br />
                   </h4>
@@ -234,9 +340,7 @@ function Sustainability() {
         <div className="sustainability-page-section-4 sustainable-container ">
           <img src={SUSTAINABILITY_PAGE_IMAGE} />
           <div className="sustainable-overlay">
-            <h4 >
-              Optimerade miljöer för ett hållbart liv
-            </h4>
+            <h4>Optimerade miljöer för ett hållbart liv</h4>
             <p>
               Med teknikens framsteg utrustas fastigheter med avancerade
               funktioner. Grundläggande system såsom el, VVS, uppvärmning,
