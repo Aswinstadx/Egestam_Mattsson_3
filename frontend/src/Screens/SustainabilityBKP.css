@@ -1,0 +1,124 @@
+
+.section_sustain{
+    /* width: 100%; 
+    height: 200px; 
+    position: 'relative'; 
+    background: #89BF50 !important; */
+    width: 100%;
+    height: 526px;
+    flex-shrink: 0;
+    background: #89BF50;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sectionA{
+    width: 1919px; 
+    height: 2960px; 
+    left: 0; 
+    top: 427px; 
+    position: 'absolute'; 
+    background: linear-gradient(180deg, #E9F3F9 0%, white 100%);
+}
+.sectionB{
+    width: 1920px;
+    height: 141px;
+    left: -1;
+    top: 427px;
+    position: 'absolute'; 
+    background: #89BF50 !important;
+}
+.sectionC{
+    padding-bottom: 30px;
+    padding-left: 53px;
+    padding-right: 29px;
+    left: 487px;
+    top: 49px;
+    position: 'absolute'; 
+    justify-content: 'flex-end';
+    align-items: 'center';
+    display: 'inline-flex';
+}
+/* .container{
+    
+} */
+/* .image_container{
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(180deg, #E9F3F9 0%, white 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.climate-section {
+	width: '100%';
+    height: '100%';
+    background: linear-gradient(180deg, #E9F3F9 0%, white 100%);
+}
+ 
+.content-container {
+  max-width: 1920px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  /* padding-left: 280px;
+  padding-top: 10px; */
+}
+.centered-image {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* margin: auto;  */
+    max-width: 250px; 
+    max-height: auto; 
+    /* padding-left: 280px;
+    padding-top: 10px; */
+    /* padding-right: 200px; */
+    /* align-self: center; */
+  }
+
+
+
+
+
+/* Desktop */
+@media (min-width: 1367px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Laptop */
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* iPad */
+  @media (min-width: 820px) and (max-width: 1023px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* iPad Air */
+  @media (min-width: 768px) and (max-width: 819px) {
+    body {
+      font-size: 12px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    body {
+      font-size: 10px;
+    }
+  }
+  
+
+
