@@ -59,7 +59,7 @@ function Accordion1({ title, content }) {
           </span>
         </div>
         {isOpen && (
-          <div className={`accordion-content ${isOpen ? "expanded" : ""}`}>
+          <div className={`accordion-content ${isOpen ? "expanded" : ""}`}  style={{ backgroundColor: "#00354E" }}>
             {/* <p>{content}</p> */}
             <div className="container">
               <p>
