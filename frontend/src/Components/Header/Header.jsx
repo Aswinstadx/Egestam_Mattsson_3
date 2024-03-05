@@ -181,7 +181,7 @@ const Header = () => {
               id="basic-navbar-nav"
               className="full-width-collapse"
             >
-              <Nav className="mx-auto">
+              <Nav className="mx-auto"> 
                 <Nav.Link
                   href="/"
                   // style={{
@@ -192,7 +192,7 @@ const Header = () => {
                 >
                   Hem
                 </Nav.Link>
-                <Nav.Link href="#link">Hållbarhet</Nav.Link>
+                <Nav.Link href="/sustainability">Hållbarhet</Nav.Link>
                 <Nav.Link href="#link">Tjänster</Nav.Link>
                 <Nav.Link href="/news">Nyheter</Nav.Link>
                 <Nav.Link href="#link">Kontakt</Nav.Link>
@@ -311,7 +311,7 @@ const Header = () => {
                     <li class="nav-item">
                       <a
                         class="nav-link"
-                        href="#"
+                        href="/sustainability"
                         style={{ color: "#00354E", fontWeight: 600 }}
                       >
                         Hållbarhet

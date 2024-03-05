@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
-
-import Section6 from "../Sections/Section6";
 import Banner from "../Components/CmsPage/Banner";
 import MobileFooter from "../Components/Footer/MobileFooter";
 import Footer from "../Components/Footer/Footer";
 import RelatedNews from "../Sections/RelatedNews";
+import Section6 from "../Components/News/Section6";
+import MobileOnlySust from "../Components/Sustainability/MobileOnlySust";
+import Section1 from "../Sections/Section1/Section1";
+import News from "../Components/News/News";
 
 function NewsDetailsScreen() {
   const [isMobile, setIsMobile] = useState(false);
-
+  const [isIpad, setIsIpad] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -22,6 +24,24 @@ function NewsDetailsScreen() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsIpad(window.innerWidth <= 1024 && window.innerWidth >= 600); // Assuming iPad width is less than or equal to 768px
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <Banner />
@@ -147,10 +167,29 @@ function NewsDetailsScreen() {
           <Footer />
         </footer>
       )} */}
-      <div className="related-news-section-6-div">
-        <RelatedNews />
-        <Section6 />
+      <div
+        className="related-news-section-6-div"
+        style={{ backgroundColor: isMobile && "#EFF6E7" }}
+      >
+        {isIpad ? (
+          <>
+            <News />
+          </>
+        ) : (
+          <>
+            <RelatedNews />
+            <Section6 />
+          </>
+        )}
+
+        {isIpad && <>{console.log("This is ipad")}</>}
       </div>
+      {isMobile && (
+        <div style={{ marginTop: "10px" }}>
+          <Section1 />
+          <MobileOnlySust />
+        </div>
+      )}
       {isMobile && (
         <footer
           style={{

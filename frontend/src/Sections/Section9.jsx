@@ -27,6 +27,7 @@ function Section9() {
     <div>
       {!isIpad ? (
         <>
+        {console.log('virat kohli')}
           <div className="div section9">
             <div className="div-2">
               <div className="column">
