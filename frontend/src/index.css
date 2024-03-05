@@ -930,7 +930,7 @@ footer {
 .section9 {
   position: relative;
   background: linear-gradient(rgba(0, 53, 78, 0.8), rgba(0, 53, 78, 0.8)),
-    url('https://s3-alpha-sig.figma.com/img/698e/e33c/9bf21d51128973a1d4f90eae1f2d148f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UL8mn4B9nl0sXAYF1vwYy5URWPzGIiTCC5abBtE4-YW~bUTzCYwS5R5Wfq3F4j8~4ifUpnjbP6~Nw~paxyAwWmo6kmMrY2tdPXB56UkabYo3d~sbfozmQquvkNP8-LGogo~F~yj6VA8zdSizVFHX68H~-JgzKKBuZ7uAuJy3FOVbdunkcmqW8BX8GuPzpWQ-~GibodP2gixxCJMJZHsEvwq6xiz-1mjwOLkQW3Sael3aqgzNdgnP6wFRCcKebtSEgo91zUgnnaoWtvfpVSiUYm3Ol03UuSx2mf2eaie5N44YRAByWR8gGa7mQh8ULj642UA0-O9JCy2U8G3vOEV05g__');
+    url('../public/images/section_9_background.png');
   background-position: center;
   background-size: cover;
   padding: 107px 58px 38px 120px;
