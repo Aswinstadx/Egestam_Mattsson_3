@@ -897,7 +897,8 @@ footer {
   line-height: 22.5px;
   /* 125% */
   border: none;
-
+  top: 20px;
+  position: relative;
 }
 
 /* .section9{
