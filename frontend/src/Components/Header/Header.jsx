@@ -11,16 +11,16 @@ const Header = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
-useEffect(() => {
-  const handleScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
 
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -214,7 +214,11 @@ useEffect(() => {
                       height="30"
                       viewBox="0 0 24 24"
                       fill="none"
-                      style={{ overflow: "auto", zIndex: "999" ,display: scrollPosition > 100 ? 'none' : 'block'}}
+                      style={{
+                        overflow: "auto",
+                        zIndex: "999",
+                        display: scrollPosition > 100 ? "none" : "block",
+                      }}
                       className="close__btn"
                     >
                       <path
@@ -468,6 +472,7 @@ useEffect(() => {
                   />
                 </svg>
               </button>
+
               <div
                 class="offcanvas offcanvas-top"
                 tabindex="-1"
@@ -482,10 +487,15 @@ useEffect(() => {
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
+                    onClick={() => setNavExpanded(!navExpanded)}
+                    style={{color:'white'}}
                   ></button>
                 </div>
+                {console.log("nav expanded----------", navExpanded)}
+
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <hr style={{ color: "red" }} />
                     <li class="nav-item">
                       <a
                         class="nav-link active"
@@ -495,6 +505,30 @@ useEffect(() => {
                       >
                         Hem
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                     <li class="nav-item">
                       <a
@@ -504,6 +538,30 @@ useEffect(() => {
                       >
                         Hållbarhet
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                     <li class="nav-item">
                       <a
@@ -513,6 +571,30 @@ useEffect(() => {
                       >
                         Tjänster
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                     <li class="nav-item">
                       <a
@@ -522,6 +604,30 @@ useEffect(() => {
                       >
                         Nyheter
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                     <li class="nav-item">
                       <a
@@ -531,6 +637,30 @@ useEffect(() => {
                       >
                         Kontakt
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                     <li class="nav-item">
                       <a
@@ -540,6 +670,30 @@ useEffect(() => {
                       >
                         Jobba med oss
                       </a>
+                      {isTablet && (
+                        <>
+                          <span
+                            style={{
+                              float: "right",
+                              top: "-30px",
+                              position: "relative",
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="8"
+                              height="16"
+                              viewBox="0 0 8 16"
+                              fill="none"
+                            >
+                              <path
+                                d="M0.547594 1.13964L0.326625 1.36057C0.180188 1.50701 0.180188 1.74445 0.326625 1.89092L6.43578 8.00011L0.326625 14.1093C0.180188 14.2557 0.180188 14.4932 0.326625 14.6396L0.547594 14.8606C0.694031 15.007 0.931469 15.007 1.07791 14.8606L7.67325 8.26526C7.81969 8.11882 7.81969 7.88139 7.67325 7.73492L1.07791 1.13964C0.931469 0.993168 0.694031 0.993168 0.547594 1.13964Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </span>
+                        </>
+                      )}
                     </li>
                   </ul>
                 </div>

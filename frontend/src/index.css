@@ -2243,8 +2243,19 @@ line-height: 25.6px; /* 128% */
 
   .navbar-nav a {
     font-size: 20px;
+    font-weight: 700;
   }
-
+  .nav-item{
+    border-bottom: 1px solid #00354E;
+    width: 100%;
+    padding: 17.2px 39px 14.19px 0px;
+  }
+  .btn-close{
+    top: 40px;
+    right: 46px;
+    position: relative;
+    font-size: 30px;
+  }
   .banner-text {
     width: 800px;
     position: absolute;
