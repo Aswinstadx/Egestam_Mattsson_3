@@ -37,10 +37,7 @@ button {
   /* Color on hover */
 }
 
-.navbar-container .nav-link:visited {
-  color: var(--egestam-mattsson, #fff);
-  /* Color for visited links */
-}
+
 
 .navbar-container.sticky {
   position: fixed;
@@ -1196,29 +1193,80 @@ line-height: 21px; /* 150% */
     outline: none;
   }
 
+  .navbar-nav{
+    margin-top: 50px;
+  }
+  .close_btn{
+    left: 19px;
+    position: relative;
+  }
+
+  .sticky .close_btn{
+    display: none;
+  }
+
+  .close__btn{
+    top: 18px;
+    left: 46px;
+    position: relative;
+  }
+  .hamber_ic{
+    left: 0px;
+    position: relative;
+  }
+
+  .sticky .navbar-nav{
+    display: none;
+  }
   .full-width-collapse {
     width: 100vw;
-    background-color: rgba(137, 191, 80, 0.93);
+    /* background-color: rgba(223, 11, 92, 0.93); */
     /* Set the background color here */
     padding-left: 0;
     padding-right: 0;
     left: -20px;
     position: relative;
-    top: 55px;
+    top: 5px;
     height: 90vh;
   }
-
+  .full-width-collapse a{
+    color: red;
+  }
   .navbar-container .nav-link:visited {
-    color: yellow;
-    color: #00354E;
+    /* color: yellow;
+    color: #00354E; */
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 25.6px;
+    color: #00354E;
     /* 128% */
+
+    
+  }
+  .navbar-container .nav-link{
+    color: yellow;
+    color: #00354E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 25.6px; /* 128% */
+
   }
 
+  .navbar-container .nav-link:hover {
+    color: #00354E;
+    /* Color on hover */
+  }
+  .mobile-nav-link {
+    border-bottom: 1px solid #00354E;
+    padding-bottom: 15px; /* Adjust the padding as needed */
+    margin-bottom: 15px; /* Adjust the margin as needed */
+    width: 100%;
+  }
+ 
   .accordion-btn {
     display: flex;
     justify-content: center;

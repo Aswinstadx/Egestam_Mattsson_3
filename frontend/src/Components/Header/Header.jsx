@@ -9,6 +9,19 @@ const Header = () => {
   const [isIpad, setIsIpad] = useState(false);
   const [navExpanded, setNavExpanded] = useState(false);
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const headerStyle = {
@@ -77,9 +90,7 @@ const Header = () => {
             className={`navbar-container${isSticky ? " sticky" : ""}`}
             style={{
               backgroundColor:
-                isSticky || navExpanded
-                  ? "#89BF50"
-                  : "transparent",
+                isSticky || navExpanded ? "#89BF50" : "transparent",
 
               zIndex: 1, // Adjust the z-index as needed
             }}
@@ -163,19 +174,55 @@ const Header = () => {
                     />
                   </svg>
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    style={{ overflow: "auto", zIndex: "999" }}
-                  >
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      fill="white"
-                    />
-                  </svg>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      className="hamber_ic"
+                    >
+                      <rect
+                        x="12"
+                        y="8.33008"
+                        width="24"
+                        height="2"
+                        rx="1"
+                        fill="white"
+                      />
+                      <rect
+                        x="12"
+                        y="15.4902"
+                        width="24"
+                        height="2"
+                        rx="1"
+                        fill="white"
+                      />
+                      <rect
+                        x="12"
+                        y="22.6401"
+                        width="24"
+                        height="2"
+                        rx="1"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      style={{ overflow: "auto", zIndex: "999" ,display: scrollPosition > 100 ? 'none' : 'block'}}
+                      className="close__btn"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
                 )}
               </Navbar.Toggle>
             </div>
@@ -183,7 +230,33 @@ const Header = () => {
               id="basic-navbar-nav"
               className="full-width-collapse"
             >
+              {/* {!isSticky && (
+                <>
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none close_btn"
+                    onClick={() => setNavExpanded(!navExpanded)}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="20"
+                      viewBox="0 0 19 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.6137 10L17.623 3.99063L18.8623 2.75137C19.0451 2.56855 19.0451 2.27148 18.8623 2.08867L17.5363 0.762695C17.3535 0.579883 17.0564 0.579883 16.8736 0.762695L9.625 8.01133L2.37637 0.762109C2.19355 0.579297 1.89648 0.579297 1.71367 0.762109L0.387109 2.08809C0.204297 2.2709 0.204297 2.56797 0.387109 2.75078L7.63633 10L0.387109 17.2486C0.204297 17.4314 0.204297 17.7285 0.387109 17.9113L1.71309 19.2373C1.8959 19.4201 2.19297 19.4201 2.37578 19.2373L9.625 11.9887L15.6344 17.998L16.8736 19.2373C17.0564 19.4201 17.3535 19.4201 17.5363 19.2373L18.8623 17.9113C19.0451 17.7285 19.0451 17.4314 18.8623 17.2486L11.6137 10Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </>
+              )} */}
               <Nav className="mx-auto">
+                <div
+                  className="mobile-nav-link"
+                  style={{ left: "22px", position: "relative" }}
+                />
                 <Nav.Link
                   href="/"
                   // style={{
@@ -191,14 +264,127 @@ const Header = () => {
                   //     ? "white"
                   //     : "var(--egestam-mattsson, #89BF50)",
                   // }}
+                  className="mobile-nav-link "
                 >
                   Hem
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
                 </Nav.Link>
-                <Nav.Link href="/sustainability">Hållbarhet</Nav.Link>
-                <Nav.Link href="#link">Tjänster</Nav.Link>
-                <Nav.Link href="/news">Nyheter</Nav.Link>
-                <Nav.Link href="#link">Kontakt</Nav.Link>
-                <Nav.Link href="#link">Jobba med oss</Nav.Link>
+                <Nav.Link href="/sustainability" className="mobile-nav-link">
+                  Hållbarhet
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="#link" className="mobile-nav-link">
+                  Tjänster
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="/news" className="mobile-nav-link">
+                  Nyheter
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="#link" className="mobile-nav-link">
+                  Kontakt
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                </Nav.Link>
+                <Nav.Link href="#link" className="mobile-nav-link">
+                  Jobba med oss
+                  <span
+                    style={{ float: "right" }}
+                    className="mobile-only d-block d-sm-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="17"
+                      viewBox="0 0 8 17"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.547594 1.93944L0.326625 2.16038C0.180188 2.30682 0.180188 2.54425 0.326625 2.69072L6.43578 8.79991L0.326625 14.9091C0.180188 15.0555 0.180188 15.293 0.326625 15.4394L0.547594 15.6604C0.694031 15.8068 0.931469 15.8068 1.07791 15.6604L7.67325 9.06507C7.81969 8.91863 7.81969 8.68119 7.67325 8.53472L1.07791 1.93944C0.931469 1.79297 0.694031 1.79297 0.547594 1.93944Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
