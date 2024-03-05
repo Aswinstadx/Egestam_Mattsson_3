@@ -78,8 +78,10 @@ const Header = () => {
             style={{
               backgroundColor:
                 isSticky || navExpanded
-                  ? "rgba(137, 191, 80, 0.93)"
+                  ? "#89BF50"
                   : "transparent",
+
+              zIndex: 1, // Adjust the z-index as needed
             }}
           >
             <div className="container-fluid">
@@ -181,7 +183,7 @@ const Header = () => {
               id="basic-navbar-nav"
               className="full-width-collapse"
             >
-              <Nav className="mx-auto"> 
+              <Nav className="mx-auto">
                 <Nav.Link
                   href="/"
                   // style={{
