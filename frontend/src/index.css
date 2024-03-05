@@ -2814,9 +2814,10 @@ line-height: 21px; /* 150% */
   }
 
   .section1 p {
-    width: 618px;
+    /* width: 618px; */
     height: 300px;
     flex-shrink: 0;
+    max-width: 100%;
   }
 
   .section3 {
@@ -3746,3 +3747,9 @@ line-height: 21px; /* 150% */
 
 
 
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+  .section1 p{
+    left: 0px;
+    position: relative;
+  }
+}
