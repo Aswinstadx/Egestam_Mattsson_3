@@ -3657,11 +3657,11 @@ line-height: 21px; /* 150% */
   justify-content: space-between;
 }
 
-.card-box {
+/* .card-box {
   width: calc(33.33% - 10px);
-  /* Adjust as needed */
+
   margin-bottom: 20px;
-  /* Adjust as needed */
+ 
   border-radius: 5px;
   background: #FFF;
   box-shadow: 0px 5px 11px 1px rgba(0, 0, 0, 0.15);
@@ -3669,7 +3669,7 @@ line-height: 21px; /* 150% */
   height: 412px;
   flex-shrink: 0;
   box-sizing: border-box;
-}
+} */
 
 .card-date {
   font-size: 20px;
@@ -3711,17 +3711,26 @@ line-height: 21px; /* 150% */
   width: 237.837px;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .card-box {
     width: calc(50% - 10px);
-    /* Adjust as needed */
+
   }
   
-}
+} */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .card-box {
     width: 100%;
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-box{
+    width: auto;
+    height: auto;
   }
 }
 
@@ -3742,11 +3751,15 @@ line-height: 21px; /* 150% */
     position: relative;
   }
 
+ 
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
   .card-box {
     width: calc(33.33% - 10px);
-    /* Adjust as needed */
+  
     margin-bottom: 20px;
-    /* Adjust as needed */
+  
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 5px 11px 1px rgba(0, 0, 0, 0.15);
