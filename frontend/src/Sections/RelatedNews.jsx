@@ -35,36 +35,15 @@ function RelatedNews() {
     };
   }, []);
   return (
-    <div className="section6 related-news">
+    <div
+      className="section6 related-news"
+      style={{ backgroundColor: isMobile && "#EFF6E7" }}
+    >
       <div className="container">
-        <h2>
-          {isMobile && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="31"
-              height="32"
-              viewBox="0 0 31 32"
-              fill="none"
-            >
-              <path
-                d="M15.43 28.8585C22.5315 28.8585 28.2883 23.1016 28.2883 16.0002C28.2883 8.89872 22.5315 3.14185 15.43 3.14185C8.32853 3.14185 2.57166 8.89872 2.57166 16.0002C2.57166 23.1016 8.32853 28.8585 15.43 28.8585Z"
-                stroke="#00354E"
-                stroke-width="1.28583"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.43 21.1434L20.5733 16M20.5733 16L15.43 10.8567M20.5733 16H10.2866"
-                stroke="#00354E"
-                stroke-width="1.28583"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          )}{" "}
-          Relaterat
-        </h2>
-        <h4 className="related-news-title">Energioptimering-Miljö</h4>
+        <h2>Relaterat</h2>
+        <h4 className="related-news-title" style={{ fontSize: "12px" }}>
+          Energioptimering-Miljö
+        </h4>
         {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
           <>
             <div className="container">
@@ -216,9 +195,7 @@ function RelatedNews() {
                   {console.log("IS MOBILE : ", isMobile)}
                   {isMobile ? (
                     <img
-                      src={
-                        process.env.PUBLIC_URL + `/images/card1-im_mobile.png`
-                      }
+                      src={process.env.PUBLIC_URL + `/images/card1-im.png`}
                       className="card-im"
                     />
                   ) : (
