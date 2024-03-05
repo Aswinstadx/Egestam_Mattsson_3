@@ -50,20 +50,20 @@ function HomeScreen() {
       <div>
         <Banner />
         {isMobile ? (
-          <div style={{ top: "-12px", position: "relative" }}>
+          <div style={{ top: "-16px", position: "relative" }}>
             <Accordion />
             <Accordion1 />
             <Accordion2 />
             <Section1 />
           </div>
         ) : (
-          <>
+          <div style={{ top: "-17px", position: "relative" }}>
             <Section1 />
             <Accordion />
             <Accordion1 />
             <Accordion2 />
-          </>
-        )} 
+          </div>
+        )}
 
         <Section3 />
         <Section4 />

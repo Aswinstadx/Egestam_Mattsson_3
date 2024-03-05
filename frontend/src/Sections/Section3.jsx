@@ -2,7 +2,7 @@ import React from "react";
 
 function Section3() {
   return (
-    <div className="section3">
+    <div className="section3" style={{ top: "-17px", position: "relative" }}>
       <p>
         Norden ställer om till klimatneutrala samhällen. Egestam & Mattsson
         bistår dig som kund i att utveckla fastigheter och infrastruktur som

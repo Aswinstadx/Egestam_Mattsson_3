@@ -2455,6 +2455,8 @@ line-height: 21px; /* 150% */
     width: 100%;
     /* top: -199px;
     position: relative; */
+    top: -16px;
+    position: relative;
   }
 
   .overlay-2 {
