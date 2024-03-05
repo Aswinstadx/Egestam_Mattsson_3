@@ -67,6 +67,7 @@ function NewsBanner() {
           </>
         ) : isIpad ? (
           <>
+            {console.log("this is ipad")}
             <div className="video-container">
               <ReactPlayer
                 url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}

@@ -5,7 +5,11 @@
   margin: 0;
   padding: 0;
 }
-
+.navbar-toggler:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 a {
   text-decoration: none;
 }
@@ -108,7 +112,8 @@ button {
   /* 175% */
   left: 20px;
   position: relative;
-  width: 908px;
+  /* width: 908px; */
+  width: 80%;
 }
 
 
@@ -417,6 +422,7 @@ img.logo {
   width: 908px;
   top: 20px;
   position: relative;
+  width: 80%;
 }
 
 img.logo {
@@ -1314,6 +1320,7 @@ line-height: 21px; /* 150% */
     margin-bottom: 10px;
     left: 20px;
     position: relative;
+    top: -10%;
   }
 
   .text-overlay p {
@@ -1328,6 +1335,8 @@ line-height: 21px; /* 150% */
     max-width: 80%;
     left: 20px;
     position: relative;
+    top: -10%;
+    width: 289px;
   }
 
   .banner-text h1 {
@@ -2287,6 +2296,11 @@ line-height: 21px; /* 150% */
 
   }
 
+  .banner-text2{
+    margin-left: 66px;
+    position: absolute;
+  }
+
   .navbar-container.sticky .navbar-nav {
     top: 0px;
     position: relative;
@@ -2405,7 +2419,8 @@ line-height: 21px; /* 150% */
     display: none;
   } */
   .section6 {
-    margin-top: 120px;
+    /* margin-top: 120px; */
+    margin-top: -10px;
     padding: 100px;
   }
 
@@ -3751,5 +3766,19 @@ line-height: 21px; /* 150% */
   .section1 p{
     left: 0px;
     position: relative;
+  }
+}
+
+/* New style at footer for solving content cut issue */
+@media only screen and (min-device-width: 992px) and (max-device-width: 1030px) and (-webkit-min-device-pixel-ratio: 1){
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 882px;
+}
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1030px) and (-webkit-min-device-pixel-ratio: 1){
+  .banner-text2 {
+    margin-left: 140px;
+   margin-top: 40px;
   }
 }
