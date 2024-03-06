@@ -37,33 +37,38 @@ function Section6() {
   return (
     <div className="section6">
       <div className="container">
-        <h2>
-          {isMobile && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="31"
-              height="32"
-              viewBox="0 0 31 32"
-              fill="none"
-            >
-              <path
-                d="M15.43 28.8585C22.5315 28.8585 28.2883 23.1016 28.2883 16.0002C28.2883 8.89872 22.5315 3.14185 15.43 3.14185C8.32853 3.14185 2.57166 8.89872 2.57166 16.0002C2.57166 23.1016 8.32853 28.8585 15.43 28.8585Z"
-                stroke="#00354E"
-                stroke-width="1.28583"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.43 21.1434L20.5733 16M20.5733 16L15.43 10.8567M20.5733 16H10.2866"
-                stroke="#00354E"
-                stroke-width="1.28583"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          )}{" "}
-          Nyheter
-        </h2>
+        {!isMobile && (
+          <>
+            <h2>
+              {isMobile && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="31"
+                  height="32"
+                  viewBox="0 0 31 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.43 28.8585C22.5315 28.8585 28.2883 23.1016 28.2883 16.0002C28.2883 8.89872 22.5315 3.14185 15.43 3.14185C8.32853 3.14185 2.57166 8.89872 2.57166 16.0002C2.57166 23.1016 8.32853 28.8585 15.43 28.8585Z"
+                    stroke="#00354E"
+                    stroke-width="1.28583"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.43 21.1434L20.5733 16M20.5733 16L15.43 10.8567M20.5733 16H10.2866"
+                    stroke="#00354E"
+                    stroke-width="1.28583"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              )}{" "}
+              Nyheter
+            </h2>
+          </>
+        )}
+
         {isIpad || (window.innerWidth >= 1025 && window.innerWidth < 1500) ? (
           <>
             <div className="container">
@@ -227,9 +232,13 @@ function Section6() {
                     />
                   )}
                   <div className="card-content mt-3">
-                    <h6 className="place">nyheter</h6>
-                    <h6 className="date">2023-11-21 08:00</h6>
-                    <h4 className="title">
+                    {!isMobile && (
+                      <>
+                        <h6 className="place">nyheter</h6>
+                        <h6 className="date">2023-11-21 08:00</h6>
+                      </>
+                    )}
+                    <h4 className="title title-1-2">
                       Optimerade miljöer för ett hållbart liv
                     </h4>
                     <p className="mt-3">
@@ -253,6 +262,37 @@ function Section6() {
               </div>
               <div className="col-md-4">
                 <div className="card-sm">
+                  {isMobile && (
+                    <>
+                      <h2>
+                        {isMobile && (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="31"
+                            height="32"
+                            viewBox="0 0 31 32"
+                            fill="none"
+                          >
+                            <path
+                              d="M15.43 28.8585C22.5315 28.8585 28.2883 23.1016 28.2883 16.0002C28.2883 8.89872 22.5315 3.14185 15.43 3.14185C8.32853 3.14185 2.57166 8.89872 2.57166 16.0002C2.57166 23.1016 8.32853 28.8585 15.43 28.8585Z"
+                              stroke="#00354E"
+                              stroke-width="1.28583"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.43 21.1434L20.5733 16M20.5733 16L15.43 10.8567M20.5733 16H10.2866"
+                              stroke="#00354E"
+                              stroke-width="1.28583"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        )}{" "}
+                        Nyheter
+                      </h2>
+                    </>
+                  )}
                   <img
                     src={process.env.PUBLIC_URL + "/images/card2-im.png"}
                     className="card-im"
@@ -260,7 +300,7 @@ function Section6() {
                   <div className="card-content mt-3">
                     <h6 className="place">nyheter</h6>
                     <h6 className="date">2023-11-21 08:00</h6>
-                    <h4 className="title">
+                    <h4 className="title title-2-2">
                       Elektrifiering och framtidssäkring
                     </h4>
                     <h6 className="more-text">
@@ -298,7 +338,7 @@ function Section6() {
                   <div className="card-content mt-3 no-date">
                     <h6 className="place"></h6>
                     <h6 className="date"></h6>
-                    <h4 className="title">Vinnare av DI-GASELL</h4>
+                    <h4 className="title title-3-1">Vinnare av DI-GASELL</h4>
                     <h6 className="more-text">
                       Egestam och Mattsson utmärker sig återigen
                     </h6>

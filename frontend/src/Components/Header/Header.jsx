@@ -10,6 +10,14 @@ const Header = () => {
   const [navExpanded, setNavExpanded] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [activeLink, setActiveLink] = useState("");
+
+  const handleNavLinkClick = (event, link) => {
+    event.preventDefault(); // Prevents the default link behavior
+    setActiveLink(link);
+    // Optionally, you can navigate programmatically using React Router
+    // history.push(link);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -268,7 +276,7 @@ const Header = () => {
                   //     ? "white"
                   //     : "var(--egestam-mattsson, #89BF50)",
                   // }}
-                  className="mobile-nav-link "
+                  className="mobile-nav-link active"
                 >
                   Hem
                   <span
@@ -289,7 +297,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/sustainability" className="mobile-nav-link">
+                <Nav.Link className="mobile-nav-link">
                   Hållbarhet
                   <span
                     style={{ float: "right" }}
@@ -482,14 +490,52 @@ const Header = () => {
               >
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                  <button
+                  {/* <button
                     type="button"
-                    class="btn-close"
+                    class="btn-close text-white"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                     onClick={() => setNavExpanded(!navExpanded)}
-                    style={{color:'white'}}
-                  ></button>
+                    style={{
+                      color: "white",
+                      top: "100px",
+                      position: "relative",
+                      border:'none',
+                      outline:'none'
+                    }}
+                  >
+                    
+                  </button> */}
+                  <button
+                    type="button"
+                    class="text-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    onClick={() => setNavExpanded(!navExpanded)}
+                    style={{
+                      color: "white",
+                      top: "100px",
+                      right: "5px",
+                      position: "relative",
+                      border: "none",
+                      outline: "none",
+                      background: "transparent", // Optionally, make the button background transparent
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="30"
+                      viewBox="0 0 19 30"
+                      fill="none"
+                      style={{ width: "46px", height: "46px" }}
+                    >
+                      <path
+                        d="M11.6137 15L17.623 8.99063L18.8623 7.75137C19.0451 7.56855 19.0451 7.27148 18.8623 7.08867L17.5363 5.7627C17.3535 5.57988 17.0564 5.57988 16.8736 5.7627L9.625 13.0113L2.37637 5.76211C2.19355 5.5793 1.89648 5.5793 1.71367 5.76211L0.387109 7.08809C0.204297 7.2709 0.204297 7.56797 0.387109 7.75078L7.63633 15L0.387109 22.2486C0.204297 22.4314 0.204297 22.7285 0.387109 22.9113L1.71309 24.2373C1.8959 24.4201 2.19297 24.4201 2.37578 24.2373L9.625 16.9887L15.6344 22.998L16.8736 24.2373C17.0564 24.4201 17.3535 24.4201 17.5363 24.2373L18.8623 22.9113C19.0451 22.7285 19.0451 22.4314 18.8623 22.2486L11.6137 15Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
                 </div>
                 {console.log("nav expanded----------", navExpanded)}
 

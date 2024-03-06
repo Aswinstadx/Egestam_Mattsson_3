@@ -11,6 +11,7 @@ import Accordion1 from "../Components/Sustainability/Accordion/Accordion1";
 import Accordion2 from "../Components/Sustainability/Accordion/Accordion2";
 import Section1 from "../Sections/Section1/Section1";
 import MobileOnlySust from "../Components/Sustainability/MobileOnlySust";
+import SustainBanner from "../Components/Banner/SustainBanner";
 
 function Sustainability() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,8 +37,8 @@ function Sustainability() {
     <div>
       <div>
         <Header />
-        <Banner />
-
+        {/* <Banner /> */}
+        <SustainBanner />
         {!isMobile ? (
           <>
             <div className="section_sustain">
@@ -70,7 +71,20 @@ function Sustainability() {
                 </div>
                 <div className="row">
                   <div className="col-md-6 text-center sustainability-card">
-                    <h4> 2030 Reduktion och Innovation</h4>
+                    <h4>
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
+                        }
+                        style={{
+                          left: "-16px",
+                          top: "-2px",
+                          position: "relative",
+                        }}
+                      />
+                      2030
+                      <br /> Reduktion och Innovation
+                    </h4>
                     <p>
                       Inom de kommande åren sätter vi fokus på att minska våra
                       CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att
@@ -80,33 +94,77 @@ function Sustainability() {
                     </p>
                   </div>
                   <div className="col-md-6 text-center sustainability-card">
-                    <h4> 2030 Reduktion och Innovation</h4>
+                    <h4>
+                      {" "}
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
+                        }
+                        style={{
+                          left: "-16px",
+                          top: "-2px",
+                          position: "relative",
+                        }}
+                      />
+                      2035 <br />
+                      Partnerskap och Ledarskap
+                    </h4>
                     <p>
-                      Inom de kommande åren sätter vi fokus på att minska våra
-                      CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att
-                      investera i innovativa teknologier och arbetsmetoder som
-                      minskar vårt klimatavtryck och ökar energieffektiviteten i
-                      de fastigheter vi arbetar med.
+                      Till 2035 siktar vi på att hjälpa våra kunder att minska
+                      deras utsläpp med 50 % jämfört med 2020, samtidigt som vi
+                      uppnår samma minskning i vår egen verksamhet. Vi kommer
+                      att fördjupa våra partnerskap och ta en ledande roll i
+                      branschen för att driva på den gröna omställningen.
                     </p>
                   </div>
                   <div className="col-md-6 text-center sustainability-card">
-                    <h4> 2030 Reduktion och Innovation</h4>
+                    <h4>
+                      {" "}
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
+                        }
+                        style={{
+                          left: "-16px",
+                          top: "-2px",
+                          position: "relative",
+                        }}
+                      />
+                      2040
+                      <br /> Förnyelse och Optimering
+                    </h4>
                     <p>
-                      Inom de kommande åren sätter vi fokus på att minska våra
-                      CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att
-                      investera i innovativa teknologier och arbetsmetoder som
-                      minskar vårt klimatavtryck och ökar energieffektiviteten i
-                      de fastigheter vi arbetar med.
+                      Fram till 2040 kommer vårt arbete att fokusera på att
+                      optimera användningen av förnybar energi och maximera
+                      resurseffektiviteten i alla våra projekt. Vi strävar efter
+                      att våra fastighetslösningar ska vara helt
+                      självförsörjande när det gäller energi och minimera avfall
+                      till nära noll.
                     </p>
                   </div>
                   <div className="col-md-6 text-center sustainability-card">
-                    <h4> 2030 Reduktion och Innovation</h4>
+                    <h4>
+                      {" "}
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
+                        }
+                        style={{
+                          left: "-16px",
+                          top: "-2px",
+                          position: "relative",
+                        }}
+                      />
+                      2045 <br /> Netto noll
+                    </h4>
                     <p>
-                      Inom de kommande åren sätter vi fokus på att minska våra
-                      CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att
-                      investera i innovativa teknologier och arbetsmetoder som
-                      minskar vårt klimatavtryck och ökar energieffektiviteten i
-                      de fastigheter vi arbetar med.
+                      Vår resa mot 2045 är inte bara en plan, det är ett löfte
+                      om att aktivt forma en hållbar framtid där vi och våra
+                      kunder tillsammans kan göra en verklig skillnad. Vår
+                      slutdestination är en verksamhet med netto noll utsläpp
+                      senast 2045. Vi kommer att ha fullt integrerat hållbara
+                      principer, från design och installation till underhåll och
+                      service.
                     </p>
                   </div>
                 </div>
@@ -155,29 +213,6 @@ function Sustainability() {
                     />
                     <div style={{ textAlign: "center" }}>
                       <h4>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="58"
-                          height="58"
-                          viewBox="0 0 58 58"
-                          fill="none"
-                          className="sus-arrow-icon"
-                        >
-                          <path
-                            d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
                         Anständiga arbetsvillkor och ekonomisk tillväxt
                         <br />
                       </h4>
@@ -200,29 +235,6 @@ function Sustainability() {
                     />
                     <div style={{ width: "100%", textAlign: "center" }}>
                       <h4>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="58"
-                          height="58"
-                          viewBox="0 0 58 58"
-                          fill="none"
-                          className="sus-arrow-icon"
-                        >
-                          <path
-                            d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
                         Industri, innovation och infrastruktur
                         <br />
                       </h4>
@@ -243,29 +255,6 @@ function Sustainability() {
                     />
                     <div style={{ width: "100%", textAlign: "center" }}>
                       <h4>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="58"
-                          height="58"
-                          viewBox="0 0 58 58"
-                          fill="none"
-                          className="sus-arrow-icon"
-                        >
-                          <path
-                            d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
                         Hållbara städer och samhällen
                         <br />
                       </h4>
@@ -288,29 +277,6 @@ function Sustainability() {
                     />
                     <div style={{ textAlign: "center" }}>
                       <h4>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="58"
-                          height="58"
-                          viewBox="0 0 58 58"
-                          fill="none"
-                          className="sus-arrow-icon"
-                        >
-                          <path
-                            d="M29.0002 53.1668C42.347 53.1668 53.1668 42.347 53.1668 29.0002C53.1668 15.6533 42.347 4.8335 29.0002 4.8335C15.6533 4.8335 4.8335 15.6533 4.8335 29.0002C4.8335 42.347 15.6533 53.1668 29.0002 53.1668Z"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M28.9999 38.6663L38.6666 28.9997M38.6666 28.9997L28.9999 19.333M38.6666 28.9997H19.3333"
-                            stroke="#00354E"
-                            stroke-width="1.28583"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
                         Bekämpa klimatförändringarna
                         <br />
                       </h4>
@@ -337,26 +303,32 @@ function Sustainability() {
             </div>
 
             <div className="sustainability-page-section-4 sustainable-container ">
-              <img src={SUSTAINABILITY_PAGE_IMAGE} />
-              <div className="sustainable-overlay">
-                <h4>Optimerade miljöer för ett hållbart liv</h4>
-                <p>
-                  Med teknikens framsteg utrustas fastigheter med avancerade
-                  funktioner. Grundläggande system såsom el, VVS, uppvärmning,
-                  kylning, ventilation, belysning, brandskydd, säkerhet och
-                  låssystem kompletteras nu med smarta lösningar. Digitalisering
-                  och hållbarhet leder utvecklingen med automation, effektiv
-                  energianvändning, solenergisystem och laddningsstationer för
-                  eldrivna fordon, vilket speglas i vår strävan efter att skapa
-                  integrerade, energieffektiva byggnader. Läs mer om hur vi kan
-                  hjälpa dig som fastighetsägare till en optimerad miljö. Som
-                  experter inom el- och datanätverksinstallationer är vi
-                  dedikerade till att erbjuda lösningar som är både tekniskt
-                  avancerade och miljövänliga. Vi arbetar nära våra kunder för
-                  att uppnå deras specifika behov och önskemål, och vår
-                  målsättning är att skapa fastigheter som är optimalt utrustade
-                  för framtida krav.{" "}
-                </p>
+              {/* <img src={SUSTAINABILITY_PAGE_IMAGE} /> */}
+              <div className="container">
+                <div className="sustainable-overlay">
+                  <div className="container">
+                    <h4>Optimerade miljöer för ett hållbart liv</h4>
+                    <p>
+                      Med teknikens framsteg utrustas fastigheter med avancerade
+                      funktioner. Grundläggande system såsom el, VVS,
+                      uppvärmning, kylning, ventilation, belysning, brandskydd,
+                      säkerhet och låssystem kompletteras nu med smarta
+                      lösningar. Digitalisering och hållbarhet leder
+                      utvecklingen med automation, effektiv energianvändning,
+                      solenergisystem och laddningsstationer för eldrivna
+                      fordon, vilket speglas i vår strävan efter att skapa
+                      integrerade, energieffektiva byggnader. Läs mer om hur vi
+                      kan hjälpa dig som fastighetsägare till en optimerad
+                      miljö. Som experter inom el- och
+                      datanätverksinstallationer är vi dedikerade till att
+                      erbjuda lösningar som är både tekniskt avancerade och
+                      miljövänliga. Vi arbetar nära våra kunder för att uppnå
+                      deras specifika behov och önskemål, och vår målsättning är
+                      att skapa fastigheter som är optimalt utrustade för
+                      framtida krav.{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </>

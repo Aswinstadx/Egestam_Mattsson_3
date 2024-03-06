@@ -52,10 +52,11 @@ function Section5() {
                 {/* <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left"> */}
                 <div className="position-absolute top-50 start-50 translate-middle image-content-2 text-left">
                   <h2 className="text-left">Jobba hos oss</h2>
-                  <p className="text-left">
+                  <p className="text-left mt-4">
                     Är du intresserad av att vara med och forma framtidens
-                    infrastruktur och fastighetslösningar? Bli en del av vårt
-                    team & hjälp oss att bygga en hållbar framtid
+                    infrastruktur och fastighetslösningar?
+                    <br /> Bli en del av vårt team & hjälp oss att bygga en
+                    hållbar framtid
                   </p>
                   <button>
                     Läs mer om lediga tjänster
@@ -206,7 +207,7 @@ function Section5() {
                       <h6>Behöver du hjälp med något ? Kontakta oss idag!</h6>
                       {/* <p>Behöver du hjälp med något ? Kontakta oss idag!</p> */}
                       <div className="ipad-card-content-btns">
-                        <button>
+                        <button className="btn_01">
                           Hitta till vårt kontor{" "}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +222,7 @@ function Section5() {
                             />
                           </svg>
                         </button>
-                        <button>
+                        <button className="btn_02">
                           Ring oss direkt{" "}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +268,7 @@ function Section5() {
                 </div>
               </div>
 
-              <div className="col-md-6 col-sm-12 col-12 position-relative">
+              <div className="col-md-6 col-sm-12 col-12 position-relative zero-padding_">
                 <div style={{ padding: 0 }}>
                   <img
                     src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
@@ -275,21 +276,34 @@ function Section5() {
                     style={{
                       borderTopLeftRadius: !isMobile && "20px",
                       borderTopRightRadius: !isMobile && "20px",
-                      maxWidth: "100%", // Set maximum width to 100% of its container
+                      maxWidth: isMobile ? "107%" : "100%",
                       height: !isMobile && "72%",
                     }}
                     alt="Background"
                   />
+                  {isMobile && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "64px",
+                        left: 0,
+                        width: "105%",
+                        height: "89%",
+                        backgroundColor: "rgba(0, 0, 0, 0.60)",
+                      }}
+                    />
+                  )}
                 </div>
                 <div className="card-image-content">
                   <h2>Jobba hos oss</h2>
                   <p
                     style={{
                       maxWidth: "100%", // Set maximum width to 100% of its container
-                      width: "100%", // Ensure the width adjusts to its container
+                      width: isMobile ? "308px" : "100%", // Ensure the width adjusts to its container
                       maxHeight: "100%",
                       color: isMobile && "white",
                     }}
+                    className="card-paragraph"
                   >
                     Är du intresserad av att vara med och forma framtidens
                     infrastruktur och fastighetslösningar? Bli en del av vårt

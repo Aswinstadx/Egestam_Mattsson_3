@@ -17,7 +17,23 @@ a {
 a:hover {
   text-decoration: none;
 }
+.navbar-nav{
+  left: -110px;
+  position: relative;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show   {
+  color: var(--egestam-mattsson, #89BF50);
 
+
+}
+.navbar-nav .nav-link.inactive{
+  color: red;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show  :hover{
+  color: var(--egestam-mattsson, #89BF50);
+
+
+}
 button {
   border: none;
   outline: none;
@@ -212,7 +228,19 @@ button {
   flex-shrink: 0;
   top: 19px;
   position: absolute;
-  left: 160px;
+  /* left: 160px; */
+  left: 65px;
+}
+
+.sticky .navbar-nav .nav-link.active, .navbar-nav .nav-link.show   {
+  color: white;
+
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show  :hover{
+  color: var(--egestam-mattsson, #89BF50);
+
+
 }
 
 /* Custom CSS for Header */
@@ -427,6 +455,7 @@ img.logo {
   position: relative;
   width: 266px;
   height: auto;
+  top: 20px;
 }
 
 .section1 {
@@ -1196,6 +1225,7 @@ line-height: 21px; /* 150% */
 
   .navbar-nav{
     margin-top: 50px;
+    left: 0;
   }
   .close_btn{
     left: 19px;
@@ -1271,6 +1301,10 @@ line-height: 25.6px; /* 128% */
   .accordion-btn {
     display: flex;
     justify-content: center;
+  }
+  .accordion-btn button span{
+    top: 2px;
+    position: relative;
   }
 
   .section1 {
@@ -1452,7 +1486,7 @@ line-height: 25.6px; /* 128% */
   }
 
   .accordion-content button {
-    margin-bottom: 30px;
+    margin-bottom: -45px;
   }
 
   .accordion-content p {
@@ -1471,7 +1505,11 @@ line-height: 25.6px; /* 128% */
   }
 
   .card-image-content {
-    top: 250px;
+    /* top: 250px;
+    position: absolute;
+    margin-left: 12px; */
+    top: 310px;
+    left: 188px;
     position: absolute;
     margin-left: 12px;
   }
@@ -1678,7 +1716,7 @@ line-height: 25.6px; /* 128% */
   }
 
   .card-image-content button {
-    top: -100px;
+    top: -95px;
     position: relative;
   }
 
@@ -1719,7 +1757,10 @@ line-height: 25.6px; /* 128% */
     /* 131.25% */
 
   }
-
+  .zero-padding_{
+    margin: -20px;
+    width: 100%;
+  }
   .section5-content h2 {
     color: #003A3A;
     font-family: Inter;
@@ -1756,10 +1797,15 @@ line-height: 25.6px; /* 128% */
 
   }
 
+  .card-image-content p{
+    font-family: Inter;
+    font-weight: 400;
+  }
+
   .section5 img.card2-im {
-    width: 100%;
+    width: 107%;
     height: 415.8px;
-    margin-top: 20px;
+    margin-top: 55px;
     height: 415px;
     height: 415px;
     margin-left: -5px;
@@ -1779,7 +1825,8 @@ line-height: 25.6px; /* 128% */
     font-weight: 700;
     line-height: 62.06px;
     /* 172.389% */
-    top: 20px;
+    /* top: 20px; */
+    top: 0px;
     left: 12px;
     position: relative;
   }
@@ -1826,10 +1873,30 @@ line-height: 25.6px; /* 128% */
     /* 162.8% */
     display: flex;
     width: 322px;
+    /* font-size: 32px; */
     font-size: 32px;
     line-height: 38px;
   }
-
+  .title-1-2{
+    top: 10px;
+    position: relative;
+  }
+  .title-2-2{
+    color: #003A3A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32.56px; /* 162.8% */
+  }
+  .title-3-1{
+    color: #003A3A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32.56px; /* 162.8% */
+  }
   .card-content p {
     color: #00354E;
     font-family: Inter;
@@ -1837,6 +1904,8 @@ line-height: 25.6px; /* 128% */
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    top: 3px;
+    position: relative;
     /* 162.5% */
   }
 
@@ -1881,6 +1950,7 @@ line-height: 25.6px; /* 128% */
   }
 
   .footer {
+    height: auto;
     /* display: flex;
     align-content: center;
     align-items: center; */
@@ -2001,6 +2071,9 @@ line-height: 25.6px; /* 128% */
 
   footer {
     height: auto;
+  }
+  .card-paragraph{
+    font-family: Inter;
   }
 }
 
@@ -2170,7 +2243,8 @@ line-height: 25.6px; /* 128% */
   }
 
   .section5 p {
-    width: 500px;
+    /* width: 500px; */
+    width: 665px;
   }
 
   .image-content-2 p {
@@ -2257,6 +2331,13 @@ line-height: 25.6px; /* 128% */
     position: relative;
     font-size: 30px;
   }
+  .show .btn-close{
+    top: 40px;
+    right: 46px;
+    position: relative;
+    font-size: 30px;
+  }
+
   .banner-text {
     width: 800px;
     position: absolute;
@@ -2337,7 +2418,16 @@ line-height: 25.6px; /* 128% */
     position: absolute;
     left: 40px;
   }
-
+.navbar-toggler{
+  top: 40px;
+  right: 10px;
+  position: relative;
+}
+.sticky .navbar-toggler{
+  top: 10px;
+  right: 10px;
+  position: relative;
+}
   img.logo {
     width: 182.74px;
     height: 115px;
@@ -2353,7 +2443,7 @@ line-height: 25.6px; /* 128% */
   .navbar-nav {
     top: 60px;
     position: relative;
-
+    left: 0;
   }
 
   .banner-text2{
@@ -2767,6 +2857,12 @@ line-height: 25.6px; /* 128% */
     display: flex;
   }
 
+  .btn_01{
+    width: 233px;
+height: 38px;
+flex-shrink: 0;
+  }
+
   .ipad-card-content-btns button {
     border: none;
     width: 100%;
@@ -2785,6 +2881,45 @@ line-height: 25.6px; /* 128% */
     margin-top: 10px;
   }
 
+  .ipad-card-content-btns button.btn_01 {
+    border: none;
+    width: 233px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    border: 1px solid #00354E;
+    background: #00354E;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    margin-top: 10px;
+  }
+
+  .ipad-card-content-btns button.btn_02 {
+    border: none;
+    width: 197.67px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    border: 1px solid #00354E;
+    background: #00354E;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    margin-top: 10px;
+  }
+  .section6 h2 {
+    left: -33px;
+    position: relative;
+  }
   .section9 {
     width: 100%;
     /* height: 431px; */
@@ -2795,6 +2930,7 @@ line-height: 25.6px; /* 128% */
   footer {
     width: 100%;
     padding: 0;
+    height: auto;
   }
 
   .overlay4 {
