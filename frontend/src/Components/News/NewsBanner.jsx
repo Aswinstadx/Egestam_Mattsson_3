@@ -43,17 +43,19 @@ function NewsBanner() {
         {isMobile ? (
           <>
             <div className="video-container">
-              <ReactPlayer
-                url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}
-                playing={true}
-                playsinline
-                loop={true}
-                volume={0}
-                controls={false}
-                width="100%"
-                height="auto"
-                className="player"
-              />
+              <div className="video-overlay-2">
+                <ReactPlayer
+                  url={process.env.PUBLIC_URL + "/videos/news_mobile3.mp4"}
+                  playing={true}
+                  playsinline
+                  loop={true}
+                  volume={0}
+                  controls={false}
+                  width="100%"
+                  height="auto"
+                  className="player"
+                />
+              </div>
               <div className="text-overlay">
                 <h1>Nyheter</h1>
                 <p>
@@ -69,17 +71,19 @@ function NewsBanner() {
           <>
             {console.log("this is ipad")}
             <div className="video-container">
-              <ReactPlayer
-                url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}
-                playing={true}
-                playsinline
-                loop={true}
-                volume={0}
-                controls={false}
-                width="100%"
-                height="auto"
-                className="player"
-              />
+              <div className="video-overlay-2">
+                <ReactPlayer
+                  url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}
+                  playing={true}
+                  playsinline
+                  loop={true}
+                  volume={0}
+                  controls={false}
+                  width="100%"
+                  height="auto"
+                  className="player"
+                />
+              </div>
               <div className="text-overlay">
                 <h1>Nyheter</h1>
                 <p>
@@ -93,18 +97,20 @@ function NewsBanner() {
           </>
         ) : (
           <>
-            <ReactPlayer
-              url={process.env.PUBLIC_URL + "/videos/news_desktop.mp4"}
-              playing={true}
-              playsinline
-              loop={true}
-              volume={0}
-              controls={false}
-              width="100vw"
-              // height="599px"
-              height="auto"
-              className="player"
-            />
+            <div className="video-overlay-2">
+              <ReactPlayer
+                url={process.env.PUBLIC_URL + "/videos/news_desktop2.mp4"}
+                playing={true}
+                playsinline
+                loop={true}
+                volume={0}
+                controls={false}
+                width="100vw"
+                // height="599px"
+                height="auto"
+                className="player"
+              />
+            </div>
             <div className="banner-text2">
               <h1>Nyheter</h1>
               <p>

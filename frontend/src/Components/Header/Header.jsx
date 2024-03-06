@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { FaBars, FaSearch } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -10,6 +11,14 @@ const Header = () => {
   const [navExpanded, setNavExpanded] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
+
+  const location = useLocation();
+  const { pathname } = location;
+
+  // Define a function to determine if a given path is active
+  const isActive = (path) => {
+    return pathname.includes(path);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -282,7 +291,11 @@ const Header = () => {
                   //     ? "white"
                   //     : "var(--egestam-mattsson, #89BF50)",
                   // }}
-                  className="mobile-nav-link active"
+                  // className="mobile-nav-link "
+                  // className={isActive("/") ? "active" : "" }
+                  className={`mobile-nav-link ${
+                    isActive("/") ? "active" : "inactive"
+                  }`}
                 >
                   Hem
                   <span
@@ -343,7 +356,13 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/news" className="mobile-nav-link">
+                <Nav.Link
+                  href="/news"
+                  // className="mobile-nav-link"
+                  className={`mobile-nav-link ${
+                    isActive("/news") ? "active" : ""
+                  }`}
+                >
                   Nyheter
                   <span
                     style={{ float: "right" }}
