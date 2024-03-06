@@ -10,14 +10,6 @@ const Header = () => {
   const [navExpanded, setNavExpanded] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [activeLink, setActiveLink] = useState("");
-
-  const handleNavLinkClick = (event, link) => {
-    event.preventDefault(); // Prevents the default link behavior
-    setActiveLink(link);
-    // Optionally, you can navigate programmatically using React Router
-    // history.push(link);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,7 +96,7 @@ const Header = () => {
             }}
           >
             <div className="container-fluid">
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="/">
                 {isSticky ? (
                   <img
                     src={process.env.PUBLIC_URL + "/images/logo3.png"}
@@ -112,11 +104,25 @@ const Header = () => {
                     className="logo"
                   />
                 ) : (
-                  <img
-                    src={process.env.PUBLIC_URL + "/logo.png"}
-                    alt="Thumbnail"
-                    className="logo"
-                  />
+                  <>
+                    {!navExpanded ? (
+                      <>
+                        <img
+                          src={process.env.PUBLIC_URL + "/logo.png"}
+                          alt="Thumbnail"
+                          className="logo"
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <img
+                          src={process.env.PUBLIC_URL + "/images/logo3.png"}
+                          alt="Thumbnail"
+                          className="logo"
+                        />
+                      </>
+                    )}
+                  </>
                 )}
               </Navbar.Brand>
               {/* {isSticky && (
@@ -297,7 +303,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link className="mobile-nav-link">
+                <Nav.Link href="/sustainability" className="mobile-nav-link">
                   Hållbarhet
                   <span
                     style={{ float: "right" }}
@@ -317,7 +323,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="#link" className="mobile-nav-link">
+                <Nav.Link href="/" className="mobile-nav-link">
                   Tjänster
                   <span
                     style={{ float: "right" }}
@@ -357,7 +363,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="#link" className="mobile-nav-link">
+                <Nav.Link href="/" className="mobile-nav-link">
                   Kontakt
                   <span
                     style={{ float: "right" }}
@@ -377,7 +383,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="#link" className="mobile-nav-link">
+                <Nav.Link href="/" className="mobile-nav-link">
                   Jobba med oss
                   <span
                     style={{ float: "right" }}

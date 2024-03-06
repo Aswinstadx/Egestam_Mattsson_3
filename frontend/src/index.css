@@ -1024,6 +1024,22 @@ footer {
 
 }
 
+.card-image-content_2_ {
+  position: absolute;
+  /* top: 50%; */
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  /* Adjust text color */
+  z-index: 999;
+  /* Ensure the text appears above the overlay */
+  padding: 20px;
+  /* Adjust padding as needed */
+
+}
+
 .card-image-content h2 {
   color: #FFF;
   font-family: Inter;
@@ -1051,6 +1067,7 @@ footer {
   top: 20px;
   position: relative;
 }
+
 
 .card-image-content button {
   display: flex;
@@ -1483,6 +1500,36 @@ line-height: 25.6px; /* 128% */
     width: 330px;
     left: 31px;
     position: relative;
+  }
+
+  .adv-content{
+    margin-top: 5px;
+  }
+
+  .adv-content h4{
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 120% */
+  }
+  .adv-content h3{
+    color: #00354E;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 43.2px; /* 120% */
+width: 361px;
+  }
+  .adv-content h5{
+    color: #00354E;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 37.5px; /* 187.5% */
   }
 
   .accordion-content button {
@@ -2983,6 +3030,18 @@ flex-shrink: 0;
   .card-sm {
     margin-top: 40px;
   }
+}
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+.nav-item{
+  border-bottom: 1px solid #00354E;
+  width: 100%;
+  padding: 17.2px 39px 14.19px 0px;
+  
+}
+
 }
 
 /* Responsivensss for ipad air */

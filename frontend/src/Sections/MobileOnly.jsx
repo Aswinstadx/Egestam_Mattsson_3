@@ -3,8 +3,22 @@ import React from "react";
 function MobileOnly() {
   return (
     <div className="container-fluid mt-5 mobile_screen_only">
-      <img className="w-100" src={process.env.PUBLIC_URL + "/images/adv.png"} />
+      <div className="container">
+        <img
+          className="w-100"
+          src={process.env.PUBLIC_URL + "/images/adv.png"}
+        />
+      </div>
       <div>
+        <div className="adv-content container">
+          <h4>Vi gör skillnad</h4>
+          <h3>Egestam & Mattsson satsar på en hållbar affär</h3>
+          <h5>
+            Hållbar framtid en del ev vår affär vår policy för att bidra till de
+            <br />
+            Globala Målen
+          </h5>
+        </div>
         <p>
           Egestam och Mattsson har antagit en policy som aktivt stödjer de
           globala målen för hållbar utveckling. Denna policy innefattar
