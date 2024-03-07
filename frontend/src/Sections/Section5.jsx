@@ -329,13 +329,14 @@ function Section5() {
                     <>
                       <img
                         src={process.env.PUBLIC_URL + "/images/sectn_5.jpeg"}
-                        className="card2-im"
-                        style={{
-                          borderTopLeftRadius: !isMobile && "7px",
-                          borderTopRightRadius: !isMobile && "7px",
-                          maxWidth: isMobile ? "107%" : "100%",
-                          height: "577px",
-                        }}
+                        className="card2-im card2-sm-desk"
+                        style={{borderTopLeftRadius: !isMobile && "7px",borderTopRightRadius: !isMobile && "7px"}}
+                        // style={{
+                        //   borderTopLeftRadius: !isMobile && "7px",
+                        //   borderTopRightRadius: !isMobile && "7px",
+                        //   maxWidth: isMobile ? "107%" : "100%",
+                        //   height: "577px",
+                        // }}
                         alt="Background"
                       />
                       {/* <div
@@ -353,7 +354,10 @@ function Section5() {
                       <div className="card-image-content card-image-content_2_">
                         <div className="container">
                           <h2>Jobba hos oss</h2>
-                          <p className="card-paragraph container-fluid" style={{width:'600px',maxWidth:'100%'}}>
+                          <p
+                            className="card-paragraph container-fluid"
+                            style={{ width: "600px", maxWidth: "100%" }}
+                          >
                             Är du intresserad av att vara med och forma
                             framtidens infrastruktur och fastighetslösningar?
                             Bli en del av vårt team & hjälp oss att bygga en
