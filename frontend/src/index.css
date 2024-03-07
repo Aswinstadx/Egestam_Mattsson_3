@@ -4072,3 +4072,17 @@ flex-shrink: 0;
    margin-top: 40px;
   }
 }
+
+@media only screen and (min-device-width: 1367px) and (max-device-width: 1398px) and (-webkit-min-device-pixel-ratio: 1){
+  .banner-text2 {
+    margin-left: -40px;
+   margin-top: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1){
+  .banner-text2 {
+    margin-left: -40px;
+   margin-top: 40px;
+  }
+}
