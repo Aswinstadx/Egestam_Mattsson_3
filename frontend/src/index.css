@@ -671,6 +671,8 @@ img.logo {
   flex-shrink: 0;
   top: 10px;
   position: relative;
+  right: 50px;
+  position: relative;
 }
 
 .section6 {
@@ -1048,7 +1050,7 @@ footer {
   position: absolute;
   /* top: 50%; */
   top: 50%;
-  left: 53%;
+  left: 60%;
   transform: translate(-50%, -50%);
   text-align: left;
   color: white;
