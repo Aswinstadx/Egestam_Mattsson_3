@@ -129,7 +129,7 @@ function Section9() {
             // }
             .div-5 {
               margin-top: 6px;
-              font: 26px/120% Inter, sans-serif;
+              font: 36px Inter, sans-serif;
               font-weight: 700;
 
             }
@@ -140,7 +140,7 @@ function Section9() {
             }
             .div-6 {
               margin-top: 22px;
-              font: 400 20px/38px Roboto, -apple-system, Roboto, Helvetica,
+              font: 400 32px Roboto, -apple-system, Roboto,
                 sans-serif;
             }
             @media (max-width: 991px) {

@@ -5,6 +5,8 @@
     display: flex; /* Add display flex */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
+    top: -10px;
+    position: relative;
 }
 
 .section_sustain p {
@@ -27,6 +29,8 @@ justify-content: center;
 align-items: center;
 align-content: center;
 background: #89BF50;
+top: -10px;
+position: relative;
 }
 .climatgoal_heading h2{
     color: #FFF;
@@ -43,11 +47,21 @@ line-height: 36.75px; /* 57.422% */
    width: 100%;
    background: linear-gradient(180deg, #E9F3F9 0%, #FFF 100%);
    margin-bottom: 100px;
+   top: -10px;
+   position: relative;
 }
 .sustainabiliy-page-section-2 .container{
     top: 50px;
     position: relative;
     height: auto;
+}
+.sustainability-page-section-4{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url('https://s3-alpha-sig.figma.com/img/a363/8492/2b902c0289ab6f1d3f0947cccf47bfa4?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KNgfXWbWCj0ZrOqRVBlf5RYlXGd-Ndu2eXR5Bu08qLj1wn-GhLvXovuevbklcjKfHBqpDgMRjULeV29d3lyieDWeD-OtI56v-3zZUYVj1wjB6RY9e~v--DHdfKC4vSsHYfWDJYWFkQ0D31aFjjHdJZzxUzEzTY-s50qFP7SK4yNLGePsPagSXnkGIxbTppwczKrWod7QRUqAFTPfCWtqNxMYE3gDwCNHmWQbrHTVZti6DdB~m423lMQGYL0SnI8YPci09zRfYR2HJFjktJIOy55MsKlKwaKkyuEM50~XlSxNts1GDO5n9HczfI1pkIQuhPuNI4GNhy-7VjLbZ~dizA__'), lightgray 0px -477px / 156.961% 243.31% no-repeat;
+backdrop-filter: blur(2px);
+background-position: center;
+background-size: cover;
+min-height: 523px;
+width: 100%;
 }
 .sustainabiliy-page-section-2 h4{
     color: #00354E;
@@ -157,7 +171,7 @@ flex-shrink: 0;
     line-height: 38px; /* 118.75% */
     margin-bottom: 10px;
     text-align: left;
-    margin-left: 260px;
+    /* margin-left: 260px; */
   }
 
    
@@ -169,7 +183,7 @@ flex-shrink: 0;
     font-weight: 400;
     line-height: 31px; /* 155% */
     max-width: 80%;
-    margin-left: 260px;
+    /* margin-left: 260px; */
     margin-top: 2px;
     width: 1152px;
 

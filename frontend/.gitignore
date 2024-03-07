@@ -11,7 +11,9 @@
 # production
 /build
 /build_final
-
+/build_5_1
+/build_5_2
+/build_mobile_header_done
 # misc
 .DS_Store
 .env.local

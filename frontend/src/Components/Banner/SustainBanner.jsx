@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { BANNER_VIDEO } from "../../Constants/urls";
+import {
+  BANNER_VIDEO,
+  SUSTAINABILITY_BANNER_VIDEO,
+} from "../../Constants/urls";
 import ReactPlayer from "react-player";
 
 function SustainBanner() {
@@ -29,9 +32,10 @@ function SustainBanner() {
       {isMobile ? (
         <>
           <ReactPlayer
-            url={
-              process.env.PUBLIC_URL + "/videos/banner_sustain_mobileview.mp4"
-            }
+            // url={
+            //   process.env.PUBLIC_URL + "/videos/banner_sustain_mobileview.mp4"
+            // }
+            url={SUSTAINABILITY_BANNER_VIDEO}
             playing={true}
             playsinline
             playsInline
@@ -57,7 +61,8 @@ function SustainBanner() {
             className="player"
           /> */}
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/banner_ipad_2.mp4"}
+            // url={process.env.PUBLIC_URL + "/videos/banner_ipad_2.mp4"}
+            url={SUSTAINABILITY_BANNER_VIDEO}
             playing={true}
             playsinline
             loop={true}
@@ -71,7 +76,8 @@ function SustainBanner() {
       ) : isIpad ? (
         <>
           <ReactPlayer
-            url={process.env.PUBLIC_URL + "/videos/banner_sustain_tabview.mp4"}
+            // url={process.env.PUBLIC_URL + "/videos/banner_sustain_tabview.mp4"}
+            url={SUSTAINABILITY_BANNER_VIDEO}
             playing={true}
             playsinline
             loop={true}
@@ -85,7 +91,8 @@ function SustainBanner() {
       ) : (
         <ReactPlayer
           // url={BANNER_VIDEO}
-          url={process.env.PUBLIC_URL + "/videos/banner_sustain_desktop.mp4"}
+          // url={process.env.PUBLIC_URL + "/videos/banner_sustain_desktop.mp4"}
+          url={SUSTAINABILITY_BANNER_VIDEO}
           playing={true}
           playsinline
           loop={true}

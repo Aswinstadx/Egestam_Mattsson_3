@@ -80,7 +80,9 @@ function Accordion1({ title, content }) {
                 och få en skräddarsydd offert från branschens experter.
               </p>
               <div className="accordion-btn">
-                <button>Kontakta oss</button>
+                <button>
+                  <span>Kontakta oss</span>
+                </button>
               </div>
               {/* <button>Kontakta oss</button> */}
             </div>

@@ -89,8 +89,12 @@ position: relative;
     position: relative;
   }
   .accordion-content{
-    margin-left: 81px;
+    margin-left: 0px;
     position: relative;
+    top: -2px;
+  }
+  .accordion-content .container{
+    margin-left: 90px;
   }
   /* .accordion-content p{
     width: 1000px;
