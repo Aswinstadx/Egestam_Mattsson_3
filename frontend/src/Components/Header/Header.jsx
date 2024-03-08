@@ -17,7 +17,8 @@ const Header = () => {
 
   // Define a function to determine if a given path is active
   const isActive = (path) => {
-    return pathname.includes(path);
+    // return pathname.includes(path);
+    return pathname == path;
   };
 
   useEffect(() => {
@@ -316,7 +317,12 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/sustainability" className="mobile-nav-link">
+                <Nav.Link
+                  href="/sustainability"
+                  className={`mobile-nav-link ${
+                    isActive("/sustainability") ? "active" : ""
+                  }`}
+                >
                   Hållbarhet
                   <span
                     style={{ float: "right" }}
@@ -382,7 +388,7 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/" className="mobile-nav-link">
+                <Nav.Link href="/contact" className="mobile-nav-link">
                   Kontakt
                   <span
                     style={{ float: "right" }}
@@ -703,7 +709,7 @@ const Header = () => {
                     <li class="nav-item">
                       <a
                         class="nav-link"
-                        href="#"
+                        href="/contact"
                         style={{ color: "#00354E", fontWeight: 600 }}
                       >
                         Kontakt

@@ -27,7 +27,7 @@ a:hover {
 
 }
 .navbar-nav .nav-link.inactive{
-  color: red;
+  color: white;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show  :hover{
   color: var(--egestam-mattsson, #89BF50);
@@ -419,6 +419,21 @@ img.logo {
     rgba(0, 0, 0, 0.60) 0%,
     rgba(0, 53, 78, 0.60) 72.4%
   );
+}
+
+
+.video-overlay-3 {
+  position: relative;
+}
+
+.video-overlay-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 11.5%, rgba(0, 53, 78, 0.13) 100%);
 }
 
 .banner-text2 {
@@ -4087,4 +4102,107 @@ flex-shrink: 0;
     margin-left: -40px;
    margin-top: 40px;
   }
+}
+
+.contact-screen h4{
+  color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 43.2px; /* 120% */
+}
+.contact-div-1{
+  margin-top: 30px;
+}
+.contact-screen h6{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 120% */
+
+}
+.contact-info_{
+  margin-top: 30px;
+  line-height: 20px;
+}
+.contact-info_ .email,
+.contact-info_ .phone{
+  color: #149A39;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px; /* 160% */
+}
+.contact-info_ .phone{
+  top: -10px;
+  position: relative;
+}
+
+.contact-info_ .address{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px;
+top: -20px;
+position: relative;
+}
+.address1{
+  top: -40px;
+  position: relative;
+}
+
+.map-image{
+  display: flex;
+width: 807px;
+height: 454px;
+
+}
+.contact-div-2{
+  margin-top: 40px;
+}
+.contact-info_2 p{
+  color: #00354E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 190% */
+}
+.contact-card{
+  display: flex;
+  flex-direction: row;
+}
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.contact-card-content{
+  left: 50px;
+  top: 100px;
+  position: relative;
+}
+.contact-screen-list h4{
+  color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 43.2px; /* 90% */
+}
+.contact-screen-list img{
+  width: 336.507px;
+height: 252.719px;
+flex-shrink: 0;
+}
+.contact-screen-list p {
+  color: white;
+  font-size: 20px;
 }
