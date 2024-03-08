@@ -72,9 +72,7 @@ function Accordion1({ title, content }) {
                     <div className="col-sm text-center sustain_Hållbar sustainability-page-section-3-card">
                       <img
                         style={{ width: "200px", height: "200px" }}
-                        src={
-                          process.env.PUBLIC_URL + "/images/Economic_Growth.png"
-                        }
+                        src={process.env.PUBLIC_URL + "/images/sus_1.png"}
                       />
                       <br />
                       <div style={{ textAlign: "center" }}>
@@ -94,9 +92,7 @@ function Accordion1({ title, content }) {
                     <div className="col-sm text-center sustainability-page-section-3-card">
                       <img
                         style={{ width: "200px", height: "200px" }}
-                        src={
-                          process.env.PUBLIC_URL + "/images/Economic_Growth.png"
-                        }
+                        src={process.env.PUBLIC_URL + "/images/sus_2.png"}
                       />
                       <div style={{ textAlign: "center" }}>
                         <h4>
@@ -141,7 +137,7 @@ function Accordion1({ title, content }) {
                     <div className="col-sm text-center sustainability-page-section-3-card">
                       <img
                         style={{ width: "200px", height: "200px" }}
-                        src={process.env.PUBLIC_URL + "/images/DALL_E.png"}
+                        src={process.env.PUBLIC_URL + "/images/sus3.png"}
                       />
                       <div style={{ width: "100%", textAlign: "center" }}>
                         <h4>
@@ -184,7 +180,7 @@ function Accordion1({ title, content }) {
                     <div className="col-sm text-center sustainability-page-section-3-card">
                       <img
                         style={{ width: "200px", height: "200px" }}
-                        src={process.env.PUBLIC_URL + "/images/DALL_4.png"}
+                        src={process.env.PUBLIC_URL + "/images/sus_4.png"}
                       />
                       <div style={{ width: "100%", textAlign: "center" }}>
                         <h4>
@@ -229,7 +225,7 @@ function Accordion1({ title, content }) {
                     <div class="col-sm text-center  sustainability-page-section-3-card">
                       <img
                         style={{ width: "200px", height: "200px" }}
-                        src={process.env.PUBLIC_URL + "/images/DALL_5.png"}
+                        src={process.env.PUBLIC_URL + "/images/sus_5.png"}
                       />
                       <div style={{ textAlign: "center" }}>
                         <h4>
@@ -259,16 +255,7 @@ function Accordion1({ title, content }) {
                           Bekämpa klimatförändringarna
                           <br />
                         </h4>
-                        <p
-                          style={{
-                            color: "black",
-                            fontSize: 20,
-                            fontFamily: "Inter",
-                            fontWeight: "400",
-                            lineHeight: 2,
-                            wordWrap: "break-word",
-                          }}
-                        >
+                        <p>
                           Vårt engagemang för att minska koldioxidutsläpp och
                           vår inriktning på klimatanpassning i alla våra projekt
                           reflekterar vårt bidrag till kampen mot

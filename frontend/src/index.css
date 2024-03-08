@@ -2483,7 +2483,28 @@ line-height: 32.56px; /* 162.8% */
   line-height: 38px;
 
 }
+.sustainability-page-section-3-card{
+  width: 631px;
+}
 
+.sustianability_card h6{
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36.75px; /* 183.75% */
+}
+.sustianability_card p {
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 36.75px;
+width: 631px;
+}
 /* iPads (portrait and landscape) */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
   .navbar-container.sticky {
@@ -2493,7 +2514,7 @@ line-height: 32.56px; /* 162.8% */
     height: 99px;
     z-index: 1000;
   }
-
+  
   .navbar-container.sticky img.logo {
     width: 119px;
     height: 61px;

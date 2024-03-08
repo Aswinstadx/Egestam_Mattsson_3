@@ -61,111 +61,188 @@ function Sustainability() {
               </div>
             </div>
 
-            <div className="sustainabiliy-page-section-2">
-              <div className="container">
-                <div className="text-center">
-                  <img
-                    src={process.env.PUBLIC_URL + "/images/card1-im.png"}
-                    className="card-im mt-4"
-                  />
+            <div className="sustainability-page-section-2_">
+              <div className="text-center ">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/card1-im.png"}
+                  className="main_image"
+                />
+              </div>
+              <div className="row p-5 mt-5">
+                <div className="col-md-6 text-center">
+                  <div className="container">
+                    <div class=" card-2 text-center mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="39"
+                            height="34"
+                            viewBox="0 0 39 34"
+                            fill="none"
+                          >
+                            <path
+                              d="M19.5 31.8448C29.165 31.8448 37 25.1638 37 16.9224C37 8.68099 29.165 2 19.5 2C9.83502 2 2 8.68099 2 16.9224C2 25.1638 9.83502 31.8448 19.5 31.8448Z"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M19.4998 22.8914L26.4998 16.9224M26.4998 16.9224L19.4998 10.9534M26.4998 16.9224H12.4998"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span style={{ marginLeft: "10px" }}>
+                            2030
+                            <br /> Reduktion och Innovation
+                          </span>
+                        </h5>
+                        <p class="card-text2">
+                          Inom de kommande åren sätter vi fokus på att minska
+                          våra CO2-utsläpp med 20% från 2020 års nivåer. Vi
+                          kommer att investera i innovativa teknologier och
+                          arbetsmetoder som minskar vårt klimatavtryck och ökar
+                          energieffektiviteten i de fastigheter vi arbetar med.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="row">
-                  <div className="col-md-6 text-center sustainability-card">
-                    <h4>
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
-                        }
-                        style={{
-                          left: "-16px",
-                          top: "-2px",
-                          position: "relative",
-                        }}
-                      />
-                      2030
-                      <br /> Reduktion och Innovation
-                    </h4>
-                    <p>
-                      Inom de kommande åren sätter vi fokus på att minska våra
-                      CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att
-                      investera i innovativa teknologier och arbetsmetoder som
-                      minskar vårt klimatavtryck och ökar energieffektiviteten i
-                      de fastigheter vi arbetar med.
-                    </p>
+                <div className="col-md-6 text-center">
+                  <div className="container">
+                    <div class=" card-2 text-center mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="39"
+                            height="34"
+                            viewBox="0 0 39 34"
+                            fill="none"
+                          >
+                            <path
+                              d="M19.5 31.8448C29.165 31.8448 37 25.1638 37 16.9224C37 8.68099 29.165 2 19.5 2C9.83502 2 2 8.68099 2 16.9224C2 25.1638 9.83502 31.8448 19.5 31.8448Z"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M19.4998 22.8914L26.4998 16.9224M26.4998 16.9224L19.4998 10.9534M26.4998 16.9224H12.4998"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span style={{ marginLeft: "10px" }}>
+                            2035
+                            <br /> Partnerskap och Ledarskap
+                          </span>
+                        </h5>
+                        <p class="card-text2">
+                          Till 2035 siktar vi på att hjälpa våra kunder att
+                          minska deras utsläpp med 50 % jämfört med 2020,
+                          samtidigt som vi uppnår samma minskning i vår egen
+                          verksamhet. Vi kommer att fördjupa våra partnerskap
+                          och ta en ledande roll i branschen för att driva på
+                          den gröna omställningen.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-md-6 text-center sustainability-card">
-                    <h4>
-                      {" "}
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
-                        }
-                        style={{
-                          left: "-16px",
-                          top: "-2px",
-                          position: "relative",
-                        }}
-                      />
-                      2035 <br />
-                      Partnerskap och Ledarskap
-                    </h4>
-                    <p>
-                      Till 2035 siktar vi på att hjälpa våra kunder att minska
-                      deras utsläpp med 50 % jämfört med 2020, samtidigt som vi
-                      uppnår samma minskning i vår egen verksamhet. Vi kommer
-                      att fördjupa våra partnerskap och ta en ledande roll i
-                      branschen för att driva på den gröna omställningen.
-                    </p>
+                </div>
+                <div className="col-md-6 text-center mt-5">
+                  <div className="container mt-5">
+                    <div class=" card-2 text-center mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="39"
+                            height="34"
+                            viewBox="0 0 39 34"
+                            fill="none"
+                          >
+                            <path
+                              d="M19.5 31.8448C29.165 31.8448 37 25.1638 37 16.9224C37 8.68099 29.165 2 19.5 2C9.83502 2 2 8.68099 2 16.9224C2 25.1638 9.83502 31.8448 19.5 31.8448Z"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M19.4998 22.8914L26.4998 16.9224M26.4998 16.9224L19.4998 10.9534M26.4998 16.9224H12.4998"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span style={{ marginLeft: "10px" }}>
+                            2040
+                            <br /> Förnyelse och Optimering
+                          </span>
+                        </h5>
+                        <p class="card-text2">
+                          Fram till 2040 kommer vårt arbete att fokusera på att
+                          optimera användningen av förnybar energi och maximera
+                          resurseffektiviteten i alla våra projekt. Vi strävar
+                          efter att våra fastighetslösningar ska vara helt
+                          självförsörjande när det gäller energi och minimera
+                          avfall till nära noll.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-md-6 text-center sustainability-card">
-                    <h4>
-                      {" "}
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
-                        }
-                        style={{
-                          left: "-16px",
-                          top: "-2px",
-                          position: "relative",
-                        }}
-                      />
-                      2040
-                      <br /> Förnyelse och Optimering
-                    </h4>
-                    <p>
-                      Fram till 2040 kommer vårt arbete att fokusera på att
-                      optimera användningen av förnybar energi och maximera
-                      resurseffektiviteten i alla våra projekt. Vi strävar efter
-                      att våra fastighetslösningar ska vara helt
-                      självförsörjande när det gäller energi och minimera avfall
-                      till nära noll.
-                    </p>
-                  </div>
-                  <div className="col-md-6 text-center sustainability-card">
-                    <h4>
-                      {" "}
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/sustain_arrow.svg"
-                        }
-                        style={{
-                          left: "-16px",
-                          top: "-2px",
-                          position: "relative",
-                        }}
-                      />
-                      2045 <br /> Netto noll
-                    </h4>
-                    <p>
-                      Vår resa mot 2045 är inte bara en plan, det är ett löfte
-                      om att aktivt forma en hållbar framtid där vi och våra
-                      kunder tillsammans kan göra en verklig skillnad. Vår
-                      slutdestination är en verksamhet med netto noll utsläpp
-                      senast 2045. Vi kommer att ha fullt integrerat hållbara
-                      principer, från design och installation till underhåll och
-                      service.
-                    </p>
+                </div>
+                <div className="col-md-6 text-center mt-5">
+                  <div className="container mt-5">
+                    <div class=" card-2 text-center mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title2">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="39"
+                            height="34"
+                            viewBox="0 0 39 34"
+                            fill="none"
+                          >
+                            <path
+                              d="M19.5 31.8448C29.165 31.8448 37 25.1638 37 16.9224C37 8.68099 29.165 2 19.5 2C9.83502 2 2 8.68099 2 16.9224C2 25.1638 9.83502 31.8448 19.5 31.8448Z"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M19.4998 22.8914L26.4998 16.9224M26.4998 16.9224L19.4998 10.9534M26.4998 16.9224H12.4998"
+                              stroke="#00354E"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span style={{ marginLeft: "10px" }}>
+                            2045
+                            <br /> Netto noll
+                          </span>
+                        </h5>
+                        <p class="card-text2">
+                          Vår resa mot 2045 är inte bara en plan, det är ett
+                          löfte om att aktivt forma en hållbar framtid där vi
+                          och våra kunder tillsammans kan göra en verklig
+                          skillnad. Vår slutdestination är en verksamhet med
+                          netto noll utsläpp senast 2045. Vi kommer att ha fullt
+                          integrerat hållbara principer, från design och
+                          installation till underhåll och service.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,23 +256,14 @@ function Sustainability() {
               </div>
             </div>
 
-            <div className="sustainability-page-section-3 ">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm text-center sustain_Hållbar sustainability-page-section-3-card">
-                    <img
-                      style={{ width: "200px", height: "200px" }}
-                      src={
-                        process.env.PUBLIC_URL + "/images/Economic_Growth.png"
-                      }
-                    />
-                    <br />
-                    <div style={{ textAlign: "center" }}>
-                      <h4>
-                        Hållbar energi för alla
-                        <br />
-                      </h4>
-                      <p>
+            <div className="sustainability-page-section-3_ p-5 mt-5">
+              <div className="row">
+                <div className="col-md-6">
+                  <div class="card text-center mb-3">
+                    <div class="card-body">
+                      <img src={process.env.PUBLIC_URL + "/images/sus_1.png"} />
+                      <h5 class="card-title">Hållbar energi för alla</h5>
+                      <p class="card-text">
                         Genom att integrera solenergilösningar och
                         energieffektiviseringsmetoder i våra installationer,
                         arbetar vi för att göra hållbar energi tillgänglig och
@@ -203,62 +271,47 @@ function Sustainability() {
                       </p>
                     </div>
                   </div>
-                  <div className="col"></div>
-                  <div className="col-sm text-center sustainability-page-section-3-card">
-                    <img
-                      style={{ width: "200px", height: "200px" }}
-                      src={
-                        process.env.PUBLIC_URL + "/images/Economic_Growth.png"
-                      }
-                    />
-                    <div style={{ textAlign: "center" }}>
-                      <h4>
+                </div>
+                <div className="col-md-6 text-center">
+                  <div class="card text-center mb-3">
+                    <div class="card-body">
+                      <img src={process.env.PUBLIC_URL + "/images/sus_2.png"} />
+                      <h5 class="card-title">
+                        {" "}
                         Anständiga arbetsvillkor och ekonomisk tillväxt
-                        <br />
-                      </h4>
-                      <p>
+                      </h5>
+                      <p class="card-text">
                         Vi satsar på att vara en ansvarsfull arbetsgivare som
                         främjar säkra arbetsförhållanden, samt stödjer
                         kontinuerlig utbildning och utveckling av våra
                         medarbetare.
-                        <br />
                       </p>
                     </div>
                   </div>
                 </div>
-
-                <div className="row">
-                  <div className="col-sm text-center sustainability-page-section-3-card">
-                    <img
-                      style={{ width: "200px", height: "200px" }}
-                      src={process.env.PUBLIC_URL + "/images/DALL_E.png"}
-                    />
-                    <div style={{ width: "100%", textAlign: "center" }}>
-                      <h4>
+                <div className="col-md-6 text-center">
+                  <div class="card text-center mb-3 mt-5">
+                    <div class="card-body">
+                      <img src={process.env.PUBLIC_URL + "/images/sus3.png"} />
+                      <h5 class="card-title">
+                        {" "}
                         Industri, innovation och infrastruktur
-                        <br />
-                      </h4>
-                      <p>
+                      </h5>
+                      <p class="card-text">
                         Vi bidrar till byggandet av motståndskraftig
                         infrastruktur och främjar inkluderande, hållbar
                         industrialisering genom att använda oss av innovativa,
                         hållbara tekniska lösningar.
-                        <br />
                       </p>
                     </div>
                   </div>
-                  <div className="col"></div>
-                  <div className="col-sm text-center sustainability-page-section-3-card">
-                    <img
-                      style={{ width: "200px", height: "200px" }}
-                      src={process.env.PUBLIC_URL + "/images/DALL_4.png"}
-                    />
-                    <div style={{ width: "100%", textAlign: "center" }}>
-                      <h4>
-                        Hållbara städer och samhällen
-                        <br />
-                      </h4>
-                      <p>
+                </div>
+                <div className="col-md-6 text-center">
+                  <div class="card text-center mb-3 mt-5">
+                    <div class="card-body">
+                      <img src={process.env.PUBLIC_URL + "/images/sus_4.png"} />
+                      <h5 class="card-title">Hållbara städer och samhällen</h5>
+                      <p class="card-text">
                         Genom vårt arbete med att utveckla, bygga nya & renovera
                         fastigheter samt infrastruktur strävar vi efter att
                         skapa och underhålla gröna och tillgängliga urbana
@@ -267,29 +320,13 @@ function Sustainability() {
                     </div>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div className="col"></div>
-                  <div class="col-sm text-center  sustainability-page-section-3-card">
-                    <img
-                      style={{ width: "200px", height: "200px" }}
-                      src={process.env.PUBLIC_URL + "/images/DALL_5.png"}
-                    />
-                    <div style={{ textAlign: "center" }}>
-                      <h4>
-                        Bekämpa klimatförändringarna
-                        <br />
-                      </h4>
-                      <p
-                        style={{
-                          color: "black",
-                          fontSize: 20,
-                          fontFamily: "Inter",
-                          fontWeight: "400",
-                          lineHeight: 2,
-                          wordWrap: "break-word",
-                        }}
-                      >
+                <div className="col-md-4"></div>
+                <div className="col-md-4 text-center">
+                  <div class="card text-center mb-3 mt-5">
+                    <div class="card-body">
+                      <img src={process.env.PUBLIC_URL + "/images/sus_5.png"} />
+                      <h5 class="card-title">Bekämpa klimatförändringarna</h5>
+                      <p class="card-text">
                         Vårt engagemang för att minska koldioxidutsläpp och vår
                         inriktning på klimatanpassning i alla våra projekt
                         reflekterar vårt bidrag till kampen mot
@@ -297,8 +334,8 @@ function Sustainability() {
                       </p>
                     </div>
                   </div>
-                  <div className="col"></div>
                 </div>
+                <div className="col-md-4"></div>
               </div>
             </div>
 
@@ -327,6 +364,10 @@ function Sustainability() {
                       att skapa fastigheter som är optimalt utrustade för
                       framtida krav.{" "}
                     </p>
+                    <div style={{ float: "right" }} className="link">
+                      {" "}
+                      Läs mer {">>"}{" "}
+                    </div>
                   </div>
                 </div>
               </div>
