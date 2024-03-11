@@ -31,7 +31,7 @@ const Accordion = ({ year, title, content, color }) => {
           <div
             className="accordion-content"
             style={{
-              backgroundColor: color,
+              backgroundColor: year == "2045" ? "#FFF" : color,
               width: color !== "white" && "111.3%",
               margin: color !== "white" && "-22px",
             }}
@@ -39,7 +39,21 @@ const Accordion = ({ year, title, content, color }) => {
             {color == "white" ? (
               <>{content}</>
             ) : (
-              <div className="continer m-3">{content}</div>
+              <div className="continer m-3">
+                <p
+                  className="acc-contnet"
+                  style={{
+                    color: "#000",
+                    fontFamily: "Inter",
+                    fontSize: "16px",
+                    width: "294px",
+                    fontWeight: 400,
+                    lineHeight: "30px",
+                  }}
+                >
+                  {content}
+                </p>
+              </div>
             )}
           </div>
         )}

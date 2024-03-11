@@ -329,6 +329,34 @@ margin-top: 30px;
         height: 294px;
     }
 
+    .sustainability-page-section-3 h4{
+        width: 300px;
+      }
+
+    .mobile_text_only h4{
+        color: #00354E;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27px; /* 135% */
+        width: 336px;
+        /* left: 15px; */
+        position: relative;
+        top: 25px;
+      }
+      .mobile_text_only h4 span{
+        font-weight: 700;
+      }
+      
+      .sustainability-page-section-3-card{
+        margin-top: 28px;
+      }
+      .card_text_{
+        left: 10px;
+        position: relative;
+      }
     .section_sustain {}
 
     .sustainability-page-section-3 p {
@@ -339,7 +367,7 @@ margin-top: 30px;
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
-        left: 30px;
+        /* left: 30px; */
         position: relative;
     }
 }

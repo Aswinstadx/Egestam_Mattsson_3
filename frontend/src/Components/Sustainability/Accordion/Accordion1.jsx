@@ -75,7 +75,7 @@ function Accordion1({ title, content }) {
               <Accordion
                 year="2022"
                 title="Reduktion & Innovation"
-                content="nom de kommande åren sätter vi fokus på att minska våra CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att investera i innovativa teknologier och arbetsmetoder som minskar vårt klimatavtryck och ökar energieffektiviteten i de fastigheter vi arbetar med."
+                content="Inom de kommande åren sätter vi fokus på att minska våra CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att investera i innovativa teknologier och arbetsmetoder som minskar vårt klimatavtryck och ökar energieffektiviteten i de fastigheter vi arbetar med."
                 color="white"
               />
               <Accordion

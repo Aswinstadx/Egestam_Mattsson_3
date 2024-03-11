@@ -374,10 +374,29 @@ function Sustainability() {
             </div>
           </>
         ) : (
-          <div style={{top:'-10px',position:'relative'}}>
+          <div style={{ top: "-10px", position: "relative" }}>
             <Accordion />
             <Accordion1 />
             <Accordion2 />
+            <div className="section_3_mobile_view">
+              <div className="container p-4">
+                <h2>Optimerade miljöer för ett hållbart liv</h2>
+                <div className="content">
+                  Med teknikens framsteg utrustas fastigheter med avancerade
+                  funktioner. Grundläggande system såsom el, VVS, uppvärmning,
+                  kylning, ventilation, belysning, brandskydd, säkerhet och
+                  låssystem kompletteras nu med smarta lösningar. Digitalisering
+                  och hållbarhet leder utvecklingen med automation, effektiv
+                  energianvändning, solenergisystem och laddningsstationer för
+                  eldrivna fordon, vilket speglas i vår strävan efter att skapa
+                  integrerade, energieffektiva byggnader. Läs mer om hur vi kan
+                  hjälpa dig som fastighetsägare till en optimerad miljö.
+                  <p style={{ float: "right" }} className="link_">
+                    Läs mer {">>"}
+                  </p>
+                </div>
+              </div>
+            </div>
             <Section1 />
             <MobileOnlySust />
           </div>
