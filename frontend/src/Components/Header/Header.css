@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu-icon {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+}
+
+.hamberger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show on smaller screens */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px; /* Adjust this value according to your header height */
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+}
