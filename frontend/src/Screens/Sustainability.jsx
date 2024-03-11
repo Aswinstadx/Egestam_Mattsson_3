@@ -374,13 +374,13 @@ function Sustainability() {
             </div>
           </>
         ) : (
-          <>
+          <div style={{top:'-10px',position:'relative'}}>
             <Accordion />
             <Accordion1 />
             <Accordion2 />
             <Section1 />
             <MobileOnlySust />
-          </>
+          </div>
         )}
 
         {/* <footer>

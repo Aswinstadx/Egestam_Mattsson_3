@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Accordion.css"; // Import your CSS file
+import Accordion from "../MobileView/Accordion";
 
 function Accordion1({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,24 +72,30 @@ function Accordion1({ title, content }) {
               />
             </div>
             <div className="container mt-5">
-              <p style={{color:'red'}}>
-                Egestam och Mattsson erbjuder omfattande tjänster för renovering
-                inom el och installation, anpassade för både bostäder och
-                kommersiella fastigheter. Vår expertis täcker allt från
-                uppgradering av befintliga elsystem till installation av
-                moderna, energieffektiva lösningar. Vi förstår vikten av att
-                kombinera funktionalitet med estetik och arbetar nära våra
-                kunder för att säkerställa att varje projekt möter deras
-                specifika behov och önskemål. Vårt team är specialiserat på att
-                leverera högkvalitativa resultat, från planering till
-                slutförande, med fokus på säkerhet, hållbarhet och teknisk
-                innovation. Kontakta oss för att diskutera dina renoveringsbehov
-                och få en skräddarsydd offert från branschens experter.
-              </p>
-              <div className="accordion-link text-center">
-                <a className="text-white">Så här jobbar vi med hållbarhet</a>
-              </div>
-              {/* <button>Kontakta oss</button> */}
+              <Accordion
+                year="2022"
+                title="Reduktion & Innovation"
+                content="nom de kommande åren sätter vi fokus på att minska våra CO2-utsläpp med 20% från 2020 års nivåer. Vi kommer att investera i innovativa teknologier och arbetsmetoder som minskar vårt klimatavtryck och ökar energieffektiviteten i de fastigheter vi arbetar med."
+                color="white"
+              />
+              <Accordion
+                year="2035"
+                title="Partnerskap & Ledarskap"
+                content="Till 2035 siktar vi på att hjälpa våra kunder att minska deras utsläpp med 50 % jämfört med 2020, samtidigt som vi uppnår samma minskning i vår egen verksamhet. Vi kommer att fördjupa våra partnerskap och ta en ledande roll i branschen för att driva på den gröna omställningen."
+                color="#E9F3F9"
+              />
+              <Accordion
+                year="2040"
+                title="Förnyelse & Optimering"
+                content="Fram till 2040 kommer vårt arbete att fokusera på att optimera användningen av förnybar energi och maximera resurseffektiviteten i alla våra projekt. Vi strävar efter att våra fastighetslösningar ska vara helt självförsörjande när det gäller energi och minimera avfall till nära noll."
+                color="white"
+              />
+              <Accordion
+                year="2045"
+                title="Netto noll"
+                content="Vår resa mot 2045 är inte bara en plan, det är ett löfte om att aktivt forma en hållbar framtid där vi och våra kunder tillsammans kan göra en verklig skillnad. Vår slutdestination är en verksamhet med netto noll utsläpp senast 2045. Vi kommer att ha fullt integrerat hållbara principer, från design och installation till underhåll och service. "
+                color="#E9F3F9"
+              />
             </div>
           </div>
         )}

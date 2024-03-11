@@ -61,12 +61,16 @@ function Accordion({ title, content }) {
         {isOpen && (
           <div
             className={`accordion-content ${isOpen ? "expanded" : ""}`}
-            style={{ background: isOpen && "#89BF50" }}
+            style={{
+              background: isOpen && "#89BF50",
+              top: "-2px",
+              position: "relative",
+            }}
           >
             {/* <p>{content}</p> */}
-            <div className="container">
-              <p>
-                VEgestam och Mattsson har en hållbarhetsvision som sträcker sig
+            <div className="container sustai_container">
+              <p style={{ textAlign: "center" }}>
+                Egestam och Mattsson har en hållbarhetsvision som sträcker sig
                 till 2045, där målet är att nå netto noll utsläpp. Vi ser
                 hållbarhet som kärnan i vår verksamhet och ett grundläggande
                 åtagande i allt vi gör. Varje femårsperiod fram till 2045
@@ -78,7 +82,12 @@ function Accordion({ title, content }) {
                 <button className="text-center">Kontakta oss</button>
               </div> */}
               <div className="accordion-link text-center">
-                <a className="text-white">Så här jobbar vi med hållbarhet</a>
+                <a
+                  className="text-white"
+                  style={{ top: "-7px", position: "relative" }}
+                >
+                  Så här jobbar vi med hållbarhet
+                </a>
               </div>
             </div>
           </div>

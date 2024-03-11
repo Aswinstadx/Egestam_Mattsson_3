@@ -32,10 +32,8 @@ function SustainBanner() {
       {isMobile ? (
         <>
           <ReactPlayer
-            // url={
-            //   process.env.PUBLIC_URL + "/videos/banner_sustain_mobileview.mp4"
-            // }
-            url={SUSTAINABILITY_BANNER_VIDEO}
+            url={process.env.PUBLIC_URL + "/videos/sus_mo.mp4"}
+            // url={SUSTAINABILITY_BANNER_VIDEO}
             playing={true}
             playsinline
             playsInline
@@ -104,11 +102,15 @@ function SustainBanner() {
         />
       )}
       {isMobile ? (
-        <div className="banner-text_2 text-center">
-          <h1>
-            <span> Hållbarhet</span> för en bättre framtid
+        <div
+          className="sustai_text banner-text_2 "
+          style={{ textAlign: "left" }}
+        >
+          <h1 style={{ textAlign: "left" }}>
+            <span> Hållbarhet</span>
+            <br /> för en bättre framtid
           </h1>
-          <p>
+          <p style={{ textAlign: "left" ,left:'33px',position:'relative'}}>
             Vårt engagemang för en bättre framtid är tydligt. Vi strävar efter
             att minska miljöpåverkan och främja teknisk innovation. Genom att
             erbjuda energieffektiva lösningar, integrerade system, och smarta

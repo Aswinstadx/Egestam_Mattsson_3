@@ -1577,7 +1577,22 @@ line-height: 37.5px; /* 187.5% */
     left: 10px;
     position: relative;
   }
-
+  .sustai_container p {
+    color: #00354E;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 181.25% */
+margin-top: 20px;
+width: 348px;
+height: 294px;
+  }
+  .sustai_container a{
+    top: -10px;
+    position: relative;
+  }
   .banner-text_2 span {
     color: #89BF50;
     font-family: Inter;
@@ -2158,6 +2173,25 @@ line-height: 32.56px; /* 162.8% */
   }
   .card-paragraph{
     font-family: Inter;
+  }
+  .sustai_text span{
+    color: var(--egestam-mattsson, #89BF50);
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 45px; /* 93.75% */
+text-transform: none;
+text-align: left;
+  }
+  .sustai_text h1{
+    color: var(--egestam-mattsson, #FFF);
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 45px;
+text-transform: none;
   }
 }
 
@@ -4226,4 +4260,55 @@ flex-shrink: 0;
 .contact-screen-list p {
   color: white;
   font-size: 20px;
+}
+.sus-page-mobile-view .accordion-header{
+  background-color: red;
+  margin: -22px;
+  height: 121px;
+
+}
+.accordion-title-1{
+  top: -10px;
+  position: relative;
+}
+
+.accordion-title-1 h4{
+  color: #00354E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 36.75px; /* 183.75% */
+top: 0px;
+position: relative;
+}
+.more-text-{
+  color: #00354E;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 100;
+line-height: 36.75px; /* 367.5% */
+top: 20px;
+position: relative;
+}
+.sus-page-mobile-view .accordion-content{
+  background-color: white;
+  border: none;
+  min-height: 340px;
+}
+.sus-page-mobile-view .accordion{
+  border: none;
+}
+.sus-page-mobile-view .accordion-content{
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+width: 270px;
+}
+.sus-page-mobile-view .accordion:nth-child(odd) {
+  background-color: white;
 }
