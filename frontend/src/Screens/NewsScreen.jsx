@@ -23,7 +23,7 @@ function NewsScreen() {
   return (
     <div>
       <NewsBanner />
-      <div className="container">
+      <div className="news_page_">
         {!isMobile && (
           <>
             <select
@@ -40,7 +40,9 @@ function NewsScreen() {
         )}
         <div className="card-container mt-5">
           {[...Array(9)].map((_, index) => (
+            <div className="card__">
             <Card key={index} title={`Card ${index + 1}`} />
+            </div>
           ))}
         </div>
 

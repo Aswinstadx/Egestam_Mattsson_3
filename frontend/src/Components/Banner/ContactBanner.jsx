@@ -46,8 +46,8 @@ function ContactBanner() {
             <div className="video-container">
               <div className="video-overlay-2">
                 <ReactPlayer
-                  // url={process.env.PUBLIC_URL + "/videos/news_mobile3.mp4"}
-                  url={CONTACT_BANNER_VIDEO}
+                  url={process.env.PUBLIC_URL + "/videos/contact_banner.mp4"}
+                  // url={CONTACT_BANNER_VIDEO}
                   playing={true}
                   playsinline
                   loop={true}
@@ -76,7 +76,7 @@ function ContactBanner() {
               <div className="video-overlay-2">
                 <ReactPlayer
                   // url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}
-                  url={CONTACT_BANNER_VIDEO}
+                  url={process.env.PUBLIC_URL + "/videos/contact_banner.mp4"}
                   playing={true}
                   playsinline
                   loop={true}
@@ -103,7 +103,7 @@ function ContactBanner() {
             <div className="video-overlay-3">
               <ReactPlayer
                 // url={process.env.PUBLIC_URL + "/videos/news_desktop2.mp4"}
-                url={CONTACT_BANNER_VIDEO}
+                url={process.env.PUBLIC_URL + "/videos/contact_3.mp4"}
                 playing={true}
                 playsinline
                 loop={true}
@@ -111,7 +111,7 @@ function ContactBanner() {
                 controls={false}
                 width="100vw"
                 // height="599px"
-                height="563px"
+                height="auto"
                 className="player"
               />
             </div>

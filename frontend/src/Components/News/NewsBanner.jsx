@@ -45,7 +45,7 @@ function NewsBanner() {
             <div className="video-container">
               <div className="video-overlay-2">
                 <ReactPlayer
-                  url={process.env.PUBLIC_URL + "/videos/news_mobile3.mp4"}
+                  url={process.env.PUBLIC_URL + "/videos/news_banner-mob.mp4"}
                   playing={true}
                   playsinline
                   loop={true}

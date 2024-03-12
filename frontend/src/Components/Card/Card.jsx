@@ -3,10 +3,13 @@ import { CARD_IMAGE } from "../../Constants/urls";
 
 function Card() {
   return (
-    <div>
+    <div className="card__">
       <a href={"/news/1"}>
         <div className="card-box">
-          <img src={CARD_IMAGE} className="w-100" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/card_image.png"}
+            className="w-100"
+          />
           <div className="container-fluid p-3">
             <h6 className="card-date">13 februari 2024</h6>
             <h2>Elektrifiering och framtidssäkring </h2>
