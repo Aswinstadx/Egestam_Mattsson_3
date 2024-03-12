@@ -710,7 +710,8 @@ img.logo {
 .section6 {
   padding: 50px;
 }
-.section6_1{
+
+.section6_1 {
   padding: 0;
   margin-top: 80px;
 }
@@ -1243,46 +1244,52 @@ img.card2-im {
   margin-bottom: 20px;
 }
 
-.related-news .card-content p{
- 
+.related-news .card-content p {
+
   max-height: 324.592px;
   width: 342px;
 
 }
-.news-details_padding{
+
+.news-details_padding {
   padding-left: 163px;
   padding-right: 100px;
 }
-.container___{
- 
+
+.container___ {
+
   padding: 100px;
   padding-left: 150px;
 }
-img.lightbx-im{
+
+img.lightbx-im {
   width: 365px;
-height: 317px;
-flex-shrink: 0;
+  height: 317px;
+  flex-shrink: 0;
 }
-.testimonial_card{
+
+.testimonial_card {
   top: 170px;
   position: relative;
 }
-.testimonial_card h2{
+
+.testimonial_card h2 {
   font-family: Inter;
   font-size: 23px;
   font-weight: bold;
   font-weight: 700;
 }
 
-.testimonial_card h3{
+.testimonial_card h3 {
   font-family: Inter;
   font-size: 18px;
   font-weight: bold;
   top: -10px;
   position: relative;
 }
-.testimonial_card h4{
-  color:green;
+
+.testimonial_card h4 {
+  color: green;
   font-weight: 400;
   font-size: 17px;
 }
@@ -1302,6 +1309,15 @@ flex-shrink: 0;
 } */
 
 
+.contact_page .container-fluid {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.contact_page_section1 {
+  margin-top: 90px;
+}
+
 
 /* .section5 img.card2-im{
   width: 500px;
@@ -1312,9 +1328,11 @@ flex-shrink: 0;
     left: 10px;
     position: relative;
   }
-  .news-details_padding{
+
+  .news-details_padding {
     padding-left: 10px;
   }
+
   .card-container {
     top: -20px;
     position: relative;
@@ -1329,6 +1347,10 @@ flex-shrink: 0;
     padding-left: 15px;
     padding-right: 15px;
   } */
+
+  .contact_page .container-fluid {
+    padding-left: 20px;
+  }
 
   .news-details-content li h5 {
     color: #00354E;
@@ -2471,6 +2493,7 @@ position: relative; */
     left: -10px;
     position: relative;
   }
+
   .news_details__page {
     padding-left: 0px;
     padding-right: 0px;
@@ -2534,6 +2557,7 @@ position: relative; */
     left: 10px;
     position: relative;
   }
+
   /* .news-details{
     padding-left: 80px;
     padding-right: 10px;
@@ -2541,6 +2565,11 @@ position: relative; */
   } */
   .ipad-block {
     display: block;
+  }
+
+  .contact_page .container-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .section5 {
@@ -4037,7 +4066,8 @@ position: relative; */
   .desktop-only {
     display: block;
   }
-  .news_details__page{}
+
+  .news_details__page {}
 
   .section5 {
 
@@ -4650,4 +4680,209 @@ position: relative; */
 
 .sus-page-mobile-view .accordion:nth-child(odd) {
   background-color: white;
+}
+
+/* Style for contact page */
+
+.contact_page_section1 h3{
+  color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 43.2px; /* 120% */
+}
+.contact_page_section1_div1{
+  margin-top: 25px;
+}
+
+.contact_page_section1_div1 h4{
+  color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 120% */
+}
+
+.contact_page_section1_div2{
+  margin-top: 30px;
+}
+.contact_page_section1_div2{
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px; /* 160% */
+}
+
+.contact_page_section1_div2 p.email__,
+.contact_page_section1_div2 p.contact____{
+  color: #149A39;
+}
+
+.contact_page_section1_div2 p.address__,
+.contact_page_section1_div2 p.place__{
+  color: #000;
+}
+.contact_page_section1_div3{
+  margin-top: 40px;
+  color: #00354E;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 190% */
+}
+
+.card-container__2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 cards per row for desktop */
+  gap: 20px;
+}
+
+.card__2 {
+ 
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+ 
+}
+.card__2 img{
+  width: 345px;
+height: 259px;
+}
+.card__block{
+  margin-top: 100px;
+}
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  text-align: center;
+  font-size: 25px;
+  font-family: Inter;
+}
+h4.round_card_text{
+  color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 43.2px; /* 90% */
+top: -20px;
+position: relative;
+left: 30px;
+}
+.contact_page_section2{
+  position: relative;
+}
+.svg_banner_text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 140px;
+}
+img.testimonials_image{
+  width: 365px;
+height: 317px;
+}
+
+.left-content,
+.right-content {
+  width: calc(50% - 10px); /* Adjust margin as needed */
+  display: flex;
+  justify-content: space-around;
+}
+.banner___contact{
+  width: 100%;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1899px) {
+  img.map_image {
+    width: 100%;
+height: auto;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1024px) {
+  img.map_image {
+    width: 375px;
+height: 250px;
+margin-top: 50px;
+  }
+  h4.round_card_text{
+    display: none;
+  }
+  .banner___contact{
+    width: 100%;
+    height: 564px;
+  }
+  .contact_page_section2{
+    padding-left: 10px;
+  }
+  .testimonials{
+    padding-left: 87px;
+  }
+  .testimonial_card {
+    top: 100px;
+    left: 150px;
+    position: relative;
+  }
+  .testimonials img{
+    height: 274px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+
+  img.map_image {
+    width: 807px;
+    height: 454px;
+  }
+}
+
+@media (max-width: 768px) {
+  img.map_image {
+    display: none;
+  }
+  .contact_page_section1{
+    margin-top: 25px;
+  }
+  .card__block{
+    display: none;
+  }
+  .card__2 img{
+    width: 288.75px;
+height: 216.727px;
+align-items: center;
+  }
+ .card-container__2{
+  left: 10%;
+  position: relative;
+ }
+ h4.round_card_text{
+  display: none;
+}
+.testimonials{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact_page_section2 {
+  margin-top: -200px;
+}
+.testimonial_card{
+  left: -191px;
+  position: relative;
+}
+.round-cards-list{
+  margin-top: -150px;
+}
+
 }
