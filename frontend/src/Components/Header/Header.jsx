@@ -22,6 +22,10 @@ const Header = () => {
     return pathname.startsWith(path);
   };
 
+  const isActive2 = (path) => {
+    return pathname === path;
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
@@ -296,7 +300,7 @@ const Header = () => {
                   // className="mobile-nav-link "
                   // className={isActive("/") ? "active" : "" }
                   className={`mobile-nav-link ${
-                    isActive("/") ? "active" : "inactive"
+                    isActive("/") && isActive2('/') ? "active" : "inactive"
                   }`}
                 >
                   Hem
@@ -343,7 +347,12 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/" className="mobile-nav-link">
+                <Nav.Link
+                  href="/services"
+                  className={`mobile-nav-link ${
+                    isActive("/services") ? "active" : ""
+                  }`}
+                >
                   Tjänster
                   <span
                     style={{ float: "right" }}
@@ -389,9 +398,12 @@ const Header = () => {
                     </svg>
                   </span>
                 </Nav.Link>
-                <Nav.Link href="/contact"  className={`mobile-nav-link ${
+                <Nav.Link
+                  href="/contact"
+                  className={`mobile-nav-link ${
                     isActive("/contact") ? "active" : "inactive"
-                  }`}>
+                  }`}
+                >
                   Kontakt
                   <span
                     style={{ float: "right" }}
@@ -646,7 +658,7 @@ const Header = () => {
                     <li class="nav-item">
                       <a
                         class="nav-link"
-                        href="#"
+                        href="/services"
                         style={{ color: "#00354E", fontWeight: 600 }}
                       >
                         Tjänster

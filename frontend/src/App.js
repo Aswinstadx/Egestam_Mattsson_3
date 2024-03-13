@@ -21,6 +21,7 @@ import NewsScreen from "./Screens/NewsScreen";
 import NewsDetailsScreen from "./Screens/NewsDetailsScreen";
 import Sustainability from "./Screens/Sustainability";
 import ContactScreen from "./Screens/ContactScreen";
+import ServiceScreen from "./Screens/ServiceScreen";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,6 +69,7 @@ function App() {
         <Route path="/news/:id" element={<NewsDetailsScreen />} />
         <Route path="/sustainability" element={<Sustainability />} />
         <Route path="/contact" element={<ContactScreen />} />
+        <Route path="/services" element={<ServiceScreen />} />
       </Routes>
     </BrowserRouter>
   );

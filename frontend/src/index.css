@@ -4886,3 +4886,35 @@ align-items: center;
 }
 
 }
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.video-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 53, 78, 0.14) 100%);
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1254px) {
+  .testimonial_card {
+    top: 100px;
+    left: 150px;
+    position: relative;
+  }
+}
+
+.contact_page_section1_div2 p{
+  line-height: 15px;
+}
+.contact_page_section1_div3{
+  line-height: 18px;
+}

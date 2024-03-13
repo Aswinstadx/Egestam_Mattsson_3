@@ -44,7 +44,7 @@ function ContactBanner() {
         {isMobile ? (
           <>
             <div className="video-container">
-              <div className="video-overlay-2">
+              <div className="video-wrapper">
                 <ReactPlayer
                   url={process.env.PUBLIC_URL + "/videos/contact_banner.mp4"}
                   // url={CONTACT_BANNER_VIDEO}
@@ -73,7 +73,7 @@ function ContactBanner() {
           <>
             {console.log("this is ipad")}
             <div className="video-container">
-              <div className="video-overlay-2">
+              <div className="video-wrapper">
                 <ReactPlayer
                   // url={process.env.PUBLIC_URL + "/videos/news_mobile.mp4"}
                   url={process.env.PUBLIC_URL + "/videos/contact_banner.mp4"}
@@ -100,7 +100,7 @@ function ContactBanner() {
           </>
         ) : (
           <>
-            <div className="video-overlay-3">
+            <div className="video-wrapper">
               <ReactPlayer
                 // url={process.env.PUBLIC_URL + "/videos/news_desktop2.mp4"}
                 url={process.env.PUBLIC_URL + "/videos/contact_3.mp4"}

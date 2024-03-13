@@ -85,7 +85,7 @@ function ContactScreen() {
                   <p className="place__">Måndag-Fredag</p>
                 </div>
                 <div className="contact_page_section1_div3">
-                  <p>Egestam Mattsson El & Data AB</p>
+                  <p style={{whiteSpace:'nowrap'}}>Egestam Mattsson El & Data AB</p>
                   <p>Ridspögatan 15a</p>
                   <p>213 77 Malmö</p>
                 </div>
@@ -167,7 +167,24 @@ function ContactScreen() {
                   <div className="testimonial_card">
                     <h2>Daniel Egestam</h2>
                     <h3>Projektchef-Delagare</h3>
-                    <h4>Maila mig</h4>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="21"
+                        viewBox="0 0 28 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M27.0708 7.93273C27.2741 7.80918 27.5765 7.92476 27.5765 8.12004V16.2699C27.5765 17.326 26.4557 18.1829 25.0743 18.1829H3.38877C2.00736 18.1829 0.886597 17.326 0.886597 16.2699V8.12402C0.886597 7.92476 1.18373 7.81317 1.39224 7.93671C2.55993 8.63015 4.10815 9.5109 9.42528 12.464C10.5252 13.0777 12.381 14.369 14.2315 14.361C16.0925 14.3729 17.9848 13.0538 19.043 12.464C24.3601 9.5109 25.9032 8.62617 27.0708 7.93273ZM14.2315 13.0817C15.4409 13.0976 17.182 11.918 18.0578 11.4318C24.9753 7.59398 25.5018 7.25922 27.0969 6.30275C27.3992 6.12341 27.5765 5.84444 27.5765 5.54953V4.79233C27.5765 3.73623 26.4557 2.87939 25.0743 2.87939H3.38877C2.00736 2.87939 0.886597 3.73623 0.886597 4.79233V5.54953C0.886597 5.84444 1.06383 6.11943 1.36618 6.30275C2.96132 7.25523 3.48782 7.59398 10.4053 11.4318C11.2811 11.918 13.0222 13.0976 14.2315 13.0817Z"
+                          fill="#149A39"
+                        />
+                      </svg>
+                      {"    "}
+                      <span style={{ left: "4px", position: "relative" }}>
+                        Maila mig
+                      </span>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -226,8 +243,7 @@ function ContactScreen() {
                 <div>
                   <img
                     src={
-                      process.env.PUBLIC_URL +
-                      "/images/emilie-bild-hemsida-ny.png.png"
+                      process.env.PUBLIC_URL + "/images/andreas-hemsida.png.png"
                     }
                     alt="Image"
                     // className="w-100"
@@ -242,9 +258,25 @@ function ContactScreen() {
                 </div>
                 <div>
                   <div className="testimonial_card">
-                    <h2>Daniel Egestam</h2>
-                    <h3>Projektchef-Delagare</h3>
-                    <h4>Maila mig</h4>
+                    <h2>Jonatan Mattsson</h2>
+                    <h3>Affarschef-Delagare</h3>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="21"
+                        viewBox="0 0 28 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M27.0708 7.93273C27.2741 7.80918 27.5765 7.92476 27.5765 8.12004V16.2699C27.5765 17.326 26.4557 18.1829 25.0743 18.1829H3.38877C2.00736 18.1829 0.886597 17.326 0.886597 16.2699V8.12402C0.886597 7.92476 1.18373 7.81317 1.39224 7.93671C2.55993 8.63015 4.10815 9.5109 9.42528 12.464C10.5252 13.0777 12.381 14.369 14.2315 14.361C16.0925 14.3729 17.9848 13.0538 19.043 12.464C24.3601 9.5109 25.9032 8.62617 27.0708 7.93273ZM14.2315 13.0817C15.4409 13.0976 17.182 11.918 18.0578 11.4318C24.9753 7.59398 25.5018 7.25922 27.0969 6.30275C27.3992 6.12341 27.5765 5.84444 27.5765 5.54953V4.79233C27.5765 3.73623 26.4557 2.87939 25.0743 2.87939H3.38877C2.00736 2.87939 0.886597 3.73623 0.886597 4.79233V5.54953C0.886597 5.84444 1.06383 6.11943 1.36618 6.30275C2.96132 7.25523 3.48782 7.59398 10.4053 11.4318C11.2811 11.918 13.0222 13.0976 14.2315 13.0817Z"
+                          fill="#149A39"
+                        />
+                      </svg>
+                      <span style={{ left: "7px", position: "relative" }}>
+                        Maila mig
+                      </span>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -311,7 +343,23 @@ function ContactScreen() {
                   <div className="testimonial_card">
                     <h2>Daniel Egestam</h2>
                     <h3>Projektchef-Delagare</h3>
-                    <h4>Maila mig</h4>
+                    <h4>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="21"
+                        viewBox="0 0 28 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M27.0708 7.93273C27.2741 7.80918 27.5765 7.92476 27.5765 8.12004V16.2699C27.5765 17.326 26.4557 18.1829 25.0743 18.1829H3.38877C2.00736 18.1829 0.886597 17.326 0.886597 16.2699V8.12402C0.886597 7.92476 1.18373 7.81317 1.39224 7.93671C2.55993 8.63015 4.10815 9.5109 9.42528 12.464C10.5252 13.0777 12.381 14.369 14.2315 14.361C16.0925 14.3729 17.9848 13.0538 19.043 12.464C24.3601 9.5109 25.9032 8.62617 27.0708 7.93273ZM14.2315 13.0817C15.4409 13.0976 17.182 11.918 18.0578 11.4318C24.9753 7.59398 25.5018 7.25922 27.0969 6.30275C27.3992 6.12341 27.5765 5.84444 27.5765 5.54953V4.79233C27.5765 3.73623 26.4557 2.87939 25.0743 2.87939H3.38877C2.00736 2.87939 0.886597 3.73623 0.886597 4.79233V5.54953C0.886597 5.84444 1.06383 6.11943 1.36618 6.30275C2.96132 7.25523 3.48782 7.59398 10.4053 11.4318C11.2811 11.918 13.0222 13.0976 14.2315 13.0817Z"
+                          fill="#149A39"
+                        />
+                      </svg>
+                      <span style={{ left: "14px", position: "relative" }}>
+                        Maila mig
+                      </span>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -319,8 +367,7 @@ function ContactScreen() {
                 <div>
                   <img
                     src={
-                      process.env.PUBLIC_URL +
-                      "/images/emilie-bild-hemsida-ny.png.png"
+                      process.env.PUBLIC_URL + "/images/andreas-hemsida.png.png"
                     }
                     alt="Image"
                     className="testimonials_image"
@@ -328,9 +375,26 @@ function ContactScreen() {
                 </div>
                 <div>
                   <div className="testimonial_card">
-                    <h2>Daniel Egestam</h2>
-                    <h3>Projektchef-Delagare</h3>
-                    <h4>Maila mig</h4>
+                    <h2>Jonatan Mattsson</h2>
+                    <h3>Affarschef-Delagare</h3>
+                    <h4>
+                      {" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="21"
+                        viewBox="0 0 28 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M27.0708 7.93273C27.2741 7.80918 27.5765 7.92476 27.5765 8.12004V16.2699C27.5765 17.326 26.4557 18.1829 25.0743 18.1829H3.38877C2.00736 18.1829 0.886597 17.326 0.886597 16.2699V8.12402C0.886597 7.92476 1.18373 7.81317 1.39224 7.93671C2.55993 8.63015 4.10815 9.5109 9.42528 12.464C10.5252 13.0777 12.381 14.369 14.2315 14.361C16.0925 14.3729 17.9848 13.0538 19.043 12.464C24.3601 9.5109 25.9032 8.62617 27.0708 7.93273ZM14.2315 13.0817C15.4409 13.0976 17.182 11.918 18.0578 11.4318C24.9753 7.59398 25.5018 7.25922 27.0969 6.30275C27.3992 6.12341 27.5765 5.84444 27.5765 5.54953V4.79233C27.5765 3.73623 26.4557 2.87939 25.0743 2.87939H3.38877C2.00736 2.87939 0.886597 3.73623 0.886597 4.79233V5.54953C0.886597 5.84444 1.06383 6.11943 1.36618 6.30275C2.96132 7.25523 3.48782 7.59398 10.4053 11.4318C11.2811 11.918 13.0222 13.0976 14.2315 13.0817Z"
+                          fill="#149A39"
+                        />
+                      </svg>
+                      <span style={{ left: "14px", position: "relative" }}>
+                        Maila mig
+                      </span>
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -357,19 +421,19 @@ function ContactScreen() {
           </div>
           <div className="col-md-3">
             <img
-              src={process.env.PUBLIC_URL + "/images/card-1.png"}
+              src={process.env.PUBLIC_URL + "/images/card-2.png"}
               className="w-100"
             />
           </div>
           <div className="col-md-3">
             <img
-              src={process.env.PUBLIC_URL + "/images/card-1.png"}
+              src={process.env.PUBLIC_URL + "/images/card-3.png"}
               className="w-100"
             />
           </div>
           <div className="col-md-3">
             <img
-              src={process.env.PUBLIC_URL + "/images/card-1.png"}
+              src={process.env.PUBLIC_URL + "/images/card-4.png"}
               className="w-100"
             />
           </div>
